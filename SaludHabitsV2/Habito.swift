@@ -1,22 +1,37 @@
 //
 //  Habito.swift
-//  SaludHabits
+//  saludHabits
 //
-//  Created by user198121 on 10/13/21.
+//  Created by David Garcia on 15/10/21.
 //
 
 import UIKit
 
 class Habito: NSObject {
-
-    var activo : Bool
-    var descripcion : String
-    var completo : Bool
-    // var horasNotificacion :
+    var activo : Bool!
+    var descripcion : String!
+    var completo : Bool!
+    var horasNotificacion = [DateComponents]()
+    var numHabito : Int!
     
-    init(activo : Bool, descripcion : String, completo : Bool) {
-        self.activo = activo
-        self.descripcion = descripcion
-        self.completo = completo
+    init(a : Bool, d : String, c : Bool, h : [DateComponents], n: Int) {
+        self.activo = a
+        self.descripcion = d
+        self.completo = c
+        self.horasNotificacion = h
+        self.numHabito = n
     }
+    
+    func mostrarDescripcion() {
+        
+    }
+    
+    func reiniciarEstado() {
+        
+    }
+    
+    func mostrarMensaje() {
+        
+    }
+
 }
