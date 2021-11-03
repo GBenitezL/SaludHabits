@@ -14,6 +14,8 @@
 		6481DA642730ED0B000E64F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA622730ED0B000E64F2 /* Main.storyboard */; };
 		6481DA662730ED0C000E64F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA652730ED0C000E64F2 /* Assets.xcassets */; };
 		6481DA692730ED0C000E64F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */; };
+		84B052572733255A00F9AE30 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B052562733255A00F9AE30 /* SetUpViewController.swift */; };
+		84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0525C273327A000F9AE30 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6481DA652730ED0C000E64F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6481DA682730ED0C000E64F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6481DA6A2730ED0C000E64F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B052562733255A00F9AE30 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		84B0525C273327A000F9AE30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */,
 				6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */,
+				84B0525C273327A000F9AE30 /* DashboardViewController.swift */,
 				6481DA602730ED0B000E64F2 /* ViewController.swift */,
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
+				84B052562733255A00F9AE30 /* SetUpViewController.swift */,
 				6481DA652730ED0C000E64F2 /* Assets.xcassets */,
 				6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */,
 				6481DA6A2730ED0C000E64F2 /* Info.plist */,
@@ -141,9 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6481DA612730ED0B000E64F2 /* ViewController.swift in Sources */,
+				84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */,
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
 				6446A65C2730EFC900994D6E /* Habito.swift in Sources */,
 				6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */,
+				84B052572733255A00F9AE30 /* SetUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
