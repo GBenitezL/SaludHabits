@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Agua: Habito {
+class Agua: Habito{
     var numVasos : Int!
     
     init(a : Bool, d : String, c : Bool, h : [DateComponents]) {

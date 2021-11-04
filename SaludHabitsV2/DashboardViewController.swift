@@ -9,6 +9,7 @@ import UIKit
 
 class DashboardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
   
+    var habitos = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             let m = n + 1
             key = "habito" + String(m)
             if defaults.bool(forKey: key){
-               
+                habitos.append(key)
             }
         }
     }
@@ -31,12 +32,22 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        habitos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
+        
+        cell.button.setTitle(habitos[indexPath.row], for: UIControl.State.normal)
+        
+        return cell
     }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+
+
+            return nil
+        }
 
     
     /*
