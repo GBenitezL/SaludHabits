@@ -9,8 +9,10 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-   
-    @IBOutlet weak var tfText: UILabel!
+    @IBOutlet weak var imgIcon: UIImageView!
+    
+    
+    @IBOutlet weak var tvText: UITextView!
     
     
     @IBOutlet weak var cell: UIView!

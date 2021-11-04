@@ -17,6 +17,9 @@ class SetUpViewController: UIViewController {
         DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
     ]
     
+    let dateComponent = DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,23 +33,31 @@ class SetUpViewController: UIViewController {
             return pathArchivo
     }
     
+  
+    
     @IBAction func saveSettings(_ sender: UIButton) {
-        let defaults = UserDefaults.standard
-        var key : String!
+        let habitosArr = [
+            Ejercicio(a: false, d: "1 rutina de ejercicio", c: false, h: dateComponents, t: 1, i: "exercise"),
+            SinCelular(a: false, d: "2 horas sin celular antes de dormir", c: false, h: dateComponents, i: "no-phone"),
+            Comidas(a: false, d: "3 comidas completas", c: false, h: dateComponents, i: "restaurant"),
+            Breaks(a: false, d: "4 breaks", c: false, h: dateComponents, i: "coffee-time"),
+            FrutasVerduras(a: false, d: "5 raciones de frutas y verduras", c: false, h: dateComponents, i: "healthy-food"),
+            Meditacion(a: false, d: "6 minutos de meditación", c: false, h: dateComponents, i: "meditation"),
+            Agua(a: false, d: "7 vasos de agua", c: false, h: dateComponents, i: "water-bottle"),
+            Dormir(a: false, d: "8 horas de sueño", c: false, h: dateComponents, i: dateComponent, f: dateComponent, icon: "sleep"),
+            Pasos(a: false, d: "9 mil pasos", c: false, h: dateComponents, i: "sneaker")
+        ]
+        
         for n in 0...8{
-            let m = n + 1
-            key = "habito" + String(m)
             if habitos[n].isOn {
                 print("Setting Habit #" + String(n))
-                defaults.setValue(true, forKey: key)
+                habitosArr[n].activo = true
             }
-            
         }
-        
-        let ejercicio = Ejercicio(a: true, d: "Una rutina de ejercicio", c: false, h: dateComponents, t: 1)
-        
+                
+    
         do {
-            let data = try PropertyListEncoder().encode(ejercicio)
+            let data = try PropertyListEncoder().encode(habitosArr)
                 try data.write(to: dataFileURL())
         }
         catch {

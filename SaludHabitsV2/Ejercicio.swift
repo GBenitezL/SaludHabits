@@ -10,9 +10,9 @@ import UIKit
 class Ejercicio: Habito {
     var tiempo : Int! // En minutos
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], t : Int!) {
+    init(a : Bool, d : String, c : Bool, h : [DateComponents], t : Int!, i : String) {
         self.tiempo = t
-        super.init(a: a, d: d, c: c, h: h, n: 1)
+        super.init(a: a, d: d, c: c, h: h, n: 1, i: i)
     }
     
     required init(from decoder: Decoder) throws {
