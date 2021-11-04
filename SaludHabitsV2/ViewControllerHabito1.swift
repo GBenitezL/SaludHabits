@@ -9,6 +9,7 @@ import UIKit
 
 class ViewControllerHabito1: UIViewController {
     
+   
     var numHabito : Int = 1
 
     @IBOutlet weak var swCompleto: UISwitch!
@@ -32,6 +33,9 @@ class ViewControllerHabito1: UIViewController {
         lbMinutos.text = Int(sender.value).description
     }
     
+    @IBAction func regresar(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

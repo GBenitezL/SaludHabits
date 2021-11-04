@@ -15,6 +15,10 @@ class Pasos: Habito {
         super.init(a: a, d: d, c: c, h: h, n: 9)
     }
     
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
     func registrarPasos(pasos: Int) {
         
     }

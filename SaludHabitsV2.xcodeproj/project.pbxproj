@@ -25,6 +25,20 @@
 		6481DA642730ED0B000E64F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA622730ED0B000E64F2 /* Main.storyboard */; };
 		6481DA662730ED0C000E64F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA652730ED0C000E64F2 /* Assets.xcassets */; };
 		6481DA692730ED0C000E64F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */; };
+		84B052572733255A00F9AE30 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B052562733255A00F9AE30 /* SetUpViewController.swift */; };
+		84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0525C273327A000F9AE30 /* DashboardViewController.swift */; };
+		84B052602733589100F9AE30 /* Comidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0525E2733589100F9AE30 /* Comidas.swift */; };
+		84B052612733589100F9AE30 /* Breaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0525F2733589100F9AE30 /* Breaks.swift */; };
+		84B052632733589800F9AE30 /* Agua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B052622733589800F9AE30 /* Agua.swift */; };
+		84B05267273358A600F9AE30 /* Dormir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B05264273358A600F9AE30 /* Dormir.swift */; };
+		84B05268273358A600F9AE30 /* Ejercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B05265273358A600F9AE30 /* Ejercicio.swift */; };
+		84B05269273358A600F9AE30 /* FrutasVerduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B05266273358A600F9AE30 /* FrutasVerduras.swift */; };
+		84B0526E273358B100F9AE30 /* Pasos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0526A273358B100F9AE30 /* Pasos.swift */; };
+		84B0526F273358B100F9AE30 /* RegistroHabito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0526B273358B100F9AE30 /* RegistroHabito.swift */; };
+		84B05270273358B100F9AE30 /* Receta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0526C273358B100F9AE30 /* Receta.swift */; };
+		84B05271273358B100F9AE30 /* Meditacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0526D273358B100F9AE30 /* Meditacion.swift */; };
+		84B05273273358B900F9AE30 /* SinCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B05272273358B900F9AE30 /* SinCelular.swift */; };
+		84B0527527335D3E00F9AE30 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +62,20 @@
 		6481DA652730ED0C000E64F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6481DA682730ED0C000E64F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6481DA6A2730ED0C000E64F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B052562733255A00F9AE30 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		84B0525C273327A000F9AE30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		84B0525E2733589100F9AE30 /* Comidas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comidas.swift; sourceTree = "<group>"; };
+		84B0525F2733589100F9AE30 /* Breaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Breaks.swift; sourceTree = "<group>"; };
+		84B052622733589800F9AE30 /* Agua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agua.swift; sourceTree = "<group>"; };
+		84B05264273358A600F9AE30 /* Dormir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dormir.swift; sourceTree = "<group>"; };
+		84B05265273358A600F9AE30 /* Ejercicio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ejercicio.swift; sourceTree = "<group>"; };
+		84B05266273358A600F9AE30 /* FrutasVerduras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrutasVerduras.swift; sourceTree = "<group>"; };
+		84B0526A273358B100F9AE30 /* Pasos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pasos.swift; sourceTree = "<group>"; };
+		84B0526B273358B100F9AE30 /* RegistroHabito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroHabito.swift; sourceTree = "<group>"; };
+		84B0526C273358B100F9AE30 /* Receta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receta.swift; sourceTree = "<group>"; };
+		84B0526D273358B100F9AE30 /* Meditacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meditacion.swift; sourceTree = "<group>"; };
+		84B05272273358B900F9AE30 /* SinCelular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinCelular.swift; sourceTree = "<group>"; };
+		84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +110,28 @@
 			children = (
 				6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */,
 				6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */,
+				84B0525C273327A000F9AE30 /* DashboardViewController.swift */,
 				6481DA602730ED0B000E64F2 /* ViewController.swift */,
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
+				84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */,
+				84B052562733255A00F9AE30 /* SetUpViewController.swift */,
 				3A8226392731C6B500632B01 /* ViewControllerSettings.swift */,
 				3A8226362731C6A700632B01 /* ViewControllerInfo.swift */,
 				6481DA652730ED0C000E64F2 /* Assets.xcassets */,
 				6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */,
 				6481DA6A2730ED0C000E64F2 /* Info.plist */,
 				6446A65B2730EFC900994D6E /* Habito.swift */,
+				84B0525F2733589100F9AE30 /* Breaks.swift */,
+				84B0525E2733589100F9AE30 /* Comidas.swift */,
+				84B052622733589800F9AE30 /* Agua.swift */,
+				84B05264273358A600F9AE30 /* Dormir.swift */,
+				84B05265273358A600F9AE30 /* Ejercicio.swift */,
+				84B05266273358A600F9AE30 /* FrutasVerduras.swift */,
+				84B0526D273358B100F9AE30 /* Meditacion.swift */,
+				84B0526A273358B100F9AE30 /* Pasos.swift */,
+				84B0526C273358B100F9AE30 /* Receta.swift */,
+				84B0526B273358B100F9AE30 /* RegistroHabito.swift */,
+				84B05272273358B900F9AE30 /* SinCelular.swift */,
 				3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */,
 				3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */,
 				3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */,
@@ -173,11 +215,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B0527527335D3E00F9AE30 /* CustomTableViewCell.swift in Sources */,
+				84B05273273358B900F9AE30 /* SinCelular.swift in Sources */,
+				84B052632733589800F9AE30 /* Agua.swift in Sources */,
+				84B0526F273358B100F9AE30 /* RegistroHabito.swift in Sources */,
 				3A82262B2731C66900632B01 /* ViewControllerHabito6.swift in Sources */,
 				3A8226282731C64400632B01 /* ViewControllerHabito5.swift in Sources */,
 				3A82263A2731C6B500632B01 /* ViewControllerSettings.swift in Sources */,
 				3A8226252731C63900632B01 /* ViewControllerHabito4.swift in Sources */,
 				6481DA612730ED0B000E64F2 /* ViewController.swift in Sources */,
+				84B0526E273358B100F9AE30 /* Pasos.swift in Sources */,
+				84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */,
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
 				3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */,
 				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
@@ -188,6 +236,14 @@
 				3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */,
 				3A82262E2731C67300632B01 /* ViewControllerHabito7.swift in Sources */,
 				6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */,
+				84B05271273358B100F9AE30 /* Meditacion.swift in Sources */,
+				84B05268273358A600F9AE30 /* Ejercicio.swift in Sources */,
+				84B052572733255A00F9AE30 /* SetUpViewController.swift in Sources */,
+				84B05269273358A600F9AE30 /* FrutasVerduras.swift in Sources */,
+				84B052602733589100F9AE30 /* Comidas.swift in Sources */,
+				84B05270273358B100F9AE30 /* Receta.swift in Sources */,
+				84B05267273358A600F9AE30 /* Dormir.swift in Sources */,
+				84B052612733589100F9AE30 /* Breaks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3BU946V9N;
 				INFOPLIST_FILE = SaludHabitsV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3BU946V9N;
 				INFOPLIST_FILE = SaludHabitsV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

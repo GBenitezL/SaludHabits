@@ -14,6 +14,10 @@ class Comidas: Habito {
         super.init(a: a, d: d, c: c, h: h, n: 3)
     }
     
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
     func completarComida(tipoComida : Int) {
         
     }

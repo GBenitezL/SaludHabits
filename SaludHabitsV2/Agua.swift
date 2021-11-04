@@ -7,12 +7,16 @@
 
 import UIKit
 
-class Agua: Habito {
+class Agua: Habito{
     var numVasos : Int!
     
     init(a : Bool, d : String, c : Bool, h : [DateComponents]) {
         self.numVasos = 0
         super.init(a: a, d: d, c: c, h: h, n: 7)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
     func completar() {

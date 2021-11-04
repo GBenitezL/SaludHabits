@@ -30,6 +30,10 @@ class ViewControllerHabito4: UIViewController {
             self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func regresar(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
