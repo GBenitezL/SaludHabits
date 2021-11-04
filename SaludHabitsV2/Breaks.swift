@@ -15,6 +15,10 @@ class Breaks: Habito {
         super.init(a: a, d: d, c: c, h: h, n: 4)
     }
     
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
     func iniciarTimer() {
         
     }

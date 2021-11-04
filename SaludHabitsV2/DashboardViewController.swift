@@ -11,10 +11,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
   
     var habitos = [String]()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+
     func SetHabits(){
         let defaults = UserDefaults.standard
         var key : String!
@@ -29,6 +26,15 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         SetHabits()
+        do {
+            let data = try Data(contentsOf: dataFileURL())
+            let ejercicio = try PropertyListDecoder().decode(Ejercicio.self, from: data)
+          
+            print(ejercicio.activo!)
+        }
+        catch {
+            print("Error al cargar el archivo")
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,17 +44,27 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
         
-        cell.button.setTitle(habitos[indexPath.row], for: UIControl.State.normal)
+        cell.tfText.text = habitos[indexPath.row]
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-
-
-            return nil
-        }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var habitoSeleccionado = habitos[indexPath.row]
+        performSegue(withIdentifier: habitoSeleccionado, sender: self)
+        print(habitoSeleccionado)
+    }
+    
+    func dataFileURL() -> URL {
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let pathArchivo = documentsDirectory.appendingPathComponent("Habitos").appendingPathExtension("plist")
+            return pathArchivo
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     
     /*
     // MARK: - Navigation

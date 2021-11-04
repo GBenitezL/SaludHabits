@@ -17,6 +17,10 @@ class Dormir: Habito {
         super.init(a: a, d: d, c: c, h: h, n: 8)
     }
     
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
     func cambiarHorario (inicio : DateComponents, final : DateComponents) {
         
     }

@@ -10,21 +10,24 @@ import UIKit
 class CustomTableViewCell: UITableViewCell {
 
    
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var tfText: UILabel!
     
     
     @IBOutlet weak var cell: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        button.layer.cornerRadius = 10
-        button.clipsToBounds = true
-            }
-
+        self.backgroundColor = UIColor(red: 1, green: 202/255, blue: 175/255, alpha: 1)
+        self.layer.cornerRadius = 5
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
 
 }

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */; };
+		3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */; };
+		3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */; };
+		3A8226252731C63900632B01 /* ViewControllerHabito4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226242731C63900632B01 /* ViewControllerHabito4.swift */; };
+		3A8226282731C64400632B01 /* ViewControllerHabito5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226272731C64400632B01 /* ViewControllerHabito5.swift */; };
+		3A82262B2731C66900632B01 /* ViewControllerHabito6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82262A2731C66900632B01 /* ViewControllerHabito6.swift */; };
+		3A82262E2731C67300632B01 /* ViewControllerHabito7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82262D2731C67300632B01 /* ViewControllerHabito7.swift */; };
+		3A8226312731C67D00632B01 /* ViewControllerHabito8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226302731C67D00632B01 /* ViewControllerHabito8.swift */; };
+		3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226332731C68800632B01 /* ViewControllerHabito9.swift */; };
+		3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226362731C6A700632B01 /* ViewControllerInfo.swift */; };
+		3A82263A2731C6B500632B01 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226392731C6B500632B01 /* ViewControllerSettings.swift */; };
 		6446A65C2730EFC900994D6E /* Habito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446A65B2730EFC900994D6E /* Habito.swift */; };
 		6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */; };
 		6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */; };
@@ -31,6 +42,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito1.swift; sourceTree = "<group>"; };
+		3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito2.swift; sourceTree = "<group>"; };
+		3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito3.swift; sourceTree = "<group>"; };
+		3A8226242731C63900632B01 /* ViewControllerHabito4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito4.swift; sourceTree = "<group>"; };
+		3A8226272731C64400632B01 /* ViewControllerHabito5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito5.swift; sourceTree = "<group>"; };
+		3A82262A2731C66900632B01 /* ViewControllerHabito6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito6.swift; sourceTree = "<group>"; };
+		3A82262D2731C67300632B01 /* ViewControllerHabito7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito7.swift; sourceTree = "<group>"; };
+		3A8226302731C67D00632B01 /* ViewControllerHabito8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito8.swift; sourceTree = "<group>"; };
+		3A8226332731C68800632B01 /* ViewControllerHabito9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito9.swift; sourceTree = "<group>"; };
+		3A8226362731C6A700632B01 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
+		3A8226392731C6B500632B01 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		6446A65B2730EFC900994D6E /* Habito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habito.swift; sourceTree = "<group>"; };
 		6481DA592730ED0B000E64F2 /* SaludHabitsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaludHabitsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +115,8 @@
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
 				84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */,
 				84B052562733255A00F9AE30 /* SetUpViewController.swift */,
+				3A8226392731C6B500632B01 /* ViewControllerSettings.swift */,
+				3A8226362731C6A700632B01 /* ViewControllerInfo.swift */,
 				6481DA652730ED0C000E64F2 /* Assets.xcassets */,
 				6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */,
 				6481DA6A2730ED0C000E64F2 /* Info.plist */,
@@ -108,6 +132,15 @@
 				84B0526C273358B100F9AE30 /* Receta.swift */,
 				84B0526B273358B100F9AE30 /* RegistroHabito.swift */,
 				84B05272273358B900F9AE30 /* SinCelular.swift */,
+				3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */,
+				3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */,
+				3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */,
+				3A8226242731C63900632B01 /* ViewControllerHabito4.swift */,
+				3A8226272731C64400632B01 /* ViewControllerHabito5.swift */,
+				3A82262A2731C66900632B01 /* ViewControllerHabito6.swift */,
+				3A82262D2731C67300632B01 /* ViewControllerHabito7.swift */,
+				3A8226302731C67D00632B01 /* ViewControllerHabito8.swift */,
+				3A8226332731C68800632B01 /* ViewControllerHabito9.swift */,
 			);
 			path = SaludHabitsV2;
 			sourceTree = "<group>";
@@ -186,11 +219,22 @@
 				84B05273273358B900F9AE30 /* SinCelular.swift in Sources */,
 				84B052632733589800F9AE30 /* Agua.swift in Sources */,
 				84B0526F273358B100F9AE30 /* RegistroHabito.swift in Sources */,
+				3A82262B2731C66900632B01 /* ViewControllerHabito6.swift in Sources */,
+				3A8226282731C64400632B01 /* ViewControllerHabito5.swift in Sources */,
+				3A82263A2731C6B500632B01 /* ViewControllerSettings.swift in Sources */,
+				3A8226252731C63900632B01 /* ViewControllerHabito4.swift in Sources */,
 				6481DA612730ED0B000E64F2 /* ViewController.swift in Sources */,
 				84B0526E273358B100F9AE30 /* Pasos.swift in Sources */,
 				84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */,
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
+				3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */,
+				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
+				3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */,
+				3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */,
+				3A8226312731C67D00632B01 /* ViewControllerHabito8.swift in Sources */,
 				6446A65C2730EFC900994D6E /* Habito.swift in Sources */,
+				3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */,
+				3A82262E2731C67300632B01 /* ViewControllerHabito7.swift in Sources */,
 				6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */,
 				84B05271273358B100F9AE30 /* Meditacion.swift in Sources */,
 				84B05268273358A600F9AE30 /* Ejercicio.swift in Sources */,
@@ -347,6 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3BU946V9N;
 				INFOPLIST_FILE = SaludHabitsV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U3BU946V9N;
 				INFOPLIST_FILE = SaludHabitsV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
