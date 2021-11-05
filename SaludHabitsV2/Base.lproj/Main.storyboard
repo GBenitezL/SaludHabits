@@ -278,14 +278,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoSample_ByTailorBrands" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-pz-sC6">
-                                <rect key="frame" x="41" y="14" width="293" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSample_ByTailorBrands" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-pz-sC6">
+                                <rect key="frame" x="41" y="80" width="296" height="60"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="77J-Dd-icM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="77J-Dd-icM">
                                 <rect key="frame" x="16" y="181" width="343" height="474"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="474" id="5hl-GU-1uB"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="80"/>
@@ -324,10 +326,12 @@
                                     <outlet property="delegate" destination="cK3-WK-zUb" id="dKm-CT-fp2"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkR-jG-DjO">
-                                <rect key="frame" x="0.0" y="20" width="50" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkR-jG-DjO">
+                                <rect key="frame" x="15" y="30" width="51" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RkR-jG-DjO" secondAttribute="height" multiplier="17:10" id="QfJ-ZQ-2in"/>
+                                </constraints>
+                                <state key="normal" title="Ajustes"/>
                                 <connections>
                                     <segue destination="HTt-lQ-PSP" kind="show" id="rqB-Uc-WsS"/>
                                 </connections>
@@ -335,6 +339,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjf-7w-MmL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Tv-pz-sC6" firstAttribute="top" secondItem="RkR-jG-DjO" secondAttribute="bottom" constant="20" id="3oX-h2-PgI"/>
+                            <constraint firstItem="tjf-7w-MmL" firstAttribute="bottom" secondItem="77J-Dd-icM" secondAttribute="bottom" constant="12" id="5rM-2O-SeS"/>
+                            <constraint firstItem="tjf-7w-MmL" firstAttribute="trailing" secondItem="5Tv-pz-sC6" secondAttribute="trailing" constant="38" id="DAI-DE-JYp"/>
+                            <constraint firstItem="77J-Dd-icM" firstAttribute="centerX" secondItem="oC6-pJ-ykr" secondAttribute="centerX" id="Pbp-k9-bEX"/>
+                            <constraint firstItem="77J-Dd-icM" firstAttribute="leading" secondItem="oC6-pJ-ykr" secondAttribute="leadingMargin" id="QEo-69-fSl"/>
+                            <constraint firstItem="5Tv-pz-sC6" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="41" id="dFq-rj-Log"/>
+                            <constraint firstItem="RkR-jG-DjO" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="30" id="dL2-ua-YcS"/>
+                            <constraint firstItem="RkR-jG-DjO" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="15" id="tgf-h7-PXU"/>
+                            <constraint firstItem="77J-Dd-icM" firstAttribute="top" secondItem="5Tv-pz-sC6" secondAttribute="bottom" constant="41" id="uQt-on-9Gf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gZx-4e-PAW"/>
                     <connections>
