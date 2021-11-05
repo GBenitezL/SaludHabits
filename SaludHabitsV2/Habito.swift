@@ -15,13 +15,14 @@ class Habito: NSObject, Codable {
     var numHabito : Int!
     var icon : String!  //Nombre de la imagen
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], n: Int, i: String) {
-        self.activo = a
-        self.descripcion = d
-        self.completo = c
-        self.horasNotificacion = h
-        self.numHabito = n
-        self.icon = i
+    init(activo : Bool, desc : String, completo : Bool,
+         horas : [DateComponents], numHabito: Int, icon: String) {
+        self.activo = activo
+        self.descripcion = desc
+        self.completo = completo
+        self.horasNotificacion = horas
+        self.numHabito = numHabito
+        self.icon = icon
     }
     
     private enum CodingKeys : String, CodingKey {

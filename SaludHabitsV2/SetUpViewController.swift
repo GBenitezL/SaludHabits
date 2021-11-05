@@ -37,15 +37,15 @@ class SetUpViewController: UIViewController {
     
     @IBAction func saveSettings(_ sender: UIButton) {
         let habitosArr = [
-            Ejercicio(a: false, d: "1 rutina de ejercicio", c: false, h: dateComponents, t: 1, i: "exercise"),
-            SinCelular(a: false, d: "2 horas sin celular antes de dormir", c: false, h: dateComponents, i: "no-phone"),
-            Comidas(a: false, d: "3 comidas completas", c: false, h: dateComponents, i: "restaurant"),
-            Breaks(a: false, d: "4 breaks", c: false, h: dateComponents, i: "coffee-time"),
-            FrutasVerduras(a: false, d: "5 raciones de frutas y verduras", c: false, h: dateComponents, i: "healthy-food"),
-            Meditacion(a: false, d: "6 minutos de meditación", c: false, h: dateComponents, i: "meditation"),
-            Agua(a: false, d: "7 vasos de agua", c: false, h: dateComponents, i: "water-bottle"),
-            Dormir(a: false, d: "8 horas de sueño", c: false, h: dateComponents, i: dateComponent, f: dateComponent, icon: "sleep"),
-            Pasos(a: false, d: "9 mil pasos", c: false, h: dateComponents, i: "sneaker")
+            Ejercicio(activo: false, desc: "1 rutina de ejercicio", completo: false, horas: dateComponents, time: 1, icon: "exercise"),
+            SinCelular(activo: false, desc: "2 horas sin celular antes de dormir", completo: false, horas: dateComponents, icon: "no-phone"),
+            Comidas(activo: false, desc: "3 comidas completas", completo: false, horas: dateComponents, icon: "restaurant"),
+            Breaks(activo: false, desc: "4 breaks", completo: false, horas: dateComponents, icon: "coffee-time"),
+            FrutasVerduras(activo: false, desc: "5 raciones de frutas y verduras", completo: false, horas: dateComponents, icon: "healthy-food"),
+            Meditacion(activo: false, desc: "6 minutos de meditación", completo: false, horas: dateComponents, icon: "meditation"),
+            Agua(activo: false, desc: "7 vasos de agua", completo: false, horas: dateComponents, icon: "water-bottle"),
+            Dormir(activo: false, desc: "8 horas de sueño", completo: false, horas: dateComponents, inicial: dateComponent, final: dateComponent, icon: "sleep"),
+            Pasos(activo: false, desc: "9 mil pasos", completo: false, horas: dateComponents, icon: "sneaker")
         ]
         
         for n in 0...8{

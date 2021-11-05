@@ -12,10 +12,10 @@ class RegistroHabito: NSObject, Codable {
     var numHabito : Int!
     var completo : Bool!
     
-    init(f : Date, n : Int, c : Bool) {
-        self.fecha = f
-        self.numHabito = n
-        self.completo = c
+    init(fecha : Date, numHabito : Int, completo : Bool) {
+        self.fecha = fecha
+        self.numHabito = numHabito
+        self.completo = completo
     }
     
     private enum CodingKeys : String, CodingKey {
