@@ -10,9 +10,11 @@ import UIKit
 class Breaks: Habito {
     var numBreaks : Int!
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], i : String) {
+    init(activo : Bool, desc : String, completo : Bool,
+         horas : [DateComponents], icon : String) {
         self.numBreaks = 0
-        super.init(a: a, d: d, c: c, h: h, n: 4, i: i)
+        super.init(activo: activo, desc: desc, completo: completo,
+                   horas: horas, numHabito: 4, icon: icon)
     }
     
     required init(from decoder: Decoder) throws {

@@ -9,8 +9,10 @@ import UIKit
 
 class Meditacion: Habito {
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], i : String) {
-        super.init(a: a, d: d, c: c, h: h, n: 6, i: i)
+    init(activo : Bool, desc : String, completo : Bool,
+         horas : [DateComponents], icon : String) {
+        super.init(activo: activo, desc: desc, completo: completo,
+                   horas: horas, numHabito: 6, icon: icon)
     }
     
     required init(from decoder: Decoder) throws {
@@ -19,7 +21,7 @@ class Meditacion: Habito {
     
    
     override func encode(to encoder: Encoder) throws {
-           try super.encode(to: encoder)
+        try super.encode(to: encoder)
     }
     
     func conectarSpotify() {
