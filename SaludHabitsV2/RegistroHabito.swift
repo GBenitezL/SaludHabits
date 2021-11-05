@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistroHabito: NSObject {
+class RegistroHabito: NSObject, Codable {
     var fecha : Date!
     var numHabito : Int!
     var completo : Bool!
@@ -16,6 +16,19 @@ class RegistroHabito: NSObject {
         self.fecha = f
         self.numHabito = n
         self.completo = c
+    }
+    
+    private enum CodingKeys : String, CodingKey {
+            case fecha
+            case numHabito
+            case completo
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(fecha, forKey: .fecha)
+        try container.encode(numHabito, forKey: .numHabito)
+        try container.encode(completo, forKey: .completo)
     }
     
     func recopilarRegistros() {
