@@ -175,15 +175,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outletCollection property="habitos" destination="Lra-dR-4GH" collectionClass="NSMutableArray" id="vTV-Fa-I9z"/>
-                        <outletCollection property="habitos" destination="loK-6g-Sla" collectionClass="NSMutableArray" id="SKK-HL-S9c"/>
-                        <outletCollection property="habitos" destination="96w-Oe-smZ" collectionClass="NSMutableArray" id="4fi-0F-d23"/>
-                        <outletCollection property="habitos" destination="qK5-xY-aKw" collectionClass="NSMutableArray" id="eWr-Z4-uE9"/>
-                        <outletCollection property="habitos" destination="2C3-Dy-QZw" collectionClass="NSMutableArray" id="gvg-Ur-xtG"/>
-                        <outletCollection property="habitos" destination="Rim-s0-Gkv" collectionClass="NSMutableArray" id="Yyq-QZ-ieo"/>
-                        <outletCollection property="habitos" destination="tC2-eb-CE1" collectionClass="NSMutableArray" id="VFi-iZ-r5Z"/>
-                        <outletCollection property="habitos" destination="Hv8-T9-Dev" collectionClass="NSMutableArray" id="09e-hp-26v"/>
-                        <outletCollection property="habitos" destination="YR7-UO-RJi" collectionClass="NSMutableArray" id="bx1-Qk-9DP"/>
+                        <outletCollection property="habitos" destination="YR7-UO-RJi" collectionClass="NSMutableArray" id="FrM-ZY-I0F"/>
+                        <outletCollection property="habitos" destination="Hv8-T9-Dev" collectionClass="NSMutableArray" id="mLC-9N-uEB"/>
+                        <outletCollection property="habitos" destination="tC2-eb-CE1" collectionClass="NSMutableArray" id="ftJ-fS-7Gs"/>
+                        <outletCollection property="habitos" destination="Rim-s0-Gkv" collectionClass="NSMutableArray" id="4YK-wt-awW"/>
+                        <outletCollection property="habitos" destination="2C3-Dy-QZw" collectionClass="NSMutableArray" id="cgv-8k-zAK"/>
+                        <outletCollection property="habitos" destination="qK5-xY-aKw" collectionClass="NSMutableArray" id="hSh-qa-AjP"/>
+                        <outletCollection property="habitos" destination="96w-Oe-smZ" collectionClass="NSMutableArray" id="7MF-v7-uSb"/>
+                        <outletCollection property="habitos" destination="loK-6g-Sla" collectionClass="NSMutableArray" id="axC-Bm-A4B"/>
+                        <outletCollection property="habitos" destination="Lra-dR-4GH" collectionClass="NSMutableArray" id="AzV-ZX-ie6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -214,13 +214,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4W-XI-N5h">
-                                                    <rect key="frame" x="22" y="30" width="244" height="21"/>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3D-DX-bmQ">
+                                                    <rect key="frame" x="16" y="8" width="215" height="64"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleep" translatesAutoresizingMaskIntoConstraints="NO" id="34f-CR-sTd">
+                                                    <rect key="frame" x="254" y="8" width="73" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
@@ -229,7 +234,8 @@
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="13" bottom="14" trailing="8"/>
                                         <connections>
                                             <outlet property="cell" destination="n2R-Po-fs8" id="52g-4z-doD"/>
-                                            <outlet property="tfText" destination="M4W-XI-N5h" id="MTe-Db-gEn"/>
+                                            <outlet property="imgIcon" destination="34f-CR-sTd" id="dCj-Jw-2VO"/>
+                                            <outlet property="tvText" destination="N3D-DX-bmQ" id="OQl-Ts-dVr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -722,6 +728,7 @@
         <image name="habito-2-img" width="128" height="128"/>
         <image name="habito-3-img" width="128" height="128"/>
         <image name="habito-4-img" width="128" height="128"/>
+        <image name="sleep" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
