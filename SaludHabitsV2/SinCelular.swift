@@ -9,8 +9,10 @@ import UIKit
 
 class SinCelular: Habito {
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], i : String) {
-        super.init(a: a, d: d, c: c, h: h, n: 2, i: i)
+    init(activo : Bool, desc : String, completo : Bool,
+         horas : [DateComponents], icon : String) {
+        super.init(activo: activo, desc: desc, completo: completo,
+                   horas: horas, numHabito: 2, icon: icon)
     }
     
     required init(from decoder: Decoder) throws {

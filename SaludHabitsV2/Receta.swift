@@ -13,11 +13,11 @@ class Receta: NSObject {
     var link : URL!
     var tipoComida : Int!
     
-    init (i : Int, r : String, l : URL, t : Int) {
-        self.id = i
-        self.receta = r
-        self.link = l
-        self.tipoComida = t
+    init (id : Int, receta : String, link : URL, tipoComida : Int) {
+        self.id = id
+        self.receta = receta
+        self.link = link
+        self.tipoComida = tipoComida
     }
 
 }

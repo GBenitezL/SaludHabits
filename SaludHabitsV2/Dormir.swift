@@ -11,10 +11,12 @@ class Dormir: Habito {
     var horarioInicial : DateComponents!
     var horarioFinal : DateComponents!
     
-    init(a : Bool, d : String, c : Bool, h : [DateComponents], i : DateComponents, f : DateComponents, icon : String) {
-        self.horarioInicial = i
-        self.horarioFinal = f
-        super.init(a: a, d: d, c: c, h: h, n: 8, i: icon)
+    init(activo : Bool, desc : String, completo : Bool, horas : [DateComponents],
+         inicial : DateComponents, final : DateComponents, icon : String) {
+        self.horarioInicial = inicial
+        self.horarioFinal = final
+        super.init(activo: activo, desc: desc, completo: completo,
+                   horas: horas, numHabito: 8, icon: icon)
     }
     
     required init(from decoder: Decoder) throws {
@@ -22,9 +24,7 @@ class Dormir: Habito {
 
         let values = try decoder.container(keyedBy: CodingKeys.self)
         horarioInicial =  try values.decode(DateComponents.self, forKey: .horarioInicial)
-        horarioFinal   =  try values.decode(DateComponents.self, forKey: .horarioFinal)
-        
-        
+        horarioFinal = try values.decode(DateComponents.self, forKey: .horarioFinal)
     }
     
    
