@@ -40,6 +40,10 @@ class ViewControllerHabito7: UIViewController {
         }
     }
 
+    @IBAction func regresar(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
     /*
     // MARK: - Navigation
 
