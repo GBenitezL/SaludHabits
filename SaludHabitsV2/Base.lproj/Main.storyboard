@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -149,7 +148,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="¿Cuáles hábitos te gustaría trabajar?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-RU-ZPR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="¿Cuáles hábitos te gustaría trabajar?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-RU-ZPR">
                                 <rect key="frame" x="42" y="110" width="282" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -161,10 +160,6 @@
                                 <rect key="frame" x="314" y="591" width="43" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.right.circle.fill" catalog="system" title="">
-                                    <backgroundConfiguration key="background"/>
-                                    <color key="baseForegroundColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="saveSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2o-6V-GeU"/>
                                     <segue destination="cK3-WK-zUb" kind="presentation" identifier="showDashboard" modalPresentationStyle="fullScreen" id="hSo-Gm-brH"/>
@@ -208,7 +203,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -248,7 +243,6 @@
                                 <rect key="frame" x="0.0" y="20" width="50" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="⚙️"/>
                                 <connections>
                                     <segue destination="HTt-lQ-PSP" kind="show" id="rqB-Uc-WsS"/>
                                 </connections>
@@ -263,6 +257,7 @@
                         <segue destination="ptq-W4-8p6" kind="presentation" identifier="habito2" modalPresentationStyle="fullScreen" id="Z5e-Ty-yhy"/>
                         <segue destination="o4S-Zq-dBf" kind="presentation" identifier="habito3" modalPresentationStyle="fullScreen" id="ZEB-MI-ceW"/>
                         <segue destination="uk3-BX-88G" kind="presentation" identifier="habito4" modalPresentationStyle="fullScreen" id="dI9-x9-Kon"/>
+                        <segue destination="a1i-aP-WEM" kind="presentation" identifier="habito5" modalPresentationStyle="fullScreen" id="ltY-36-JKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nO-DPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -409,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyN-aF-1QF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-672"/>
+            <point key="canvasLocation" x="1862" y="-697"/>
         </scene>
         <!--Habito2-->
         <scene sceneID="UBC-Rd-N0p">
@@ -419,20 +414,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-TR-JCw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Hábito 2" id="CwX-4n-jBR">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="fFr-Gx-uB1">
-                                            <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="regresar:" destination="ptq-W4-8p6" id="xc1-rV-1sD"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="habito-2-img" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-1J-90k">
                                 <rect key="frame" x="67" y="196" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -472,6 +453,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-TR-JCw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Hábito 2" id="CwX-4n-jBR">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="fFr-Gx-uB1">
+                                            <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="regresar:" destination="ptq-W4-8p6" id="xc1-rV-1sD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1rJ-8j-mCU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -485,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd4-kg-YNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="-490"/>
+            <point key="canvasLocation" x="2631" y="-696"/>
         </scene>
         <!--Habito4-->
         <scene sceneID="a3G-b9-R0W">
@@ -613,7 +608,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qaz-Hz-8jV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="412"/>
+            <point key="canvasLocation" x="1801" y="475"/>
+        </scene>
+        <!--View Controller Habito5-->
+        <scene sceneID="Tfu-mO-8y8">
+            <objects>
+                <viewController id="a1i-aP-WEM" customClass="ViewControllerHabito5" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ttm-h2-yve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Frutas" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-YS-RXP">
+                                <rect key="frame" x="67" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fnq-22-GK4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Raciones de Frutas y / o Verduras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-ad-Tc8">
+                                <rect key="frame" x="31" y="83" width="312" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Dz-q19">
+                                <rect key="frame" x="67" y="510" width="240" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cuántas raciones llevas hoy?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBV-i5-O9C">
+                                <rect key="frame" x="58" y="366" width="147" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DV3-UD-YrD">
+                                <rect key="frame" x="237" y="417" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stpContadorFV:" destination="a1i-aP-WEM" eventType="valueChanged" id="BXx-d2-9o2"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqe-zh-sJ9">
+                                <rect key="frame" x="263" y="381" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4j3-c9-Nf9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dNW-vS-UYx"/>
+                    <connections>
+                        <outlet property="lbContadorFV" destination="Aqe-zh-sJ9" id="eTz-kE-dru"/>
+                        <outlet property="pbProgreso" destination="esf-Dz-q19" id="8eA-Gq-5D5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSr-ti-9pE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629.5999999999999" y="-17.541229385307346"/>
         </scene>
         <!--Habito3-->
         <scene sceneID="h4x-x3-wdg">
@@ -717,12 +774,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYZ-xM-we7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367" y="-170"/>
+            <point key="canvasLocation" x="3391" y="-698"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Frutas" width="599" height="319"/>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
-        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="habito-1-img" width="128" height="128"/>
         <image name="habito-2-img" width="128" height="128"/>

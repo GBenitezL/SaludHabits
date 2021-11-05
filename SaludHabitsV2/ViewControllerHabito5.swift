@@ -8,11 +8,40 @@
 import UIKit
 
 class ViewControllerHabito5: UIViewController {
+    
+    @IBOutlet weak var lbContadorFV: UILabel!
+    @IBOutlet weak var pbProgreso: UIProgressView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        super.viewDidLoad()
+        let contador = Int(lbContadorFV.text ?? "0") ?? 0
+        progreso(cont: contador)
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func stpContadorFV(_ sender: UIStepper) {
+        lbContadorFV.text = String(format: "%.0f", sender.value)
+        //mensaje(cont: Int(sender.value))
+        progreso(cont: Int(sender.value))
+        if lbContadorFV.text == "5" {
+            let alert = UIAlertController(title: "Felicidades", message: "Has completado tus 5 raciones diarias. ¡Sigue así!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
+            self.present(alert, animated: true, completion: nil)
+
+        }
+    }
+    
+    func progreso(cont: Int){
+        if (cont >= 5){
+            pbProgreso.setProgress(1, animated: true)
+        }
+        else {
+            pbProgreso.setProgress(Float(cont)/5, animated: true)
+        }
     }
     
 
