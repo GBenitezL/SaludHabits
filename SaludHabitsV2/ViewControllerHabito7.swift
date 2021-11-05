@@ -40,7 +40,7 @@ class ViewControllerHabito7: UIViewController {
         }
     }
 
-    @IBAction func regresar(_ sender: Any) {
+    @IBAction func regresar(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
 
