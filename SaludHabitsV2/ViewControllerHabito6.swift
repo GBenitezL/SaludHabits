@@ -15,7 +15,7 @@ class ViewControllerHabito6: UIViewController {
     
     
     var temp = Timer()
-    var seg : Int = 20
+    var seg : Int = 5
     
     
     override func viewDidLoad() {
@@ -84,6 +84,11 @@ class ViewControllerHabito6: UIViewController {
             temp.invalidate()
         }
     }
+    
+    @IBAction func regresar(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     /*
     // MARK: - Navigation
