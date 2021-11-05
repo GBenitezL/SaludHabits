@@ -40,110 +40,92 @@
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lra-dR-4GH">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lra-dR-4GH">
                                 <rect key="frame" x="16" y="523" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196078431373" green="0.74509803921568629" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 mil pasos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuf-Tb-uEV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="9 mil pasos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuf-Tb-uEV">
                                 <rect key="frame" x="78" y="529" width="102" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loK-6g-Sla">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="loK-6g-Sla">
                                 <rect key="frame" x="16" y="484" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 horas de sueño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvm-29-9n2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="8 horas de sueño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvm-29-9n2">
                                 <rect key="frame" x="78" y="490" width="156" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96w-Oe-smZ">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96w-Oe-smZ">
                                 <rect key="frame" x="16" y="448" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 vasos de agua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="874-MM-8aY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="7 vasos de agua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="874-MM-8aY">
                                 <rect key="frame" x="79" y="451" width="147" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qK5-xY-aKw">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qK5-xY-aKw">
                                 <rect key="frame" x="16" y="409" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 minutos de meditación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0P-t0-NKs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6 minutos de meditación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0P-t0-NKs">
                                 <rect key="frame" x="79" y="415" width="222" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-Dy-QZw">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-Dy-QZw">
                                 <rect key="frame" x="14" y="370" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 raciones de frutas y verduras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQx-PQ-vtW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5 raciones de frutas y verduras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQx-PQ-vtW">
                                 <rect key="frame" x="77" y="376" width="282" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rim-s0-Gkv">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rim-s0-Gkv">
                                 <rect key="frame" x="14" y="331" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 breaks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diD-vr-GaJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4 breaks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diD-vr-GaJ">
                                 <rect key="frame" x="77" y="337" width="79" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-eb-CE1">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-eb-CE1">
                                 <rect key="frame" x="14" y="292" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 comidas completas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-iD-gjs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 comidas completas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqe-iD-gjs">
                                 <rect key="frame" x="77" y="298" width="191" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-T9-Dev">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-T9-Dev">
                                 <rect key="frame" x="16" y="253" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 horas sin celular antes de dormir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg6-Ta-wP2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 horas sin celular antes de dormir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg6-Ta-wP2">
                                 <rect key="frame" x="79" y="259" width="278" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YR7-UO-RJi">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YR7-UO-RJi">
                                 <rect key="frame" x="16" y="214" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 rutina de ejercicio " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-QA-stI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1 rutina de ejercicio " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mU-QA-stI">
                                 <rect key="frame" x="80" y="220" width="215" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -168,6 +150,61 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qK5-xY-aKw" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="1nz-py-PiQ"/>
+                            <constraint firstItem="qK5-xY-aKw" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="3cN-qq-3vW"/>
+                            <constraint firstItem="qK5-xY-aKw" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="4L4-S1-IFE"/>
+                            <constraint firstItem="tC2-eb-CE1" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="6as-gI-Uxt"/>
+                            <constraint firstItem="Hv8-T9-Dev" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="AKX-tX-zmB"/>
+                            <constraint firstItem="Rim-s0-Gkv" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="Buf-8E-5Oo"/>
+                            <constraint firstItem="96w-Oe-smZ" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="C51-fl-9Hw"/>
+                            <constraint firstItem="loK-6g-Sla" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="C9m-zY-pzC"/>
+                            <constraint firstItem="iQx-PQ-vtW" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="Db2-YR-1vX"/>
+                            <constraint firstItem="2C3-Dy-QZw" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="M8b-z3-Enc"/>
+                            <constraint firstItem="diD-vr-GaJ" firstAttribute="centerY" secondItem="Rim-s0-Gkv" secondAttribute="centerY" id="OgV-gV-T6D"/>
+                            <constraint firstItem="qK5-xY-aKw" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="Ouk-KY-To9"/>
+                            <constraint firstItem="874-MM-8aY" firstAttribute="centerY" secondItem="96w-Oe-smZ" secondAttribute="centerY" id="PM7-fT-4ou"/>
+                            <constraint firstItem="qK5-xY-aKw" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="Q7Q-vp-lfp"/>
+                            <constraint firstItem="Rim-s0-Gkv" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="RFj-iG-Uca"/>
+                            <constraint firstItem="iQx-PQ-vtW" firstAttribute="centerY" secondItem="2C3-Dy-QZw" secondAttribute="centerY" id="RND-Uc-yx8"/>
+                            <constraint firstItem="9mU-QA-stI" firstAttribute="centerY" secondItem="YR7-UO-RJi" secondAttribute="centerY" id="RNf-bC-TrZ"/>
+                            <constraint firstItem="Vvm-29-9n2" firstAttribute="centerY" secondItem="loK-6g-Sla" secondAttribute="centerY" id="SQI-cY-Zjz"/>
+                            <constraint firstItem="2C3-Dy-QZw" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="SqG-EZ-A5N"/>
+                            <constraint firstItem="2C3-Dy-QZw" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="U5b-rd-SZd"/>
+                            <constraint firstItem="Vvm-29-9n2" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="U6X-be-tCC"/>
+                            <constraint firstItem="tC2-eb-CE1" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="UIR-Bc-P8u"/>
+                            <constraint firstItem="loK-6g-Sla" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="UWo-RC-E5M"/>
+                            <constraint firstItem="Lra-dR-4GH" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="Uj9-UO-Vg3"/>
+                            <constraint firstItem="loK-6g-Sla" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="UyQ-JG-QTX"/>
+                            <constraint firstItem="Uuf-Tb-uEV" firstAttribute="centerY" secondItem="Lra-dR-4GH" secondAttribute="centerY" id="aUt-q5-xQ8"/>
+                            <constraint firstItem="96w-Oe-smZ" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="aew-7R-2SU"/>
+                            <constraint firstItem="Uuf-Tb-uEV" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="cIj-uf-nbW"/>
+                            <constraint firstItem="R0P-t0-NKs" firstAttribute="centerY" secondItem="qK5-xY-aKw" secondAttribute="centerY" id="cJl-yp-1fZ"/>
+                            <constraint firstItem="Rim-s0-Gkv" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="cS1-A0-VHU"/>
+                            <constraint firstItem="Lra-dR-4GH" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="cVr-lu-S2S"/>
+                            <constraint firstItem="Rim-s0-Gkv" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="d5U-1P-fbl"/>
+                            <constraint firstItem="diD-vr-GaJ" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="ebd-DV-xIP"/>
+                            <constraint firstItem="2C3-Dy-QZw" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="gQz-Gc-8M9"/>
+                            <constraint firstItem="tC2-eb-CE1" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="gp8-Ib-9U3"/>
+                            <constraint firstItem="Lra-dR-4GH" firstAttribute="leading" secondItem="YR7-UO-RJi" secondAttribute="leading" id="hsO-oi-XoR"/>
+                            <constraint firstItem="Fg6-Ta-wP2" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="iDF-if-pdv"/>
+                            <constraint firstItem="2C3-Dy-QZw" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="k1a-1F-ckZ"/>
+                            <constraint firstItem="96w-Oe-smZ" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="klq-8u-tfS"/>
+                            <constraint firstItem="vqe-iD-gjs" firstAttribute="centerY" secondItem="tC2-eb-CE1" secondAttribute="centerY" id="m7B-Ab-JrE"/>
+                            <constraint firstItem="Lra-dR-4GH" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="m8V-mq-KMP"/>
+                            <constraint firstItem="874-MM-8aY" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="mB3-G0-mXV"/>
+                            <constraint firstItem="tC2-eb-CE1" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="mpg-7s-1eQ"/>
+                            <constraint firstItem="96w-Oe-smZ" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="muj-dk-2OG"/>
+                            <constraint firstItem="96w-Oe-smZ" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="myw-bW-cot"/>
+                            <constraint firstItem="Rim-s0-Gkv" firstAttribute="height" secondItem="Hv8-T9-Dev" secondAttribute="height" id="nQE-ZZ-zVP"/>
+                            <constraint firstItem="loK-6g-Sla" firstAttribute="height" secondItem="YR7-UO-RJi" secondAttribute="height" id="nYh-QS-Hyl"/>
+                            <constraint firstItem="Fg6-Ta-wP2" firstAttribute="centerY" secondItem="Hv8-T9-Dev" secondAttribute="centerY" id="pJl-g1-qcN"/>
+                            <constraint firstItem="loK-6g-Sla" firstAttribute="width" secondItem="Hv8-T9-Dev" secondAttribute="width" id="sbm-5A-UBq"/>
+                            <constraint firstItem="vqe-iD-gjs" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="vzZ-DE-LG8"/>
+                            <constraint firstItem="Lra-dR-4GH" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="w92-1v-MF4"/>
+                            <constraint firstItem="R0P-t0-NKs" firstAttribute="leading" secondItem="9mU-QA-stI" secondAttribute="leading" id="x99-k2-9h9"/>
+                            <constraint firstItem="Hv8-T9-Dev" firstAttribute="width" secondItem="YR7-UO-RJi" secondAttribute="width" id="yT9-oo-Cxj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outletCollection property="habitos" destination="YR7-UO-RJi" collectionClass="NSMutableArray" id="FrM-ZY-I0F"/>
