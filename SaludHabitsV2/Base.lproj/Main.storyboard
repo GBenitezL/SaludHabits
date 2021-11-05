@@ -796,49 +796,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fnq-22-GK4">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnq-22-GK4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Dz-q19">
-                                <rect key="frame" x="67" y="510" width="240" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="esf-Dz-q19">
+                                <rect key="frame" x="67" y="510" width="241" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cuántas raciones llevas hoy?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBV-i5-O9C">
-                                <rect key="frame" x="58" y="366" width="147" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántas raciones llevas hoy?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBV-i5-O9C">
+                                <rect key="frame" x="55" y="366" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fpr-0I-yvu"/>
+                                    <constraint firstAttribute="width" constant="150" id="Vjs-eh-XCW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DV3-UD-YrD">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DV3-UD-YrD">
                                 <rect key="frame" x="237" y="417" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="stpContadorFV:" destination="a1i-aP-WEM" eventType="valueChanged" id="BXx-d2-9o2"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqe-zh-sJ9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqe-zh-sJ9">
                                 <rect key="frame" x="263" y="381" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="fr7-XE-WFa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Frutas" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-YS-RXP">
-                                <rect key="frame" x="67" y="170" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frutas" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-YS-RXP">
+                                <rect key="frame" x="-112" y="170" width="599" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kYx-nF-9F4"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Raciones de Frutas y / o Verduras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-ad-Tc8">
-                                <rect key="frame" x="31" y="60" width="312" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53o-Eq-nt2">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53o-Eq-nt2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Habito 5" id="TAb-g8-UVw">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="o7V-8i-NhA">
@@ -850,9 +846,42 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="5 Raciones de Frutas y / o Verduras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-ad-Tc8">
+                                <rect key="frame" x="62.5" y="84" width="250" height="55.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="cyF-nh-XtH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4j3-c9-Nf9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fnq-22-GK4" firstAttribute="leading" secondItem="53o-Eq-nt2" secondAttribute="leading" id="3Pk-fm-B4P"/>
+                            <constraint firstItem="Aqe-zh-sJ9" firstAttribute="top" secondItem="UYy-YS-RXP" secondAttribute="bottom" constant="83" id="5Pz-vt-l2R"/>
+                            <constraint firstItem="esf-Dz-q19" firstAttribute="top" secondItem="gBV-i5-O9C" secondAttribute="bottom" constant="44" id="AKj-eD-bpu"/>
+                            <constraint firstItem="UXZ-ad-Tc8" firstAttribute="centerX" secondItem="ttm-h2-yve" secondAttribute="centerX" id="Bcc-dd-hz1"/>
+                            <constraint firstItem="UYy-YS-RXP" firstAttribute="top" secondItem="UXZ-ad-Tc8" secondAttribute="bottom" constant="30.5" id="C1W-uG-wgV"/>
+                            <constraint firstItem="Fnq-22-GK4" firstAttribute="top" secondItem="4j3-c9-Nf9" secondAttribute="top" id="GZY-Mb-NTR"/>
+                            <constraint firstItem="esf-Dz-q19" firstAttribute="leading" secondItem="4j3-c9-Nf9" secondAttribute="leading" constant="67" id="LnL-vc-NUa"/>
+                            <constraint firstItem="Fnq-22-GK4" firstAttribute="centerX" secondItem="esf-Dz-q19" secondAttribute="centerX" id="NEX-AF-D9K"/>
+                            <constraint firstItem="DV3-UD-YrD" firstAttribute="top" secondItem="Aqe-zh-sJ9" secondAttribute="bottom" constant="15" id="Rdb-to-omV"/>
+                            <constraint firstItem="esf-Dz-q19" firstAttribute="centerX" secondItem="ttm-h2-yve" secondAttribute="centerX" id="VXS-0j-eVI"/>
+                            <constraint firstItem="UYy-YS-RXP" firstAttribute="centerX" secondItem="ttm-h2-yve" secondAttribute="centerX" id="WTy-2y-Cd4"/>
+                            <constraint firstItem="UXZ-ad-Tc8" firstAttribute="top" secondItem="53o-Eq-nt2" secondAttribute="bottom" constant="40" id="X91-jg-cXO"/>
+                            <constraint firstItem="UYy-YS-RXP" firstAttribute="centerX" secondItem="Fnq-22-GK4" secondAttribute="centerX" id="YlK-30-Yp3"/>
+                            <constraint firstItem="53o-Eq-nt2" firstAttribute="top" secondItem="4j3-c9-Nf9" secondAttribute="top" id="ZDj-8d-Vwm"/>
+                            <constraint firstItem="DV3-UD-YrD" firstAttribute="centerX" secondItem="Aqe-zh-sJ9" secondAttribute="centerX" id="aV4-4a-glV"/>
+                            <constraint firstItem="Aqe-zh-sJ9" firstAttribute="leading" secondItem="gBV-i5-O9C" secondAttribute="trailing" constant="58" id="c6k-y9-4we"/>
+                            <constraint firstItem="gBV-i5-O9C" firstAttribute="top" secondItem="UYy-YS-RXP" secondAttribute="bottom" constant="68" id="dgJ-S9-upD"/>
+                            <constraint firstItem="4j3-c9-Nf9" firstAttribute="trailing" secondItem="Aqe-zh-sJ9" secondAttribute="trailing" constant="70" id="fEu-gl-gsg"/>
+                            <constraint firstItem="53o-Eq-nt2" firstAttribute="trailing" secondItem="4j3-c9-Nf9" secondAttribute="trailing" id="h1F-1J-ufi"/>
+                            <constraint firstItem="53o-Eq-nt2" firstAttribute="leading" secondItem="4j3-c9-Nf9" secondAttribute="leading" id="l49-jy-kCc"/>
+                            <constraint firstItem="UXZ-ad-Tc8" firstAttribute="centerX" secondItem="ttm-h2-yve" secondAttribute="centerX" id="vKh-z1-acJ"/>
+                            <constraint firstItem="UYy-YS-RXP" firstAttribute="centerX" secondItem="esf-Dz-q19" secondAttribute="centerX" id="z47-Pf-t6D"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dNW-vS-UYx"/>
                     <connections>
