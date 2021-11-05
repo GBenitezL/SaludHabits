@@ -8,6 +8,10 @@
 import UIKit
 
 class ViewControllerHabito9: UIViewController {
+    
+    var numHabito : Int = 9
+
+    @IBOutlet weak var lbPasos: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +19,10 @@ class ViewControllerHabito9: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func regresar(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
