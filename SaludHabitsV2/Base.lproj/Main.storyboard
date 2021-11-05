@@ -360,8 +360,6 @@
                         <segue destination="a1i-aP-WEM" kind="presentation" identifier="habito5" modalPresentationStyle="fullScreen" id="ltY-36-JKQ"/>
                         <segue destination="xXT-1y-i89" kind="presentation" identifier="habito7" modalPresentationStyle="fullScreen" id="EDk-YE-hRG"/>
                         <segue destination="2eV-uj-wNt" kind="presentation" identifier="habito6" modalPresentationStyle="fullScreen" id="qQM-ek-Yo7"/>
-                        <segue destination="NPQ-Ro-XBf" kind="presentation" identifier="habito8" modalPresentationStyle="fullScreen" id="MO2-Py-wCJ"/>
-                        <segue destination="feg-ie-qSy" kind="presentation" identifier="habito9" modalPresentationStyle="fullScreen" id="Yqz-1k-UPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nO-DPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -714,10 +712,10 @@
             </objects>
             <point key="canvasLocation" x="1862" y="-18"/>
         </scene>
-        <!--Habito5-->
+        <!--View Controller Habito5-->
         <scene sceneID="Tfu-mO-8y8">
             <objects>
-                <viewController title="Habito5" id="a1i-aP-WEM" customClass="ViewControllerHabito5" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a1i-aP-WEM" customClass="ViewControllerHabito5" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ttm-h2-yve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -762,15 +760,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-YH-TSV">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53o-Eq-nt2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Hábito 5" id="H0F-sR-QRG">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="h1V-1b-MPj">
+                                    <navigationItem title="Habito 5" id="TAb-g8-UVw">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="o7V-8i-NhA">
                                             <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="regresar:" destination="a1i-aP-WEM" id="W9A-Qn-MTQ"/>
+                                                <action selector="regresar:" destination="a1i-aP-WEM" id="aDL-cj-Prx"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -790,10 +788,10 @@
             </objects>
             <point key="canvasLocation" x="2629.5999999999999" y="-17.541229385307346"/>
         </scene>
-        <!--Habito6-->
+        <!--View Controller Habito6-->
         <scene sceneID="f4g-eW-Lm1">
             <objects>
-                <viewController title="Habito6" id="2eV-uj-wNt" customClass="ViewControllerHabito6" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2eV-uj-wNt" customClass="ViewControllerHabito6" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pSh-qy-mdB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -880,15 +878,15 @@
                                     <action selector="swCompletar:" destination="2eV-uj-wNt" eventType="valueChanged" id="yEp-zk-fUC"/>
                                 </connections>
                             </switch>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyH-8W-zOQ">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JHs-39-0VM">
                                 <rect key="frame" x="1" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Hábito 6" id="7vF-Zx-lIH">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="6jf-n2-dmP">
+                                    <navigationItem title="Habito 6" id="3jr-FH-adD">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="YHW-DL-mBy">
                                             <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="regresar:" destination="2eV-uj-wNt" id="wXf-c3-rmB"/>
+                                                <action selector="regresar:" destination="2eV-uj-wNt" id="TQs-x5-Ejg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -908,10 +906,10 @@
             </objects>
             <point key="canvasLocation" x="3389.5999999999999" y="-16.641679160419791"/>
         </scene>
-        <!--Habito7-->
+        <!--View Controller Habito7-->
         <scene sceneID="Tf9-pZ-Nte">
             <objects>
-                <viewController title="Habito7" id="xXT-1y-i89" customClass="ViewControllerHabito7" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xXT-1y-i89" customClass="ViewControllerHabito7" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zpm-gH-jCO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -953,15 +951,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kS9-P4-btv">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1w4-Cc-Mcs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Hábito 7" id="ld6-eo-eaf">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="ePy-ZX-O6F">
+                                    <navigationItem title="Habito 7" id="3M5-KU-0TJ">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="IN5-IY-n0M">
                                             <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="regresar:" destination="xXT-1y-i89" id="CjE-3g-fSp"/>
+                                                <action selector="regresar:" destination="xXT-1y-i89" id="tXN-uc-ZAO"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1085,156 +1083,6 @@
             </objects>
             <point key="canvasLocation" x="3391" y="-698"/>
         </scene>
-        <!--Habito8-->
-        <scene sceneID="Sme-CN-QTP">
-            <objects>
-                <viewController title="Habito8" id="NPQ-Ro-XBf" customClass="ViewControllerHabito8" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p8z-Ny-xqh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 Horas de Sueño" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg5-mG-o6h">
-                                <rect key="frame" x="31" y="81" width="312" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="habito-8-img" translatesAutoresizingMaskIntoConstraints="NO" id="UZ5-S6-sBs">
-                                <rect key="frame" x="67" y="191" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcf-dj-K3K">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Hábito 8" id="rNt-cd-CYT">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="NEi-L6-0B5">
-                                            <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="regresar:" destination="NPQ-Ro-XBf" id="2O7-WT-U5V"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cúantas horas quieres dormir?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bb-J4-HcB">
-                                <rect key="frame" x="60" y="388" width="255" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="horas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyQ-Yw-ZIL">
-                                <rect key="frame" x="127" y="483" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="24" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4V9-BM-ort">
-                                <rect key="frame" x="67" y="443" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="selectHoras:" destination="NPQ-Ro-XBf" eventType="valueChanged" id="vlI-Vd-RB5"/>
-                                    <action selector="setTimer:" destination="uk3-BX-88G" eventType="valueChanged" id="4pa-un-rxd"/>
-                                </connections>
-                            </stepper>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-0q-lCG">
-                                <rect key="frame" x="228" y="443" width="87" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Establecer"/>
-                                <connections>
-                                    <action selector="cambiarHorario:" destination="NPQ-Ro-XBf" eventType="touchUpInside" id="aJs-1J-3kn"/>
-                                    <action selector="iniciarTimer:" destination="uk3-BX-88G" eventType="touchUpInside" id="du4-R1-w33"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-rG-L2g">
-                                <rect key="frame" x="67" y="483" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="L1q-Q2-Aoj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gS1-O2-TO6"/>
-                    <connections>
-                        <outlet property="lbHoras" destination="gRn-rG-L2g" id="QvB-py-iz3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a1b-WO-0HQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2630" y="672"/>
-        </scene>
-        <!--Habito9-->
-        <scene sceneID="OUv-qA-hDu">
-            <objects>
-                <viewController title="Habito9" id="feg-ie-qSy" customClass="ViewControllerHabito9" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZAf-wd-Bl6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 Mil Pasos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-Ei-TFo">
-                                <rect key="frame" x="31" y="81" width="312" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="habito-9-img" translatesAutoresizingMaskIntoConstraints="NO" id="mQu-8Z-dKo">
-                                <rect key="frame" x="67" y="191" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-qp-ftE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Hábito 9" id="xSr-bd-mpK">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="QQi-Or-cJc">
-                                            <color key="tintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="regresar:" destination="uk3-BX-88G" id="xet-Zq-ieP"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Se recomiendan 10.000 pasos diarios " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-xd-8NW">
-                                <rect key="frame" x="35" y="382" width="305" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wB-1Y-T9a">
-                                <rect key="frame" x="246" y="498" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introduce el número de pasos que diste hoy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bq-Yd-RI5">
-                                <rect key="frame" x="31" y="489" width="207" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="RHw-DC-x09"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fVi-VS-29H"/>
-                    <connections>
-                        <outlet property="lbPasos" destination="9wB-1Y-T9a" id="wGJ-rA-PQD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a8J-Lt-hAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3389.5999999999999" y="671.51424287856082"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Agua" width="509" height="339"/>
@@ -1243,12 +1091,10 @@
         <image name="Meditacion" width="1226" height="1004"/>
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
-        <image name="habito-1-img" width="2400" height="1600"/>
-        <image name="habito-2-img" width="1152" height="1280"/>
-        <image name="habito-3-img" width="759" height="512"/>
-        <image name="habito-4-img" width="270" height="538"/>
-        <image name="habito-8-img" width="635" height="446"/>
-        <image name="habito-9-img" width="559" height="809"/>
+        <image name="habito-1-img" width="128" height="128"/>
+        <image name="habito-2-img" width="128" height="128"/>
+        <image name="habito-3-img" width="128" height="128"/>
+        <image name="habito-4-img" width="128" height="128"/>
         <image name="sleep" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
