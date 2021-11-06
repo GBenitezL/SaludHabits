@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewControllerHabito9: UIViewController {
+class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDelegate {
     
     var numHabito : Int = 9
     
@@ -36,14 +36,15 @@ class ViewControllerHabito9: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vistaPopOver = segue.destination as! ViewControllerPopOver
+        vistaPopOver.popoverPresentationController!.delegate = self
+        vistaPopOver.dato = lbPasos.text
     }
-    */
+    
+    func actualizaPasos(dato : String) {
+        objetivoPasos = Int(dato) ?? 0
+        lbPasos.text = dato
+    }
 
 }

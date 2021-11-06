@@ -18,6 +18,7 @@
 		3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226332731C68800632B01 /* ViewControllerHabito9.swift */; };
 		3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226362731C6A700632B01 /* ViewControllerInfo.swift */; };
 		3A82263A2731C6B500632B01 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226392731C6B500632B01 /* ViewControllerSettings.swift */; };
+		3A955BBB2735DA3E0042DCE0 /* ViewControllerPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */; };
 		6446A65C2730EFC900994D6E /* Habito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446A65B2730EFC900994D6E /* Habito.swift */; };
 		6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */; };
 		6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		3A8226332731C68800632B01 /* ViewControllerHabito9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito9.swift; sourceTree = "<group>"; };
 		3A8226362731C6A700632B01 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 		3A8226392731C6B500632B01 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
+		3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPopOver.swift; sourceTree = "<group>"; };
 		6446A65B2730EFC900994D6E /* Habito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habito.swift; sourceTree = "<group>"; };
 		6481DA592730ED0B000E64F2 /* SaludHabitsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaludHabitsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */,
 				6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */,
 				84B0525C273327A000F9AE30 /* DashboardViewController.swift */,
+				3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */,
 				6481DA602730ED0B000E64F2 /* ViewController.swift */,
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
 				84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */,
@@ -235,6 +238,7 @@
 				6446A65C2730EFC900994D6E /* Habito.swift in Sources */,
 				3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */,
 				3A82262E2731C67300632B01 /* ViewControllerHabito7.swift in Sources */,
+				3A955BBB2735DA3E0042DCE0 /* ViewControllerPopOver.swift in Sources */,
 				6481DA5F2730ED0B000E64F2 /* SceneDelegate.swift in Sources */,
 				84B05271273358B100F9AE30 /* Meditacion.swift in Sources */,
 				84B05268273358A600F9AE30 /* Ejercicio.swift in Sources */,

@@ -14,6 +14,11 @@ class ViewControllerHabito4: UIViewController {
     @IBOutlet weak var stpTimer: UIStepper!
     @IBOutlet weak var lbTimer: UILabel!
 
+    @IBOutlet weak var sw1: UISwitch!
+    @IBOutlet weak var sw2: UISwitch!
+    @IBOutlet weak var sw3: UISwitch!
+    @IBOutlet weak var sw4: UISwitch!
+
     override func viewDidLoad() {
         stpTimer.value = 45
         lbTimer.text = Int(stpTimer.value).description
@@ -33,15 +38,5 @@ class ViewControllerHabito4: UIViewController {
     @IBAction func regresar(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
