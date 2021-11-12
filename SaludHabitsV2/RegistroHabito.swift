@@ -55,12 +55,14 @@ class RegistroHabito: NSObject, Codable {
         }
         
         let dateComponent = DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
+        let userCalendar = Calendar(identifier: .gregorian)
+        let someDateTime = userCalendar.date(from: dateComponent)!
         
         var habitosRegistro = [RegistroHabito]()
         
         for i in 0...8{
             if habitos[i].activo {
-                let registroHabit = RegistroHabito(fecha: <#T##Date#>, numHabito: i+1, completo: true)
+                let registroHabit = RegistroHabito(fecha: someDateTime, numHabito: i+1, completo: true)
                 
                 habitosRegistro.append(registroHabit)
                 
