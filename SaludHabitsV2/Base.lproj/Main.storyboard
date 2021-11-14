@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -268,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114.40000000000001" y="-16.641679160419791"/>
+            <point key="canvasLocation" x="-268" y="-17"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="3n7-Oc-2ii">
@@ -278,10 +279,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSample_ByTailorBrands" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-pz-sC6">
-                                <rect key="frame" x="41" y="80" width="296" height="60"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="77J-Dd-icM">
                                 <rect key="frame" x="16" y="181" width="343" height="474"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -290,7 +287,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -326,33 +323,44 @@
                                     <outlet property="delegate" destination="cK3-WK-zUb" id="dKm-CT-fp2"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkR-jG-DjO">
-                                <rect key="frame" x="15" y="30" width="51" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSample_ByTailorBrands" translatesAutoresizingMaskIntoConstraints="NO" id="coG-sF-syO">
+                                <rect key="frame" x="69" y="73" width="236" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="RkR-jG-DjO" secondAttribute="height" multiplier="17:10" id="QfJ-ZQ-2in"/>
+                                    <constraint firstAttribute="height" constant="72" id="qtF-lm-NiF"/>
+                                    <constraint firstAttribute="width" constant="236" id="yIJ-MI-XQK"/>
                                 </constraints>
-                                <state key="normal" title="Ajustes"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-2P-eLW">
+                                <rect key="frame" x="10" y="10" width="31" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Jzx-Iu-4oq"/>
+                                    <constraint firstAttribute="width" constant="31" id="pI1-XJ-SBk"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="setting"/>
                                 <connections>
-                                    <segue destination="HTt-lQ-PSP" kind="show" id="rqB-Uc-WsS"/>
+                                    <segue destination="PCQ-GA-bWO" kind="presentation" id="hLp-45-e8g"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjf-7w-MmL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5Tv-pz-sC6" firstAttribute="top" secondItem="RkR-jG-DjO" secondAttribute="bottom" constant="20" id="3oX-h2-PgI"/>
+                            <constraint firstItem="bVb-2P-eLW" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="10" id="3If-Yg-qkj"/>
                             <constraint firstItem="tjf-7w-MmL" firstAttribute="bottom" secondItem="77J-Dd-icM" secondAttribute="bottom" constant="12" id="5rM-2O-SeS"/>
-                            <constraint firstItem="tjf-7w-MmL" firstAttribute="trailing" secondItem="5Tv-pz-sC6" secondAttribute="trailing" constant="38" id="DAI-DE-JYp"/>
                             <constraint firstItem="77J-Dd-icM" firstAttribute="centerX" secondItem="oC6-pJ-ykr" secondAttribute="centerX" id="Pbp-k9-bEX"/>
                             <constraint firstItem="77J-Dd-icM" firstAttribute="leading" secondItem="oC6-pJ-ykr" secondAttribute="leadingMargin" id="QEo-69-fSl"/>
-                            <constraint firstItem="5Tv-pz-sC6" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="41" id="dFq-rj-Log"/>
-                            <constraint firstItem="RkR-jG-DjO" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="30" id="dL2-ua-YcS"/>
-                            <constraint firstItem="RkR-jG-DjO" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="15" id="tgf-h7-PXU"/>
-                            <constraint firstItem="77J-Dd-icM" firstAttribute="top" secondItem="5Tv-pz-sC6" secondAttribute="bottom" constant="41" id="uQt-on-9Gf"/>
+                            <constraint firstItem="bVb-2P-eLW" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="10" id="SF9-eH-lBO"/>
+                            <constraint firstItem="bVb-2P-eLW" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="10" id="Uc4-Q4-vRy"/>
+                            <constraint firstItem="tjf-7w-MmL" firstAttribute="trailing" secondItem="coG-sF-syO" secondAttribute="trailing" constant="70" id="WDX-WK-5kr"/>
+                            <constraint firstItem="bVb-2P-eLW" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="10" id="iXg-uN-R8P"/>
+                            <constraint firstItem="coG-sF-syO" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="73" id="kQf-Mc-5nJ"/>
+                            <constraint firstItem="coG-sF-syO" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="69" id="mv9-au-Jhd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gZx-4e-PAW"/>
                     <connections>
+                        <outlet property="tvTablaHabitos" destination="77J-Dd-icM" id="1wo-tJ-w0b"/>
                         <segue destination="Jgg-lg-5Ig" kind="presentation" identifier="habito1" modalPresentationStyle="fullScreen" id="D1o-lx-oPz"/>
                         <segue destination="ptq-W4-8p6" kind="presentation" identifier="habito2" modalPresentationStyle="fullScreen" id="Z5e-Ty-yhy"/>
                         <segue destination="o4S-Zq-dBf" kind="presentation" identifier="habito3" modalPresentationStyle="fullScreen" id="ZEB-MI-ceW"/>
@@ -391,32 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zba-Lf-dhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="724"/>
-        </scene>
-        <!--View Controller Settings-->
-        <scene sceneID="5K7-2D-5zu">
-            <objects>
-                <viewController id="HTt-lQ-PSP" customClass="ViewControllerSettings" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aZR-gM-db6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Página de configuración" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPc-KP-sKo">
-                                <rect key="frame" x="80" y="67" width="214" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="DC0-xc-mVY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="XvW-l1-0It"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OgJ-OK-G1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="634" y="833"/>
+            <point key="canvasLocation" x="-242" y="750"/>
         </scene>
         <!--Habito1-->
         <scene sceneID="thg-0E-KDu">
@@ -1353,6 +1336,178 @@
             </objects>
             <point key="canvasLocation" x="4053.5999999999999" y="671.51424287856082"/>
         </scene>
+        <!--Hábitos-->
+        <scene sceneID="jvS-We-U8o">
+            <objects>
+                <viewController id="Yka-V8-hfr" customClass="AjustesViewController" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4oo-M2-MRt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hábitos por trabajar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w5-lB-pdK">
+                                <rect key="frame" x="87" y="63" width="201" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0a-oT-2JD">
+                                <rect key="frame" x="18" y="435" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 mil pasos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ko-aI-JWl">
+                                <rect key="frame" x="81" y="442" width="102" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enP-1Q-gIm">
+                                <rect key="frame" x="18" y="395" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8 horas de sueño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-20-8X7">
+                                <rect key="frame" x="81" y="400" width="156" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ana-7N-YKY">
+                                <rect key="frame" x="18" y="358" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 vasos de agua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYn-WG-VOs">
+                                <rect key="frame" x="81" y="362" width="147" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-Qq-j9D">
+                                <rect key="frame" x="18" y="318" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 minutos de meditación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-Xs-Gog">
+                                <rect key="frame" x="81" y="323" width="222" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUH-lA-iiS">
+                                <rect key="frame" x="18" y="278" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 raciones de frutas y verduras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITd-vK-6Th">
+                                <rect key="frame" x="81" y="285" width="282" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jqc-sD-ULx">
+                                <rect key="frame" x="18" y="238" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 breaks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9id-3V-8ZP">
+                                <rect key="frame" x="81" y="243" width="79" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Td-7t-xOd">
+                                <rect key="frame" x="16" y="198" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 comidas completas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeo-JN-tzy">
+                                <rect key="frame" x="81" y="205" width="191" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAg-kf-1dl">
+                                <rect key="frame" x="18" y="158" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 horas sin celular antes de dormir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wi-y7-jws">
+                                <rect key="frame" x="81" y="166" width="278" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rc1-bg-l2n">
+                                <rect key="frame" x="18" y="118" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.65490196079999996" green="0.74509803919999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 rutina de ejercicio " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWy-QD-9Tf">
+                                <rect key="frame" x="81" y="125" width="184" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
+                                <rect key="frame" x="137" y="511" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
+                                <connections>
+                                    <action selector="guardar:" destination="Yka-V8-hfr" eventType="touchUpInside" id="nch-5V-vp9"/>
+                                    <segue destination="rgT-MM-IcS" kind="unwind" unwindAction="unwindFromSegueWithSegue:" id="OUE-DJ-raS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cVw-wJ-m83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hábitos" image="pencil" catalog="system" id="0xM-Eb-idX"/>
+                    <connections>
+                        <outletCollection property="habitos" destination="Rc1-bg-l2n" collectionClass="NSMutableArray" id="dMO-Tt-yjC"/>
+                        <outletCollection property="habitos" destination="pAg-kf-1dl" collectionClass="NSMutableArray" id="9Jr-Rh-LGY"/>
+                        <outletCollection property="habitos" destination="3Td-7t-xOd" collectionClass="NSMutableArray" id="xrf-Lv-kbg"/>
+                        <outletCollection property="habitos" destination="Jqc-sD-ULx" collectionClass="NSMutableArray" id="DHk-k0-3jF"/>
+                        <outletCollection property="habitos" destination="RUH-lA-iiS" collectionClass="NSMutableArray" id="otO-Xi-nMr"/>
+                        <outletCollection property="habitos" destination="Zfi-Qq-j9D" collectionClass="NSMutableArray" id="UWD-Sw-Jnk"/>
+                        <outletCollection property="habitos" destination="Ana-7N-YKY" collectionClass="NSMutableArray" id="iF0-s2-9yP"/>
+                        <outletCollection property="habitos" destination="enP-1Q-gIm" collectionClass="NSMutableArray" id="nHS-3d-N1f"/>
+                        <outletCollection property="habitos" destination="x0a-oT-2JD" collectionClass="NSMutableArray" id="p4X-9U-d8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6H3-6k-LdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rgT-MM-IcS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="1638.5307346326838"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AOB-3U-jzi">
+            <objects>
+                <tabBarController id="PCQ-GA-bWO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OWE-wE-VKl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="seal" catalog="system" id="0YX-6H-P3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yka-V8-hfr" kind="relationship" relationship="viewControllers" id="tTW-vg-XYQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8o-2T-d6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="776"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Agua" width="509" height="339"/>
@@ -1367,6 +1522,9 @@
         <image name="habito-4-img" width="270" height="538"/>
         <image name="habito-8-img" width="635" height="446"/>
         <image name="habito-9-img" width="559" height="809"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="seal" catalog="system" width="128" height="128"/>
+        <image name="setting" width="512" height="512"/>
         <image name="sleep" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

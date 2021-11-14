@@ -11,7 +11,29 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
   
     var habitos = [Habito]()
     var habitosActivo = [Habito]()
+    @IBOutlet weak var tvTablaHabitos: UITableView!
     
+    @IBAction func unwindFromSegue(segue: UIStoryboardSegue) {
+        
+        habitos.removeAll()
+        habitosActivo.removeAll()
+        
+        do {
+            let data = try Data(contentsOf: dataFileURL())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        
+
+        storeActiveHabits()
+        tvTablaHabitos.reloadData()
+        
+    }
+
+   
     
     override func viewWillAppear(_ animated: Bool) {
         do {
