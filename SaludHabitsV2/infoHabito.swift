@@ -1,24 +1,23 @@
 //
-//  ViewControllerSettings.swift
+//  infoHabito.swift
 //  SaludHabitsV2
 //
-//  Created by Irene Truchado Mazzoli on 02/11/21.
+//  Created by Irene Truchado Mazzoli on 14/11/21.
 //
 
 import UIKit
 
-class ViewControllerSettings: UIViewController {
+class infoHabito: UIViewController {
+
+    @IBOutlet weak var textInfo: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //textInfo.text = Habito.mostrarDescripcion()
     }
     
 
-    @IBAction func regresar(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
     /*
     // MARK: - Navigation
 

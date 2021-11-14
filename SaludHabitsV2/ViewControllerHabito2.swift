@@ -11,11 +11,15 @@ class ViewControllerHabito2: UIViewController {
     
     var numHabito : Int = 2
     var horaDormir : Date!
+    let dateFormatter = DateFormatter()
 
     @IBOutlet weak var swRecordatorio: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // format the time to be shown
+        dateFormatter.dateFormat = "HH:mm"
+
     }
     
     @IBAction func setHora(_ sender: UIDatePicker) {
@@ -24,9 +28,7 @@ class ViewControllerHabito2: UIViewController {
     
     @IBAction func setRecordatorio(_ sender: UISwitch) {
         if swRecordatorio.isOn {
-            // format the time to be shown
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm"
+
             let result = dateFormatter.string(from: self.horaDormir)
             // show the alert notification
             let alert = UIAlertController(title: "Horario de sueño", message: "Recordatorio configurado a las " + result, preferredStyle: UIAlertController.Style.alert)

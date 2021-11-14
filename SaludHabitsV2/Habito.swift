@@ -44,8 +44,28 @@ class Habito: NSObject, Codable {
         try container.encode(icon, forKey: .icon)
     }
     
-    func mostrarDescripcion() {
-        
+    func mostrarDescripcion() -> String {
+        var descripcion : String = ""
+        if numHabito==1 {
+            descripcion = "info habito 1"
+        } else if numHabito==2 {
+            descripcion = "info habito 2"
+        } else if numHabito==3 {
+            descripcion = "info habito 3"
+        } else if numHabito==4 {
+            descripcion = "info habito 4"
+        } else if numHabito==5 {
+            descripcion = "info habito 5"
+        } else if numHabito==6 {
+            descripcion = "info habito 6"
+        } else if numHabito==7 {
+            descripcion = "info habito 7"
+        } else if numHabito==8 {
+            descripcion = "info habito 8"
+        } else if numHabito==9 {
+            descripcion = "info habito 9"
+        }
+        return descripcion
     }
     
     func reiniciarEstado() {
