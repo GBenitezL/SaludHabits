@@ -40,6 +40,7 @@
 		84B05271273358B100F9AE30 /* Meditacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0526D273358B100F9AE30 /* Meditacion.swift */; };
 		84B05273273358B900F9AE30 /* SinCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B05272273358B900F9AE30 /* SinCelular.swift */; };
 		84B0527527335D3E00F9AE30 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */; };
+		84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		84B0526D273358B100F9AE30 /* Meditacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meditacion.swift; sourceTree = "<group>"; };
 		84B05272273358B900F9AE30 /* SinCelular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinCelular.swift; sourceTree = "<group>"; };
 		84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */,
 				6481DA602730ED0B000E64F2 /* ViewController.swift */,
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
+				84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */,
 				84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */,
 				84B052562733255A00F9AE30 /* SetUpViewController.swift */,
 				3A8226392731C6B500632B01 /* ViewControllerSettings.swift */,
@@ -232,6 +235,7 @@
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
 				3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */,
 				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
+				84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */,
 				3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */,
 				3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */,
 				3A8226312731C67D00632B01 /* ViewControllerHabito8.swift in Sources */,
