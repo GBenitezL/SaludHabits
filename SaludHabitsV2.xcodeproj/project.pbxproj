@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A341879274497E100DDBA09 /* infoHabito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A341878274497E100DDBA09 /* infoHabito.swift */; };
 		3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */; };
 		3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */; };
 		3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A341878274497E100DDBA09 /* infoHabito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoHabito.swift; sourceTree = "<group>"; };
 		3A82261B2731C5E900632B01 /* ViewControllerHabito1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito1.swift; sourceTree = "<group>"; };
 		3A82261E2731C5FA00632B01 /* ViewControllerHabito2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito2.swift; sourceTree = "<group>"; };
 		3A8226212731C62F00632B01 /* ViewControllerHabito3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHabito3.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				6481DA6A2730ED0C000E64F2 /* Info.plist */,
 				6446A65B2730EFC900994D6E /* Habito.swift */,
 				84B0525F2733589100F9AE30 /* Breaks.swift */,
+				3A341878274497E100DDBA09 /* infoHabito.swift */,
 				84B0525E2733589100F9AE30 /* Comidas.swift */,
 				84B052622733589800F9AE30 /* Agua.swift */,
 				84B05264273358A600F9AE30 /* Dormir.swift */,
@@ -235,6 +238,7 @@
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
 				3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */,
 				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
+				3A341879274497E100DDBA09 /* infoHabito.swift in Sources */,
 				84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */,
 				3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */,
 				3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */,

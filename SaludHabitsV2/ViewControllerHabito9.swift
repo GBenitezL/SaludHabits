@@ -37,9 +37,11 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vistaPopOver = segue.destination as! ViewControllerPopOver
-        vistaPopOver.popoverPresentationController!.delegate = self
-        vistaPopOver.dato = lbPasos.text
+        if segue.identifier == "popover" {
+            let vistaPopOver = segue.destination as! ViewControllerPopOver
+            vistaPopOver.popoverPresentationController!.delegate = self
+            vistaPopOver.dato = lbPasos.text
+        }
     }
     
     func actualizaPasos(dato : String) {
