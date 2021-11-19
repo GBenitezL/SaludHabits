@@ -9,11 +9,23 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    private func requestNotificationAuth(application: UIApplication){
+        let center = UNUserNotificationCenter.current()
+        let options: UNAuthorizationOptions = [.badge, .sound, .alert]
+        
+        center.requestAuthorization(options: options) { granted, error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        requestNotificationAuth(application: application)
         return true
     }
 

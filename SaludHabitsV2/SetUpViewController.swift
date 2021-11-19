@@ -11,7 +11,7 @@ class SetUpViewController: UIViewController {
 
     
     @IBOutlet var habitos: [UISwitch]!
-    
+    private let notifManager = NotificationManager()
 
     let dateComponents = [
         DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
@@ -19,7 +19,12 @@ class SetUpViewController: UIViewController {
     
     let dateComponent = DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
     
-
+    /* Notificaciones que se mandaran diariamente por default */
+    func setInitialNotifications(){
+        notifManager.sendNotification(title: "¡Checa tus avances saludables!", body: "Ven y administra tus hábitos del día de hoy", doesRepeat: true, hour: 19, minute: 10, idS: "DailyReminder1")
+        notifManager.sendNotification(title: "¿Listo para vivir un día saludable?", body: "Cada mañana nacemos de nuevo. Lo que hacemos hoy es lo que más importa.", doesRepeat: true, hour: 9, minute: 25, idS: "DailyReminder2")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +60,7 @@ class SetUpViewController: UIViewController {
             }
         }
                 
+        setInitialNotifications()
     
         do {
             let data = try PropertyListEncoder().encode(habitosArr)
