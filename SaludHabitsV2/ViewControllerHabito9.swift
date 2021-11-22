@@ -11,7 +11,7 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
     
     var numHabito : Int = 9
     
-    var objetivoPasos : Int = 8000
+    var objetivoPasos : Int = 9000
 
     @IBOutlet weak var tfPasos: UITextField!
     @IBOutlet weak var lbPasos: UILabel!
@@ -38,9 +38,11 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vistaPopOver = segue.destination as! ViewControllerPopOver
-        vistaPopOver.popoverPresentationController!.delegate = self
-        vistaPopOver.dato = lbPasos.text
+        if segue.identifier == "popover" {
+            let vistaPopOver = segue.destination as! ViewControllerPopOver
+            vistaPopOver.popoverPresentationController!.delegate = self
+            vistaPopOver.dato = lbPasos.text
+        }
     }
     
     func actualizaPasos(dato : String) {
