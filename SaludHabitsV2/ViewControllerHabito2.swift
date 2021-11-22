@@ -11,6 +11,7 @@ class ViewControllerHabito2: UIViewController {
     
     var numHabito : Int = 2
     var horaDormir : Date!
+
     private let notifManager = NotificationManager()
 
 
@@ -18,6 +19,7 @@ class ViewControllerHabito2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        horaDormir = Date()
     }
     
     @IBAction func setHora(_ sender: UIDatePicker) {

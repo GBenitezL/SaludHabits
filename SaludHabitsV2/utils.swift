@@ -67,7 +67,7 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
     
 }
 
-func recopilarRegistros() {
+/*func recopilarRegistros() {
     var habitos = [Habito]()
     
     do {
@@ -94,7 +94,7 @@ func recopilarRegistros() {
         print(" al escribir en el archivo")
     }
     
-}
+}*/
 
 func save(completo: Bool, fecha: Date, numHabito: Int) {
   

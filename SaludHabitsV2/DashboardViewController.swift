@@ -79,7 +79,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recopilarRegistros()
+        //recopilarRegistros()
     }
     
     
