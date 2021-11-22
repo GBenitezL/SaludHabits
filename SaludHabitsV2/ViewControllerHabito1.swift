@@ -15,7 +15,8 @@ class ViewControllerHabito1: UIViewController {
     @IBOutlet weak var swCompleto: UISwitch!
     @IBOutlet weak var lbMinutos: UILabel!
     @IBOutlet weak var stpMinutos: UIStepper!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,8 +27,12 @@ class ViewControllerHabito1: UIViewController {
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
                 self.present(alert, animated: true, completion: nil)
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
-        //swCompleto.isOn = sender.isOn
     }
     
     @IBAction func addMinutos(_ sender: UIStepper) {

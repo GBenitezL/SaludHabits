@@ -706,11 +706,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Frutas" translatesAutoresizingMaskIntoConstraints="NO" id="gME-FX-ERE">
-                                <rect key="frame" x="67" y="170" width="240" height="128"/>
+                                <rect key="frame" x="67" y="198" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Raciones de Frutas y / o Verduras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pre-X1-tNO">
-                                <rect key="frame" x="31" y="60" width="312" height="102"/>
+                                <rect key="frame" x="31" y="88" width="312" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -741,12 +741,20 @@
                                     <segue destination="OsI-1h-N0n" kind="presentation" identifier="info" id="1JO-ts-IOH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuC-D8-baD">
+                                <rect key="frame" x="216" y="59" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CmW-B2-ZOT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gfv-ev-JRb"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="RuC-D8-baD" id="qH7-D3-G7w"/>
                         <outlet property="lbContadorFV" destination="evS-UY-ezK" id="JTM-eT-V3N"/>
                         <outlet property="pbProgreso" destination="zGr-0p-PPq" id="IRh-PY-kG1"/>
                     </connections>
@@ -764,14 +772,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 Minutos de Meditación" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o0-qz-6gA">
-                                <rect key="frame" x="57" y="70" width="261" height="28"/>
+                                <rect key="frame" x="57" y="106" width="261" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meditacion" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-T1-3aH">
-                                <rect key="frame" x="48" y="136" width="279" height="169"/>
+                                <rect key="frame" x="48" y="150" width="279" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68u-dj-fm8">
@@ -870,11 +878,19 @@
                                     <segue destination="OsI-1h-N0n" kind="presentation" identifier="info" id="MW1-nV-cVY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7h-sM-baj">
+                                <rect key="frame" x="216" y="55" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jOD-vF-nFT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="lbCompletado" destination="J7h-sM-baj" id="RZz-bd-6Ha"/>
                         <outlet property="lbMin" destination="BZ6-oL-nf6" id="spg-PC-Don"/>
                         <outlet property="lbTemp" destination="dH2-Lf-3Vh" id="fgn-dB-Q9C"/>
                         <outlet property="swCompleto" destination="uwP-nv-IZX" id="pyr-MJ-mtK"/>
@@ -954,12 +970,20 @@
                                     <segue destination="OsI-1h-N0n" kind="presentation" identifier="info" id="dUW-Bt-RD8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHM-pk-hSG">
+                                <rect key="frame" x="216" y="62" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XMD-gi-HPt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="7cE-qL-bVf"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="LHM-pk-hSG" id="sqC-79-aYu"/>
                         <outlet property="lbContadorAgua" destination="H84-sC-4he" id="9wN-u4-lyv"/>
                         <outlet property="pbProgreso" destination="zvZ-jK-Rc4" id="ZQv-7e-m2I"/>
                     </connections>
@@ -1086,12 +1110,20 @@
                                     <segue destination="OsI-1h-N0n" kind="presentation" identifier="info" id="GCd-55-5oj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSG-ea-vGo">
+                                <rect key="frame" x="216" y="63" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="beu-Tr-nbB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="dwe-dB-PGk"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="OSG-ea-vGo" id="n3g-oN-hJk"/>
                         <outlet property="lbHoras" destination="UAd-eR-Ax5" id="xfa-yb-c08"/>
                     </connections>
                 </viewController>
@@ -1107,8 +1139,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 Mil Pasos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH1-3C-OFj">
-                                <rect key="frame" x="31" y="81" width="312" height="102"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 Mil Pasos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH1-3C-OFj">
+                                <rect key="frame" x="31" y="108" width="312" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -1136,7 +1168,7 @@
                                 <rect key="frame" x="75" y="534" width="139" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tu objetivo de pasos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q92-FB-5ej">
                                 <rect key="frame" x="31" y="385" width="162" height="21"/>
@@ -1195,12 +1227,20 @@
                                     <segue destination="OsI-1h-N0n" kind="presentation" identifier="info" id="fvf-fj-JM2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr9-8v-Zq6">
+                                <rect key="frame" x="216" y="64" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KIz-Hk-SQx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="37T-ml-UGu"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="nr9-8v-Zq6" id="nlR-pi-XBB"/>
                         <outlet property="lbPasos" destination="zve-k8-Vxi" id="ZS3-T1-KjL"/>
                         <outlet property="tfPasos" destination="evS-pv-akI" id="dUm-Bn-gKA"/>
                     </connections>
@@ -1371,12 +1411,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGB-O1-pW9">
+                                <rect key="frame" x="216" y="60" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fc9-9q-cDN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="04J-J6-FhJ"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="AGB-O1-pW9" id="iKz-uL-cfo"/>
                         <outlet property="lbMinutos" destination="P2I-WV-cax" id="Dqm-Zr-WeK"/>
                         <outlet property="stpMinutos" destination="ZgL-sO-6yL" id="kQT-QM-6eT"/>
                         <outlet property="swCompleto" destination="qWp-SQ-2pm" id="mAo-5f-Dgj"/>
@@ -1458,12 +1506,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMK-gz-KzF">
+                                <rect key="frame" x="216" y="58" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EHn-cE-Z3I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="elb-SA-fMU"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="mMK-gz-KzF" id="I4D-xL-NYO"/>
                         <outlet property="swRecordatorio" destination="S6j-4v-TNo" id="Wk5-gL-WP0"/>
                     </connections>
                 </viewController>
@@ -1505,7 +1561,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 Comidas completas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xw2-dI-7JP">
-                                <rect key="frame" x="73" y="79" width="231" height="28"/>
+                                <rect key="frame" x="72" y="96" width="231" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -1580,12 +1636,20 @@
                                     <action selector="btPausar:" destination="1EB-He-TD5" eventType="touchUpInside" id="Hqg-1J-1gK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuO-Pn-GpM">
+                                <rect key="frame" x="216" y="56" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bCD-Vc-dif"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ROZ-Gt-8Lq"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="SuO-Pn-GpM" id="ooe-mX-qrl"/>
                         <outlet property="prgComida" destination="NVX-sb-C2u" id="qwH-SF-V72"/>
                         <outlet property="swCena" destination="7Ps-rY-dPs" id="8wy-1O-k3i"/>
                         <outlet property="swComida" destination="iZ9-iV-bDX" id="BO3-wb-P14"/>
@@ -1634,7 +1698,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 Breaks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0M-Ay-fhK">
-                                <rect key="frame" x="66" y="46" width="259" height="102"/>
+                                <rect key="frame" x="66" y="106" width="259" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -1720,12 +1784,20 @@
                                     <action selector="iniciarTimer:" destination="qrU-YR-f6Z" eventType="touchUpInside" id="mau-yr-PsL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-3g-Ryx">
+                                <rect key="frame" x="216" y="59" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aBn-ku-Gzy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bvR-6E-ZJc"/>
                     <connections>
+                        <outlet property="lbCompletado" destination="yFP-3g-Ryx" id="860-LW-GQX"/>
                         <outlet property="lbTimer" destination="HnS-7i-Fkn" id="ZQF-Ac-ojk"/>
                         <outlet property="stpTimer" destination="bwp-2z-yNY" id="xFT-k5-D3t"/>
                         <outlet property="sw1" destination="HRG-qy-2xN" id="cKn-Bw-E03"/>
@@ -1736,11 +1808,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74f-JH-7YQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-17"/>
+            <point key="canvasLocation" x="1861.5999999999999" y="-17.541229385307346"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Srs-8F-Cac"/>
+        <segue reference="fvf-fj-JM2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Agua" width="509" height="339"/>

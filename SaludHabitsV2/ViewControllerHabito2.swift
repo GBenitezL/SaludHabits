@@ -14,9 +14,9 @@ class ViewControllerHabito2: UIViewController {
 
     private let notifManager = NotificationManager()
 
-
     @IBOutlet weak var swRecordatorio: UISwitch!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         horaDormir = Date()

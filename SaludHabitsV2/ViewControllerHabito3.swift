@@ -15,7 +15,8 @@ class ViewControllerHabito3: UIViewController {
     @IBOutlet weak var swComida: UISwitch!
     @IBOutlet weak var swCena: UISwitch!
     @IBOutlet weak var prgComida: UIProgressView!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +38,11 @@ class ViewControllerHabito3: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
     }
     

@@ -11,6 +11,7 @@ class ViewControllerHabito7: UIViewController {
     
     @IBOutlet weak var lbContadorAgua: UILabel!
     @IBOutlet weak var pbProgreso: UIProgressView!
+    @IBOutlet weak var lbCompletado: UILabel!
     
     var numHabito : Int = 7
     
@@ -19,7 +20,6 @@ class ViewControllerHabito7: UIViewController {
         super.viewDidLoad()
         let contador = Int(lbContadorAgua.text ?? "0") ?? 0
         progreso(cont: contador)
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func stpContadorAgua(_ sender: UIStepper) {
@@ -30,6 +30,11 @@ class ViewControllerHabito7: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
     }
     

@@ -12,7 +12,8 @@ class ViewControllerHabito8: UIViewController {
     var numHabito : Int = 8
 
     @IBOutlet weak var lbHoras : UILabel!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
