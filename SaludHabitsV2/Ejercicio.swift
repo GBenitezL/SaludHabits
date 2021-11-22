@@ -38,11 +38,5 @@ class Ejercicio: Habito {
            var container = encoder.container(keyedBy: CodingKeys.self)
            try container.encode(tiempo, forKey: .tiempo)
     }
-    
-
-    
-    func completar() {
-        
-    }
 
 }

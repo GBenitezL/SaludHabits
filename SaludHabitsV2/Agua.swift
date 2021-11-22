@@ -36,8 +36,4 @@ class Agua: Habito{
            try container.encode(numVasos, forKey: .numVasos)
     }
     
-    
-    func completar() {
-        
-    }
 }

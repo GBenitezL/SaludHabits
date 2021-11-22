@@ -36,7 +36,7 @@ class ViewControllerHabito3: UIViewController {
             let alert = UIAlertController(title: "Enhorabuena", message: "Has completado tus 3 comidas diarias ", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
-
+            completarHabito(numHabito: numHabito)
         }
     }
     

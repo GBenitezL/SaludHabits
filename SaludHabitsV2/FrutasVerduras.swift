@@ -36,8 +36,4 @@ class FrutasVerduras: Habito {
            var container = encoder.container(keyedBy: CodingKeys.self)
            try container.encode(numRaciones, forKey: .numRaciones)
     }
-    
-    func completar() {
-        
-    }
 }

@@ -25,6 +25,7 @@ class ViewControllerHabito1: UIViewController {
             let alert = UIAlertController(title: "Hábito completado", message: "Hoy hiciste " + lbMinutos.text! + " minutos de ejercicio", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
                 self.present(alert, animated: true, completion: nil)
+            completarHabito(numHabito: numHabito)
         }
         //swCompleto.isOn = sender.isOn
     }

@@ -46,8 +46,4 @@ class Dormir: Habito {
     func cambiarHorario (inicio : DateComponents, final : DateComponents) {
         
     }
-    
-    func completar() {
-        
-    }
 }
