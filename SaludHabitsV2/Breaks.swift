@@ -39,9 +39,5 @@ class Breaks: Habito {
     func iniciarTimer() {
         
     }
-    
-    func completar() {
-        
-    }
 
 }

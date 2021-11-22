@@ -32,14 +32,6 @@ class SetUpViewController: UIViewController {
         defaults.setValue(true, forKey: "isInitialSetup")
     }
     
-    func dataFileURL() -> URL {
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let pathArchivo = documentsDirectory.appendingPathComponent("Habitos").appendingPathExtension("plist")
-            return pathArchivo
-    }
-    
-  
-    
     @IBAction func saveSettings(_ sender: UIButton) {
         let habitosArr = [
             Ejercicio(activo: false, desc: "1 rutina de ejercicio", completo: false, horas: dateComponents, time: 1, icon: "exercise"),
@@ -64,7 +56,7 @@ class SetUpViewController: UIViewController {
     
         do {
             let data = try PropertyListEncoder().encode(habitosArr)
-                try data.write(to: dataFileURL())
+                try data.write(to: dataFileURLHabitos())
         }
         catch {
             print(" al escribir en el archivo")

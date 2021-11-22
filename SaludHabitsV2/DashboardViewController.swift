@@ -20,7 +20,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         habitosActivo.removeAll()
         
         do {
-            let data = try Data(contentsOf: dataFileURL())
+            let data = try Data(contentsOf: dataFileURLHabitos())
             habitos = try PropertyListDecoder().decode([Habito].self, from: data)
         }
         
@@ -38,7 +38,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         do {
-            let data = try Data(contentsOf: dataFileURL())
+            let data = try Data(contentsOf: dataFileURLHabitos())
             habitos = try PropertyListDecoder().decode([Habito].self, from: data)
         }
         
@@ -75,12 +75,6 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         let habitoSeleccionado = "habito" +  String(habitosActivo[indexPath.row].numHabito)
         performSegue(withIdentifier: habitoSeleccionado, sender: self)
         print(habitoSeleccionado)
-    }
-    
-    func dataFileURL() -> URL {
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let pathArchivo = documentsDirectory.appendingPathComponent("Habitos").appendingPathExtension("plist")
-            return pathArchivo
     }
     
     override func viewDidLoad() {

@@ -43,9 +43,5 @@ class Comidas: Habito {
     func mostrarReceta(tipoComida : Int) {
         
     }
-    
-    func completar() {
-        
-    }
 
 }

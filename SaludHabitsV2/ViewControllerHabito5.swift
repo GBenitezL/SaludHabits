@@ -12,7 +12,7 @@ class ViewControllerHabito5: UIViewController {
     @IBOutlet weak var lbContadorFV: UILabel!
     @IBOutlet weak var pbProgreso: UIProgressView!
     
-    
+    var numHabito : Int = 5
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class ViewControllerHabito5: UIViewController {
             let alert = UIAlertController(title: "Felicidades", message: "Has completado tus 5 raciones diarias. ¡Sigue así!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
-
+            completarHabito(numHabito: numHabito)
         }
     }
     

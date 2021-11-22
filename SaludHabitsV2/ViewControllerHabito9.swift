@@ -27,6 +27,7 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
             msg = "Hoy has dado menos pasos de los que marca tu objetivo. ¡Sigue trabajando!"
         } else {
             msg = "¡Enhorabuena! Objetivo diario de pasos cumplido."
+            completarHabito(numHabito: numHabito)
         }
         let alert = UIAlertController(title: "Pasos diarios", message: msg, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))

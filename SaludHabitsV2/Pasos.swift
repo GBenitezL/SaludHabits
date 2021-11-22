@@ -40,8 +40,4 @@ class Pasos: Habito {
     func registrarPasos(pasos: Int) {
         
     }
-    
-    func completar() {
-        
-    }
 }

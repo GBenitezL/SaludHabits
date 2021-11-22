@@ -24,9 +24,4 @@ class SinCelular: Habito {
     override func encode(to encoder: Encoder) throws {
            try super.encode(to: encoder)
     }
-    
-    func completar() {
-        
-    }
-
 }

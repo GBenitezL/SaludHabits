@@ -27,9 +27,4 @@ class Meditacion: Habito {
     func conectarSpotify() {
         
     }
-    
-    func completar() {
-        
-    }
-
 }

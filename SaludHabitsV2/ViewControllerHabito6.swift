@@ -16,6 +16,7 @@ class ViewControllerHabito6: UIViewController {
     
     var temp = Timer()
     var seg : Int = 5
+    var numHabito : Int = 6
     
     
     override func viewDidLoad() {
@@ -34,7 +35,7 @@ class ViewControllerHabito6: UIViewController {
         let alert = UIAlertController(title: "¡Increible!", message: "La meditacion es el camino a la paz mental.", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
         self.present(alert, animated: true, completion: nil)
-
+        completarHabito(numHabito: numHabito)
     }
     
     func despliegaTiempo() {

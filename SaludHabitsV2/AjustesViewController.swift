@@ -20,7 +20,7 @@ class AjustesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         do {
-            let data = try Data(contentsOf: dataFileURL())
+            let data = try Data(contentsOf: dataFileURLHabitos())
             habitosArr = try PropertyListDecoder().decode([Habito].self, from: data)
         }
         
@@ -30,12 +30,6 @@ class AjustesViewController: UIViewController {
         
         activeSwitches()
         
-    }
-    
-    func dataFileURL() -> URL {
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let pathArchivo = documentsDirectory.appendingPathComponent("Habitos").appendingPathExtension("plist")
-            return pathArchivo
     }
     
     func activeSwitches(){
@@ -62,7 +56,7 @@ class AjustesViewController: UIViewController {
     
         do {
             let data = try PropertyListEncoder().encode(habitosArr)
-                try data.write(to: dataFileURL())
+                try data.write(to: dataFileURLHabitos())
         }
         catch {
             print(" al escribir en el archivo")

@@ -12,6 +12,8 @@ class ViewControllerHabito7: UIViewController {
     @IBOutlet weak var lbContadorAgua: UILabel!
     @IBOutlet weak var pbProgreso: UIProgressView!
     
+    var numHabito : Int = 7
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class ViewControllerHabito7: UIViewController {
             let alert = UIAlertController(title: "Excelente!", message: "¡Estás completamente hidratado!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
-
+            completarHabito(numHabito: numHabito)
         }
     }
     

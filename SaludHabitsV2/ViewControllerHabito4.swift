@@ -25,6 +25,17 @@ class ViewControllerHabito4: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func detectarCompleto(_ sender: Any) {
+        if sw1.isOn && sw2.isOn && sw3.isOn && sw4.isOn {
+            let alert = UIAlertController(title: "Enhorabuena", message: "Has completado tus 4 breaks diarios", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
+            self.present(alert, animated: true, completion: nil)
+            completarHabito(numHabito: numHabito)
+        } else {
+            completarHabito(numHabito: numHabito, cancel: true)
+        }
+    }
+    
     @IBAction func setTimer(_ sender: UIStepper) {
         lbTimer.text = Int(sender.value).description
         
