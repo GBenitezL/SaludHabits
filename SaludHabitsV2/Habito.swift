@@ -25,6 +25,7 @@ class Habito: NSObject, Codable {
         self.numHabito = numHabito
         self.icon = icon
         self.creacion = Date()
+        print(self.creacion ?? "a")
     }
     
     private enum CodingKeys : String, CodingKey {
@@ -34,6 +35,7 @@ class Habito: NSObject, Codable {
             case horasNotificacion
             case numHabito
             case icon
+            case creacion
     }
 
     func encode(to encoder: Encoder) throws {
@@ -44,6 +46,7 @@ class Habito: NSObject, Codable {
         try container.encode(horasNotificacion, forKey: .horasNotificacion)
         try container.encode(numHabito, forKey: .numHabito)
         try container.encode(icon, forKey: .icon)
+        try container.encode(creacion, forKey: .creacion)
     }
     
     func recopilarRegistros() {
