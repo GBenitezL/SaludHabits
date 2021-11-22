@@ -6,8 +6,8 @@
         <attribute name="numHabito" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="RegistroPasos" representedClassName="RegistroPasos" syncable="YES" codeGenerationType="class">
-        <attribute name="fecha" optional="YES"/>
-        <attribute name="numPasos" optional="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="numPasos" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="RegistroHabito" positionX="-63" positionY="-18" width="128" height="74"/>

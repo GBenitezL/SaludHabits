@@ -31,7 +31,6 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
             } else {
                 habitosArr[n].completo = true
             }
-            /*
             let pokeMirror = Mirror(reflecting: habitosArr[n])
             let properties = pokeMirror.children
 
@@ -40,7 +39,6 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
               print("\(property.label!) = \(property.value)")
 
             }
-            */
         }
     }
     
