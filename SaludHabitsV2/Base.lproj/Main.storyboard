@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -275,7 +274,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -318,10 +317,10 @@
                                     <constraint firstAttribute="width" constant="236" id="yIJ-MI-XQK"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-2P-eLW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-2P-eLW">
                                 <rect key="frame" x="10" y="10" width="31" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="Jzx-Iu-4oq"/>
+                                    <constraint firstAttribute="height" constant="31" id="Jzx-Iu-4oq"/>
                                     <constraint firstAttribute="width" constant="31" id="pI1-XJ-SBk"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -330,9 +329,12 @@
                                     <segue destination="PCQ-GA-bWO" kind="presentation" id="hLp-45-e8g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-r5-uA2">
-                                <rect key="frame" x="311" y="11" width="48" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-r5-uA2">
+                                <rect key="frame" x="317" y="11" width="42" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="4JZ-rq-21V"/>
+                                    <constraint firstAttribute="height" constant="31" id="RYf-mD-QFI"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="chart.bar.fill" catalog="system">
@@ -347,6 +349,7 @@
                         <viewLayoutGuide key="safeArea" id="tjf-7w-MmL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tjf-7w-MmL" firstAttribute="trailing" secondItem="gK3-r5-uA2" secondAttribute="trailing" constant="16" id="0Z0-ks-Efb"/>
                             <constraint firstItem="bVb-2P-eLW" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="10" id="3If-Yg-qkj"/>
                             <constraint firstItem="tjf-7w-MmL" firstAttribute="bottom" secondItem="77J-Dd-icM" secondAttribute="bottom" constant="12" id="5rM-2O-SeS"/>
                             <constraint firstItem="77J-Dd-icM" firstAttribute="centerX" secondItem="oC6-pJ-ykr" secondAttribute="centerX" id="Pbp-k9-bEX"/>
@@ -357,6 +360,7 @@
                             <constraint firstItem="bVb-2P-eLW" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="10" id="iXg-uN-R8P"/>
                             <constraint firstItem="coG-sF-syO" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="73" id="kQf-Mc-5nJ"/>
                             <constraint firstItem="coG-sF-syO" firstAttribute="leading" secondItem="tjf-7w-MmL" secondAttribute="leading" constant="69" id="mv9-au-Jhd"/>
+                            <constraint firstItem="gK3-r5-uA2" firstAttribute="top" secondItem="tjf-7w-MmL" secondAttribute="top" constant="10" id="q6z-Nb-sm2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gZx-4e-PAW"/>
@@ -806,9 +810,9 @@ de lucro. </string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOd-oy-dWM">
-                                <rect key="frame" x="40" y="603" width="79" height="24"/>
+                                <rect key="frame" x="40" y="603" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -845,7 +849,7 @@ de lucro. </string>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CmW-B2-ZOT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.88627450980392153" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lFk-ku-5Em" firstAttribute="centerX" secondItem="WqA-ph-koB" secondAttribute="centerX" id="1eX-Zq-OHD"/>
                             <constraint firstItem="evS-UY-ezK" firstAttribute="top" secondItem="lFk-ku-5Em" secondAttribute="bottom" constant="19" id="3JJ-4j-8H4"/>
@@ -1038,7 +1042,7 @@ de lucro. </string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jOD-vF-nFT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="1" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="J7h-sM-baj" firstAttribute="top" secondItem="lu7-fb-Vfg" secondAttribute="bottom" constant="11" id="1GL-yp-Hx9"/>
                             <constraint firstItem="lu7-fb-Vfg" firstAttribute="leading" secondItem="jOD-vF-nFT" secondAttribute="leading" constant="1" id="7m7-ie-bgm"/>
@@ -1231,7 +1235,7 @@ de lucro. </string>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XMD-gi-HPt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="885-s9-y2b" firstAttribute="top" secondItem="aQG-Ms-4qb" secondAttribute="bottom" constant="71" id="0Yk-sb-zuO"/>
                             <constraint firstItem="Dv6-TU-dNh" firstAttribute="leading" secondItem="IYT-9L-eVs" secondAttribute="leading" id="3KT-54-mf7"/>
@@ -1373,13 +1377,13 @@ de lucro. </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfB-dT-lAw">
-                                <rect key="frame" x="40" y="548" width="79" height="79"/>
+                                <rect key="frame" x="40" y="602" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="4R3-BH-Sa9"/>
                                     <constraint firstAttribute="width" secondItem="wfB-dT-lAw" secondAttribute="height" multiplier="1:1" id="gAe-A4-hcm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -1427,7 +1431,7 @@ de lucro. </string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="beu-Tr-nbB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="flB-Ke-Qu7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wfB-dT-lAw" secondAttribute="trailing" constant="8" symbolic="YES" id="4q8-aQ-qxp"/>
                             <constraint firstItem="66F-OY-XS8" firstAttribute="top" secondItem="plq-pO-VqS" secondAttribute="bottom" constant="83" id="74Q-OW-Vna"/>
@@ -1505,12 +1509,12 @@ de lucro. </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFg-Ef-N2A">
-                                <rect key="frame" x="40" y="603" width="79" height="24"/>
+                                <rect key="frame" x="40" y="603" width="25" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="uU0-vH-wAe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -1579,7 +1583,7 @@ de lucro. </string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KIz-Hk-SQx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.88627450980392153" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="rkZ-MK-Y0v" firstAttribute="top" secondItem="mvL-Vj-TSg" secondAttribute="bottom" constant="49" id="0iy-qh-faN"/>
@@ -1744,16 +1748,15 @@ de lucro. </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-VH-kSe">
-                                <rect key="frame" x="27" y="116" width="320" height="499"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-VH-kSe">
+                                <rect key="frame" x="27" y="115" width="321" height="500"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="gsO-Fe-M03" detailTextLabel="iws-Z5-J13" style="IBUITableViewCellStyleSubtitle" id="Jeg-fz-dZA">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="321" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jeg-fz-dZA" id="ZeV-F8-Fja">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsO-Fe-M03">
@@ -1779,9 +1782,12 @@ de lucro. </string>
                                     <outlet property="delegate" destination="0iX-qW-qqu" id="JOi-48-T9f"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLH-35-4IA">
-                                <rect key="frame" x="27" y="44" width="308" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLH-35-4IA">
+                                <rect key="frame" x="27" y="44" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LLH-35-4IA" secondAttribute="height" multiplier="308:41" id="V6a-XE-HPC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="irh-gt-zhF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1789,6 +1795,15 @@ de lucro. </string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="clX-dm-G1W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s9O-VH-kSe" firstAttribute="centerX" secondItem="OMb-Oe-3xG" secondAttribute="centerX" id="5kz-o1-yNC"/>
+                            <constraint firstItem="LLH-35-4IA" firstAttribute="leading" secondItem="clX-dm-G1W" secondAttribute="leading" constant="27" id="VT9-HP-Hmd"/>
+                            <constraint firstItem="LLH-35-4IA" firstAttribute="leading" secondItem="s9O-VH-kSe" secondAttribute="leading" id="YWX-qh-lYb"/>
+                            <constraint firstItem="clX-dm-G1W" firstAttribute="bottom" secondItem="s9O-VH-kSe" secondAttribute="bottom" constant="32" id="b5O-pk-mnX"/>
+                            <constraint firstItem="clX-dm-G1W" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LLH-35-4IA" secondAttribute="trailing" symbolic="YES" id="blo-h2-56t"/>
+                            <constraint firstItem="s9O-VH-kSe" firstAttribute="top" secondItem="LLH-35-4IA" secondAttribute="bottom" constant="31" id="cDf-TU-30P"/>
+                            <constraint firstItem="LLH-35-4IA" firstAttribute="top" secondItem="clX-dm-G1W" secondAttribute="top" constant="44" id="gLv-hT-AwQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lbCompNotCom" destination="LLH-35-4IA" id="hkr-PI-kr3"/>
@@ -1821,9 +1836,9 @@ de lucro. </string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt4-g5-7np">
-                                <rect key="frame" x="40" y="603" width="79" height="24"/>
+                                <rect key="frame" x="40" y="603" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -1902,7 +1917,7 @@ de lucro. </string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fc9-9q-cDN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.88627450980392153" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="f18-HI-hnD" firstAttribute="centerX" secondItem="8rU-s9-C8s" secondAttribute="centerX" id="2x4-Cj-w0V"/>
                             <constraint firstItem="fc9-9q-cDN" firstAttribute="bottom" secondItem="Kt4-g5-7np" secondAttribute="bottom" constant="40" id="7ec-CL-dCm"/>
@@ -1961,13 +1976,13 @@ de lucro. </string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAO-at-JX4">
-                                <rect key="frame" x="40" y="548" width="79" height="79"/>
+                                <rect key="frame" x="40" y="602" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BAO-at-JX4" secondAttribute="height" multiplier="1:1" id="e3v-Nv-fna"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="yGs-tl-XL5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -2027,7 +2042,7 @@ de lucro. </string>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EHn-cE-Z3I"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="1" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="S6j-4v-TNo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wMT-m6-RK5" secondAttribute="trailing" constant="8" symbolic="YES" id="0ZX-5D-5tC"/>
                             <constraint firstItem="mMK-gz-KzF" firstAttribute="leading" secondItem="EHn-cE-Z3I" secondAttribute="leading" constant="216" id="0aW-K2-tbj"/>
@@ -2085,9 +2100,9 @@ de lucro. </string>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdL-EG-7s1">
-                                <rect key="frame" x="40" y="603" width="79" height="24"/>
+                                <rect key="frame" x="40" y="603" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
@@ -2128,13 +2143,6 @@ de lucro. </string>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habito-3-oscuro" translatesAutoresizingMaskIntoConstraints="NO" id="mPY-7G-4Yy">
-                                <rect key="frame" x="67.5" y="158.5" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="mPY-7G-4Yy" secondAttribute="height" multiplier="15:8" id="771-57-GQ2"/>
-                                    <constraint firstAttribute="height" constant="128" id="UYz-T6-vgu"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ljB-ab-NdC">
                                 <rect key="frame" x="106" y="358" width="163" height="31"/>
                                 <subviews>
@@ -2196,9 +2204,16 @@ de lucro. </string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habito-3-oscuro" translatesAutoresizingMaskIntoConstraints="NO" id="mPY-7G-4Yy">
+                                <rect key="frame" x="67" y="187" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mPY-7G-4Yy" secondAttribute="height" multiplier="15:8" id="771-57-GQ2"/>
+                                    <constraint firstAttribute="height" constant="128" id="UYz-T6-vgu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bCD-Vc-dif"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="c81-0r-jSV" firstAttribute="top" secondItem="bCD-Vc-dif" secondAttribute="top" id="0B5-5c-YDm"/>
                             <constraint firstItem="mPY-7G-4Yy" firstAttribute="centerX" secondItem="r7E-Or-nng" secondAttribute="centerX" id="31u-Cg-SXb"/>
@@ -2220,10 +2235,10 @@ de lucro. </string>
                             <constraint firstItem="meI-Kj-s0N" firstAttribute="centerX" secondItem="r7E-Or-nng" secondAttribute="centerX" id="he2-rA-WvB"/>
                             <constraint firstItem="NVX-sb-C2u" firstAttribute="top" secondItem="HIN-uW-0hT" secondAttribute="bottom" constant="42" id="hi7-Sf-iin"/>
                             <constraint firstItem="ljB-ab-NdC" firstAttribute="centerX" secondItem="r7E-Or-nng" secondAttribute="centerX" id="mCk-3i-2z0"/>
-                            <constraint firstItem="mPY-7G-4Yy" firstAttribute="firstBaseline" secondItem="Q6Q-XK-Azi" secondAttribute="baseline" constant="14" symbolType="layoutAnchor" id="mk2-Ja-Wam"/>
+                            <constraint firstItem="mPY-7G-4Yy" firstAttribute="firstBaseline" secondItem="Q6Q-XK-Azi" secondAttribute="baseline" constant="42.5" id="mk2-Ja-Wam"/>
                             <constraint firstItem="DdL-EG-7s1" firstAttribute="leading" secondItem="bCD-Vc-dif" secondAttribute="leading" constant="40" id="nE3-8U-OSL"/>
                             <constraint firstItem="c81-0r-jSV" firstAttribute="leading" secondItem="r7E-Or-nng" secondAttribute="leading" id="oRS-Ng-ZFx"/>
-                            <constraint firstItem="Sui-kd-ZKf" firstAttribute="top" secondItem="mPY-7G-4Yy" secondAttribute="bottom" constant="71.5" id="pL2-Va-AHe"/>
+                            <constraint firstItem="Sui-kd-ZKf" firstAttribute="top" secondItem="mPY-7G-4Yy" secondAttribute="bottom" constant="43" id="pL2-Va-AHe"/>
                             <constraint firstItem="SuO-Pn-GpM" firstAttribute="trailing" secondItem="r7E-Or-nng" secondAttribute="trailingMargin" id="qU0-x7-yOI"/>
                             <constraint firstItem="fCf-fK-dFQ" firstAttribute="trailing" secondItem="ljB-ab-NdC" secondAttribute="trailing" id="yQ7-mg-k2d"/>
                             <constraint firstItem="c81-0r-jSV" firstAttribute="centerX" secondItem="NVX-sb-C2u" secondAttribute="centerX" id="yhU-Jv-tsz"/>
@@ -2410,7 +2425,7 @@ de lucro. </string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aBn-ku-Gzy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OgM-FQ-fNX" firstAttribute="centerX" secondItem="Ca4-10-vGM" secondAttribute="centerX" id="0AH-OV-2ih"/>
                             <constraint firstItem="K8Y-ZJ-9s2" firstAttribute="centerX" secondItem="q7R-Rb-lwH" secondAttribute="centerX" id="0S0-1d-XsA"/>
@@ -2454,7 +2469,7 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fvf-fj-JM2"/>
+        <segue reference="t7d-YV-MhD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
