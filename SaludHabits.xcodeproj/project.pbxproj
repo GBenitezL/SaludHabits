@@ -63,7 +63,7 @@
 		3A8226392731C6B500632B01 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPopOver.swift; sourceTree = "<group>"; };
 		6446A65B2730EFC900994D6E /* Habito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habito.swift; sourceTree = "<group>"; };
-		6481DA592730ED0B000E64F2 /* SaludHabitsV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaludHabitsV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6481DA592730ED0B000E64F2 /* SaludHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaludHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6481DA602730ED0B000E64F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		6481DA5A2730ED0B000E64F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6481DA592730ED0B000E64F2 /* SaludHabitsV2.app */,
+				6481DA592730ED0B000E64F2 /* SaludHabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6481DA582730ED0B000E64F2 /* SaludHabitsV2 */ = {
+		6481DA582730ED0B000E64F2 /* SaludHabits */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6481DA6D2730ED0C000E64F2 /* Build configuration list for PBXNativeTarget "SaludHabitsV2" */;
+			buildConfigurationList = 6481DA6D2730ED0C000E64F2 /* Build configuration list for PBXNativeTarget "SaludHabits" */;
 			buildPhases = (
 				6481DA552730ED0B000E64F2 /* Sources */,
 				6481DA562730ED0B000E64F2 /* Frameworks */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = SaludHabitsV2;
+			name = SaludHabits;
 			productName = SaludHabitsV2;
-			productReference = 6481DA592730ED0B000E64F2 /* SaludHabitsV2.app */;
+			productReference = 6481DA592730ED0B000E64F2 /* SaludHabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6481DA542730ED0B000E64F2 /* Build configuration list for PBXProject "SaludHabitsV2" */;
+			buildConfigurationList = 6481DA542730ED0B000E64F2 /* Build configuration list for PBXProject "SaludHabits" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,7 +216,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6481DA582730ED0B000E64F2 /* SaludHabitsV2 */,
+				6481DA582730ED0B000E64F2 /* SaludHabits */,
 			);
 		};
 /* End PBXProject section */
@@ -458,7 +458,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6481DA542730ED0B000E64F2 /* Build configuration list for PBXProject "SaludHabitsV2" */ = {
+		6481DA542730ED0B000E64F2 /* Build configuration list for PBXProject "SaludHabits" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6481DA6B2730ED0C000E64F2 /* Debug */,
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6481DA6D2730ED0C000E64F2 /* Build configuration list for PBXNativeTarget "SaludHabitsV2" */ = {
+		6481DA6D2730ED0C000E64F2 /* Build configuration list for PBXNativeTarget "SaludHabits" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6481DA6E2730ED0C000E64F2 /* Debug */,
