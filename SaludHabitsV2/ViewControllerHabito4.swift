@@ -18,7 +18,8 @@ class ViewControllerHabito4: UIViewController {
     @IBOutlet weak var sw2: UISwitch!
     @IBOutlet weak var sw3: UISwitch!
     @IBOutlet weak var sw4: UISwitch!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         stpTimer.value = 45
         lbTimer.text = Int(stpTimer.value).description
@@ -27,12 +28,16 @@ class ViewControllerHabito4: UIViewController {
     
     @IBAction func detectarCompleto(_ sender: Any) {
         if sw1.isOn && sw2.isOn && sw3.isOn && sw4.isOn {
-            let alert = UIAlertController(title: "Enhorabuena", message: "Has completado tus 4 breaks diarios", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "¡Enhorabuena!", message: "Has completado tus 4 breaks diarios", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
         } else {
             completarHabito(numHabito: numHabito, cancel: true)
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
     }
     

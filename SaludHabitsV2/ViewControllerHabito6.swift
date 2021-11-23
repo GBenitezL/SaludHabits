@@ -12,7 +12,7 @@ class ViewControllerHabito6: UIViewController {
     @IBOutlet weak var lbTemp: UILabel!
     @IBOutlet weak var lbMin: UILabel!
     @IBOutlet weak var swCompleto: UISwitch!
-    
+    @IBOutlet weak var lbCompletado: UILabel!
     
     var temp = Timer()
     var seg : Int = 5
@@ -26,7 +26,12 @@ class ViewControllerHabito6: UIViewController {
     }
     @IBAction func swCompletar(_ sender: Any) {
         if swCompleto.isOn{
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
             despliegaAlerta()
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
     }
     
@@ -36,6 +41,8 @@ class ViewControllerHabito6: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
         self.present(alert, animated: true, completion: nil)
         completarHabito(numHabito: numHabito)
+        lbCompletado.text = "Completado ✔️"
+        lbCompletado.textColor = UIColor.black
     }
     
     func despliegaTiempo() {
@@ -89,16 +96,4 @@ class ViewControllerHabito6: UIViewController {
     @IBAction func regresar(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -14,9 +14,9 @@ class ViewControllerHabito2: UIViewController {
 
     private let notifManager = NotificationManager()
 
-
     @IBOutlet weak var swRecordatorio: UISwitch!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         horaDormir = Date()
@@ -62,15 +62,4 @@ class ViewControllerHabito2: UIViewController {
     @IBAction func regresar(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

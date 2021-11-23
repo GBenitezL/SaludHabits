@@ -15,6 +15,7 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
 
     @IBOutlet weak var tfPasos: UITextField!
     @IBOutlet weak var lbPasos: UILabel!
+    @IBOutlet weak var lbCompletado: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,13 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
         var msg : String!
         if Int(tfPasos.text!) ?? 0 < objetivoPasos {
             msg = "Hoy has dado menos pasos de los que marca tu objetivo. ¡Sigue trabajando!"
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         } else {
             msg = "¡Enhorabuena! Objetivo diario de pasos cumplido."
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
         }
         let alert = UIAlertController(title: "Pasos diarios", message: msg, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))

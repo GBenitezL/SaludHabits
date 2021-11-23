@@ -12,7 +12,8 @@ class ViewControllerHabito8: UIViewController {
     var numHabito : Int = 8
 
     @IBOutlet weak var lbHoras : UILabel!
-
+    @IBOutlet weak var lbCompletado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,22 +31,16 @@ class ViewControllerHabito8: UIViewController {
         var msg : String!
         if Double(self.lbHoras.text!) ?? 0 < 8 {
             msg = "Las horas de sueño introducidas son menores de las recomendadas"
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         } else {
             msg = "¡Perfecto! Vas a dormir 8 horas o más."
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
         }
 
         let alert = UIAlertController(title: "Horario de sueño: " + lbHoras.text! + " horas", message: msg, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
