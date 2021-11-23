@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewControllerHabito1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
 
     var numHabito : Int = 1
     var tiempo : String = "0"

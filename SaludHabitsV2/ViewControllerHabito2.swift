@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewControllerHabito2: UIViewController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
     
     var numHabito : Int = 2
     var horaDormir : Date!

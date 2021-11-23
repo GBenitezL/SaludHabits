@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewControllerHabito4: UIViewController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
     
     var numHabito : Int = 4
 

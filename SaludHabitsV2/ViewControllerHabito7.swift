@@ -9,6 +9,15 @@ import UIKit
 
 class ViewControllerHabito7: UIViewController {
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
+    
     @IBOutlet weak var lbContadorAgua: UILabel!
     @IBOutlet weak var pbProgreso: UIProgressView!
     @IBOutlet weak var lbCompletado: UILabel!

@@ -9,6 +9,13 @@ import UIKit
 
 class DashboardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
     var habitos = [Habito]()
     var habitosActivo = [Habito]()
@@ -48,7 +55,6 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         
         storeActiveHabits()
         
-        print(habitos.count)
         let defaults = UserDefaults.standard
         if (defaults.object(forKey: "lastLogin") as! Date) < Date().onlyDate! {
             defaults.setValue(Date().onlyDate, forKey: "lastLogin")

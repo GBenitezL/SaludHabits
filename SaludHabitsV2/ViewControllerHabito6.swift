@@ -8,6 +8,15 @@
 import UIKit
 
 class ViewControllerHabito6: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
 
     @IBOutlet weak var lbTemp: UILabel!
     @IBOutlet weak var lbMin: UILabel!
