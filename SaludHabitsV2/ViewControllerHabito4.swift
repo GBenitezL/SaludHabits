@@ -28,7 +28,7 @@ class ViewControllerHabito4: UIViewController {
     
     @IBAction func detectarCompleto(_ sender: Any) {
         if sw1.isOn && sw2.isOn && sw3.isOn && sw4.isOn {
-            let alert = UIAlertController(title: "Enhorabuena", message: "Has completado tus 4 breaks diarios", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "¡Enhorabuena!", message: "Has completado tus 4 breaks diarios", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
             completarHabito(numHabito: numHabito)

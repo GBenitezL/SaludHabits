@@ -31,8 +31,12 @@ class ViewControllerHabito8: UIViewController {
         var msg : String!
         if Double(self.lbHoras.text!) ?? 0 < 8 {
             msg = "Las horas de sueño introducidas son menores de las recomendadas"
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         } else {
             msg = "¡Perfecto! Vas a dormir 8 horas o más."
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
         }
 
         let alert = UIAlertController(title: "Horario de sueño: " + lbHoras.text! + " horas", message: msg, preferredStyle: UIAlertController.Style.alert)
