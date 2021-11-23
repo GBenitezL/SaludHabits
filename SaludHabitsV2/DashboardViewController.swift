@@ -62,6 +62,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         } else {
             print("No se recopilaron registros ")
         }
+        tvTablaHabitos.reloadData()
     }
     
     func storeActiveHabits() {
