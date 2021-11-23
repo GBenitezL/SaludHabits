@@ -36,11 +36,14 @@ class ViewControllerHabito2: UIViewController {
     
     @IBAction func setRecordatorio(_ sender: UISwitch) {
         if swRecordatorio.isOn {
-            
             var hour = Calendar.current.component(.hour, from: horaDormir)
             let minute = Calendar.current.component(.minute, from: horaDormir)
             
-            
+            // show the alert notification
+            let alert = UIAlertController(title: "Horario de sueño", message: "Recordatorio configurado a las " + String(hour) + ":" + String(minute), preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
+            self.present(alert, animated: true, completion: nil)
+        
             if(hour == 0){
                 hour = 22
             }else if (hour == 1){
@@ -49,22 +52,13 @@ class ViewControllerHabito2: UIViewController {
                 hour = hour - 2
             }
             
-            // format the time to be shown
-            /*let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm"
-            let result = dateFormatter.string(from: self.horaDormir)
-            // show the alert notification*/
-                  
-            
-    
-            let alert = UIAlertController(title: "Horario de sueño", message: "Recordatorio configurado a las " + String(hour) + ":" + String(minute), preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
-            self.present(alert, animated: true, completion: nil)
-        
-        
-            
             notifManager.sendNotification(title: "Tienes planeado irte a dormir en dos horas", body: "Te recomendamos que dejes el celular para dejar descansar a tu ojos", doesRepeat: true, hour: hour, minute: minute, idS: "habit2")
             completarHabito(numHabito: numHabito)
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
         }
     }
     
