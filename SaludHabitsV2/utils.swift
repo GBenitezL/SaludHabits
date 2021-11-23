@@ -67,7 +67,7 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
     
 }
 
-/*func recopilarRegistros() {
+func recopilarRegistros() {
     var habitos = [Habito]()
     
     do {
@@ -75,12 +75,13 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
         habitos = try PropertyListDecoder().decode([Habito].self, from: data)
     }
     catch {
-        print("Error al cargar el archivo")
+        print("Error al cargar el archivo o abrió sesión nueva")
+        return
     }
     
     for i in 0...8{
         if habitos[i].activo {
-            save(completo: habitos[i].completo, fecha: habitos[i].creacion, numHabito: habitos[i].numHabito)
+            saveRegistroHabito(completo: habitos[i].completo, fecha: habitos[i].creacion, numHabito: habitos[i].numHabito)
             habitos[i].creacion = Date().onlyDate
             habitos[i].completo = false
         }
@@ -93,34 +94,49 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
     catch {
         print(" al escribir en el archivo")
     }
-    
-}*/
+}
 
-func save(completo: Bool, fecha: Date, numHabito: Int) {
-  
-  guard let appDelegate =
-    UIApplication.shared.delegate as? AppDelegate else {
-    return
-  }
-  
-  let managedContext =
-    appDelegate.persistentContainer.viewContext
-  
-  let entity =
-    NSEntityDescription.entity(forEntityName: "RegistroHabito",
-                               in: managedContext)!
-  
-  let registro = NSManagedObject(entity: entity,
-                               insertInto: managedContext)
-  
-  registro.setValue(completo, forKeyPath: "completo")
-  registro.setValue(fecha, forKeyPath: "fecha")
-  registro.setValue(numHabito, forKeyPath: "numHabito")
-  
-  do {
-    try managedContext.save()
-    // people.append(person)
-  } catch let error as NSError {
-    print("Could not save. \(error), \(error.userInfo)")
-  }
+func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int) {
+
+    guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return
+    }
+
+    let managedContext = appDelegate.persistentContainer.viewContext
+
+    //let registro = NSManagedObject(entity: entity, insertInto: managedContext)
+    let registro = RegistroHabito(context: managedContext)
+
+    registro.setValue(completo, forKeyPath: "completo")
+    registro.setValue(fecha, forKeyPath: "fecha")
+    registro.setValue(numHabito, forKeyPath: "numHabito")
+
+    do {
+        try managedContext.save()
+    } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+    }
+}
+
+func fetchAllHabitRegisters() -> [RegistroHabito] {
+    
+    guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return []
+    }
+
+    let managedContext = appDelegate.persistentContainer.viewContext
+
+    let fetchRequest = NSFetchRequest<RegistroHabito>(entityName: "RegistroHabito")
+
+    var results = [RegistroHabito]()
+
+    do {
+        results = try managedContext.fetch(fetchRequest)
+        return results
+    } catch let error as NSError {
+        print("Could not fetch. \(error), \(error.userInfo)")
+    }
+    return []
 }

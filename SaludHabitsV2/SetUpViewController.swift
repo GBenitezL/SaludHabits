@@ -30,6 +30,7 @@ class SetUpViewController: UIViewController {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
         defaults.setValue(true, forKey: "isInitialSetup")
+        defaults.setValue(Date().onlyDate, forKey: "lastLogin")
     }
     
     @IBAction func saveSettings(_ sender: UIButton) {
