@@ -81,6 +81,7 @@ func recopilarRegistros() {
     
     for i in 0...8{
         if habitos[i].activo {
+            print("Hola")
             saveRegistroHabito(completo: habitos[i].completo, fecha: habitos[i].creacion, numHabito: habitos[i].numHabito)
             habitos[i].creacion = Date().onlyDate
             habitos[i].completo = false
@@ -105,7 +106,6 @@ func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int) {
 
     let managedContext = appDelegate.persistentContainer.viewContext
 
-    //let registro = NSManagedObject(entity: entity, insertInto: managedContext)
     let registro = RegistroHabito(context: managedContext)
 
     registro.setValue(completo, forKeyPath: "completo")
@@ -114,18 +114,21 @@ func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int) {
 
     do {
         try managedContext.save()
+        print("Guardado" + String(numHabito))
     } catch let error as NSError {
         print("Could not save. \(error), \(error.userInfo)")
     }
 }
 
 func fetchAllHabitRegisters() -> [RegistroHabito] {
-    
+    print("Start fetch")
     guard let appDelegate =
         UIApplication.shared.delegate as? AppDelegate else {
         return []
     }
-
+    
+    print("AppDelegate loaded correctly")
+    
     let managedContext = appDelegate.persistentContainer.viewContext
 
     let fetchRequest = NSFetchRequest<RegistroHabito>(entityName: "RegistroHabito")
@@ -134,6 +137,7 @@ func fetchAllHabitRegisters() -> [RegistroHabito] {
 
     do {
         results = try managedContext.fetch(fetchRequest)
+        print("Fetched correctly")
         return results
     } catch let error as NSError {
         print("Could not fetch. \(error), \(error.userInfo)")
