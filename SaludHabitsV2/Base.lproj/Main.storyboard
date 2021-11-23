@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -288,7 +287,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -1307,6 +1306,10 @@ de lucro. </string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KIz-Hk-SQx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gDw-DH-bhg" appends="YES" id="rTn-G9-EBf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="37T-ml-UGu"/>
                     <connections>
@@ -1316,6 +1319,11 @@ de lucro. </string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymf-Ic-Ed5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gDw-DH-bhg">
+                    <connections>
+                        <action selector="quitaTeclado:" destination="c9x-kK-uET" id="HR1-fp-YMA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3389.5999999999999" y="671.51424287856082"/>
         </scene>
@@ -1409,7 +1417,7 @@ de lucro. </string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="gsO-Fe-M03" detailTextLabel="iws-Z5-J13" style="IBUITableViewCellStyleSubtitle" id="Jeg-fz-dZA">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jeg-fz-dZA" id="ZeV-F8-Fja">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -1957,7 +1965,7 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Srs-8F-Cac"/>
+        <segue reference="cPq-eK-kTS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
