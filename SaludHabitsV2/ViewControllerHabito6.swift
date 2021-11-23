@@ -24,7 +24,7 @@ class ViewControllerHabito6: UIViewController {
     @IBOutlet weak var lbCompletado: UILabel!
     
     var temp = Timer()
-    var seg : Int = 5
+    var seg : Int = 360
     var numHabito : Int = 6
     
     
@@ -81,6 +81,9 @@ class ViewControllerHabito6: UIViewController {
     
     @IBAction func btIniciar(_ sender: Any) {
         temp.invalidate()
+        if seg == 0 {
+            seg = 360
+        }
         temp = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewControllerHabito6.temporizador), userInfo: nil, repeats: true)
     }
     
