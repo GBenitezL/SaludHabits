@@ -63,5 +63,8 @@ class ViewControllerHabito9: UIViewController, UIPopoverPresentationControllerDe
         objetivoPasos = Int(dato) ?? 0
         lbPasos.text = dato
     }
-
+    @IBAction func quitaTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
 }

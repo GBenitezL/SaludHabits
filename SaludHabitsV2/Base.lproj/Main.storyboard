@@ -376,31 +376,6 @@
             </objects>
             <point key="canvasLocation" x="768.79999999999995" y="-17.541229385307346"/>
         </scene>
-        <!--View Controller Info-->
-        <scene sceneID="r8j-eV-229">
-            <objects>
-                <viewController id="t7c-Nb-toY" customClass="ViewControllerInfo" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ofb-qX-lVj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Página de info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hiz-kK-V80">
-                                <rect key="frame" x="80" y="66" width="214" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="FMy-Zf-HMT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LDY-7Q-jIf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zba-Lf-dhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-242" y="750"/>
-        </scene>
         <!--General-->
         <scene sceneID="QTa-mM-UuT">
             <objects>
@@ -695,7 +670,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-Jq-XyQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-Jq-XyQ">
                                 <rect key="frame" x="16" y="89" width="343" height="231"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rjf-Jq-XyQ" secondAttribute="height" multiplier="49:33" id="iGh-O0-vic"/>
@@ -1604,6 +1579,7 @@ de lucro. </string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KIz-Hk-SQx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="rkZ-MK-Y0v" firstAttribute="top" secondItem="mvL-Vj-TSg" secondAttribute="bottom" constant="49" id="0iy-qh-faN"/>
                             <constraint firstItem="KIz-Hk-SQx" firstAttribute="bottom" secondItem="sFg-Ef-N2A" secondAttribute="bottom" constant="40" id="63g-RE-zf1"/>
@@ -1626,6 +1602,9 @@ de lucro. </string>
                             <constraint firstItem="nr9-8v-Zq6" firstAttribute="top" secondItem="mvL-Vj-TSg" secondAttribute="bottom" constant="20" id="xT8-op-1wv"/>
                             <constraint firstItem="nr9-8v-Zq6" firstAttribute="leading" secondItem="KIz-Hk-SQx" secondAttribute="leading" constant="216" id="xaK-zz-8Xk"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="393-uf-oqu" appends="YES" id="4bY-tg-Xei"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="37T-ml-UGu"/>
                     <connections>
@@ -1635,6 +1614,11 @@ de lucro. </string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymf-Ic-Ed5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="393-uf-oqu">
+                    <connections>
+                        <action selector="quitaTeclado:" destination="c9x-kK-uET" id="xPu-0c-Jbu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3389.5999999999999" y="671.51424287856082"/>
         </scene>
@@ -1765,7 +1749,7 @@ de lucro. </string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="gsO-Fe-M03" detailTextLabel="iws-Z5-J13" style="IBUITableViewCellStyleSubtitle" id="Jeg-fz-dZA">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jeg-fz-dZA" id="ZeV-F8-Fja">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
