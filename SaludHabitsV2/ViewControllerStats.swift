@@ -12,6 +12,7 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var tableRegistros: UITableView!
     var registros: [RegistroHabito] = []
+    @IBOutlet weak var lbCompNotCom: UILabel!
     
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -24,8 +25,16 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         registros = fetchAllHabitRegisters()
-        //let registrosDict = Dictionary(grouping: registros, by: <#T##(S.Element) throws -> _#>)
         //print(registrosDict)
+        var comp = 0
+        let total = registros.count
+        
+        for i in 0...(total - 1) {
+            if registros[i].completo {
+                comp += 1
+            }
+        }
+        lbCompNotCom.text = "Se han completado " + String(comp) + " de " + String(total) + " registros."
         tableRegistros.reloadData()
     }
     
