@@ -43,6 +43,8 @@
 		84B0527527335D3E00F9AE30 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */; };
 		84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */; };
 		E4240231274B6FDE001BE052 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4240230274B6FDE001BE052 /* utils.swift */; };
+		E4240240274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424023E274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift */; };
+		E4240241274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424023F274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift */; };
 		E4ACCA0B274856C000AF82A6 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4ACCA09274856C000AF82A6 /* Models.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
 		E4240230274B6FDE001BE052 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		E424023E274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistroHabito+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E424023F274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistroHabito+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E4ACCA0A274856C000AF82A6 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,8 @@
 		6481DA5B2730ED0B000E64F2 /* SaludHabitsV2 */ = {
 			isa = PBXGroup;
 			children = (
+				E424023E274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift */,
+				E424023F274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift */,
 				6481DA5C2730ED0B000E64F2 /* AppDelegate.swift */,
 				E4ACCA09274856C000AF82A6 /* Models.xcdatamodeld */,
 				6481DA5E2730ED0B000E64F2 /* SceneDelegate.swift */,
@@ -233,6 +239,7 @@
 				84893A9627479373001F930F /* AjustesGeneralViewController.swift in Sources */,
 				84B0527527335D3E00F9AE30 /* CustomTableViewCell.swift in Sources */,
 				84B05273273358B900F9AE30 /* SinCelular.swift in Sources */,
+				E4240241274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift in Sources */,
 				84B052632733589800F9AE30 /* Agua.swift in Sources */,
 				3A82262B2731C66900632B01 /* ViewControllerHabito6.swift in Sources */,
 				3A8226282731C64400632B01 /* ViewControllerHabito5.swift in Sources */,
@@ -261,6 +268,7 @@
 				84B05269273358A600F9AE30 /* FrutasVerduras.swift in Sources */,
 				84B052602733589100F9AE30 /* Comidas.swift in Sources */,
 				84B05270273358B100F9AE30 /* Receta.swift in Sources */,
+				E4240240274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift in Sources */,
 				84B05267273358A600F9AE30 /* Dormir.swift in Sources */,
 				84B052612733589100F9AE30 /* Breaks.swift in Sources */,
 				E4240231274B6FDE001BE052 /* utils.swift in Sources */,

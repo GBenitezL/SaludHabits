@@ -56,6 +56,7 @@ class ViewControllerHabito2: UIViewController {
         
             
             notifManager.sendNotification(title: "Tienes planeado irte a dormir en dos horas", body: "Te recomendamos que dejes el celular para dejar descansar a tu ojos", doesRepeat: true, hour: hour, minute: minute, idS: "habit2")
+            completarHabito(numHabito: numHabito)
         }
     }
     

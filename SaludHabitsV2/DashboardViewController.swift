@@ -47,6 +47,15 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         storeActiveHabits()
+        
+        print(habitos.count)
+        let defaults = UserDefaults.standard
+        if (defaults.object(forKey: "lastLogin") as! Date) < Date().onlyDate! {
+            defaults.setValue(Date().onlyDate, forKey: "lastLogin")
+            recopilarRegistros()
+        } else {
+            print("No se recopilaron registros ")
+        }
     }
     
     func storeActiveHabits() {
@@ -79,7 +88,6 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //recopilarRegistros()
     }
 
 }

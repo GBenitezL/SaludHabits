@@ -35,6 +35,7 @@ class ViewControllerHabito8: UIViewController {
             lbCompletado.textColor = UIColor.gray
         } else {
             msg = "¡Perfecto! Vas a dormir 8 horas o más."
+            completarHabito(numHabito: numHabito)
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
         }
