@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewControllerPopOver: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
 
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var lbEstiloVida: UILabel!

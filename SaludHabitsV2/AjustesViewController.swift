@@ -8,6 +8,15 @@
 import UIKit
 
 class AjustesViewController: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
 
     var habitosArr = [Habito]()
     @IBOutlet var habitos: [UISwitch]!

@@ -569,8 +569,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
-                                <rect key="frame" x="137" y="511" width="101" height="31"/>
+                                <rect key="frame" x="137" y="510" width="101" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="guardar:" destination="Yka-V8-hfr" eventType="touchUpInside" id="nch-5V-vp9"/>
                                     <segue destination="rgT-MM-IcS" kind="unwind" unwindAction="unwindFromSegueWithSegue:" id="OUE-DJ-raS"/>
@@ -637,8 +638,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-Jq-XyQ">
                                 <rect key="frame" x="16" y="55" width="343" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">SaludHabits ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Febrero Junio de 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.  
-Desarrolladores:  María Fernanda Sánchez Rivera David Alejandro García Treviño Irene Truchado Mazzoli Gustavo Adolfo Benítez Leonés</mutableString>
+                                <string key="text">SaludHabits ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Febrero Junio de 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.  
+Desarrolladores:  María Fernanda Sánchez Rivera David Alejandro García Treviño Irene Truchado Mazzoli Gustavo Adolfo Benítez Leonés</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

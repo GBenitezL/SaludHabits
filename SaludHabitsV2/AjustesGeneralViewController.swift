@@ -8,6 +8,14 @@
 import UIKit
 
 class AjustesGeneralViewController: UIViewController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+     
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
 
     @IBOutlet weak var swNotifs: UISwitch!
     private let notifManager = NotificationManager()
