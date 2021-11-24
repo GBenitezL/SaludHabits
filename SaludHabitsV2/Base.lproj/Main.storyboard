@@ -685,8 +685,8 @@
                                     <constraint firstAttribute="width" secondItem="rjf-Jq-XyQ" secondAttribute="height" multiplier="49:33" id="iGh-O0-vic"/>
                                     <constraint firstAttribute="width" constant="343" id="sPA-e4-f5p"/>
                                 </constraints>
-                                <mutableString key="text">SaludHabits ha sido desarrollado por estudiantes del Instituto Tecnológico de Monterrey durante el semestre Febrero Junio de 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.  
-Desarrolladores:  María Fernanda Sánchez Rivera David Alejandro García Treviño Irene Truchado Mazzoli Gustavo Adolfo Benítez Leonés</mutableString>
+                                <string key="text">SaludHabits ha sido desarrollado por estudiantes del Instituto Tecnológico de Monterrey durante el semestre Febrero Junio de 2021, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.  
+Desarrolladores:  María Fernanda Sánchez Rivera David Alejandro García Treviño Irene Truchado Mazzoli Gustavo Adolfo Benítez Leonés</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -706,13 +706,13 @@ de lucro. </string>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-Kt-FAJ">
                                 <rect key="frame" x="64.5" y="504" width="246" height="18"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Íconos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-xV-Ckv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Íconos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-xV-Ckv">
                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="18"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="www.flaticon.es" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-xO-Y6v">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.flaticon.es" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-xO-Y6v">
                                         <rect key="frame" x="109.5" y="0.0" width="136.5" height="18"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -802,6 +802,7 @@ de lucro. </string>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66q-dg-dTS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.77647058820000003" green="0.8862745098" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 5" id="fEE-DP-CFb">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="wNa-8t-x1F">
@@ -918,6 +919,7 @@ de lucro. </string>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu7-fb-Vfg">
                                 <rect key="frame" x="1" y="0.0" width="373" height="44"/>
+                                <color key="barTintColor" red="0.94509803920000002" green="1" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 6" id="9hp-uF-d56">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="Fc0-sT-wM9">
@@ -1103,6 +1105,7 @@ de lucro. </string>
                             </progressView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dv6-TU-dNh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="1" green="0.79215686269999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 7" id="wtW-pg-jel">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="NV3-2x-0BJ">
@@ -1343,6 +1346,7 @@ de lucro. </string>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZp-Kd-hjn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.85490196080000003" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 8" id="lFT-qh-d8Q">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="7Ka-vq-7gf">
@@ -1485,6 +1489,7 @@ de lucro. </string>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvL-Vj-TSg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.77647058820000003" green="0.8862745098" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 9" id="IcK-NL-e5V">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="EHv-xO-fF1">
@@ -1828,6 +1833,7 @@ de lucro. </string>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JX2-04-S2r">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.77647058823529413" green="0.88627450980392153" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 1" id="m99-So-P8l">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="ZiG-8z-4ss">
@@ -1968,6 +1974,7 @@ de lucro. </string>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-Jr-Pp4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.94509803921568625" green="1" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 2" id="tG0-7i-hSx">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="7Gb-LT-v5V">
@@ -2092,6 +2099,7 @@ de lucro. </string>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c81-0r-jSV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="1" green="0.792156862745098" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 3" id="NCh-08-KJL">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="gE5-gP-N1a">
@@ -2271,6 +2279,7 @@ de lucro. </string>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8Y-ZJ-9s2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.85490196078431369" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Hábito 4" id="Xcv-E9-nOx">
                                         <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="LBT-Mw-EkI">
@@ -2473,7 +2482,7 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t7d-YV-MhD"/>
+        <segue reference="GCd-55-5oj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
