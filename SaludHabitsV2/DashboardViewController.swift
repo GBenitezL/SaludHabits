@@ -44,6 +44,10 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
    
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        habitos.removeAll()
+        habitosActivo.removeAll()
+        
         do {
             let data = try Data(contentsOf: dataFileURLHabitos())
             habitos = try PropertyListDecoder().decode([Habito].self, from: data)
@@ -59,6 +63,8 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         if (defaults.object(forKey: "lastLogin") as! Date) < Date().onlyDate! {
             defaults.setValue(Date().onlyDate, forKey: "lastLogin")
             recopilarRegistros()
+            // TODO: resetHabits() Aqui haré una función en utils que llame al reset de cada hábito
+            print("Se recopilaron los registros del dia anterior ")
         } else {
             print("No se recopilaron registros ")
         }

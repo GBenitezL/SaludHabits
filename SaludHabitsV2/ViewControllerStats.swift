@@ -25,16 +25,18 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         registros = fetchAllHabitRegisters()
-        //print(registrosDict)
         var comp = 0
         let total = registros.count
-        
-        for i in 0...(total - 1) {
-            if registros[i].completo {
-                comp += 1
+        if total > 0 {
+            for i in 0...(total - 1) {
+                if registros[i].completo {
+                    comp += 1
+                }
             }
+            lbCompNotCom.text = "Se han completado " + String(comp) + " de " + String(total) + " registros."
+        } else {
+            lbCompNotCom.text = "Todavía no cuentas con ningún registro :("
         }
-        lbCompNotCom.text = "Se han completado " + String(comp) + " de " + String(total) + " registros."
         tableRegistros.reloadData()
     }
     
