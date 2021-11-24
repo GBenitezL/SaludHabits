@@ -22,6 +22,7 @@ class ViewControllerHabito5: UIViewController {
     @IBOutlet weak var pbProgreso: UIProgressView!
     @IBOutlet weak var lbCompletado: UILabel!
     var numHabito : Int = 5
+    var completado : Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +38,19 @@ class ViewControllerHabito5: UIViewController {
         //mensaje(cont: Int(sender.value))
         progreso(cont: Int(sender.value))
         if lbContadorFV.text == "5" {
+            if completado == false{
             let alert = UIAlertController(title: "Felicidades", message: "Has completado tus 5 raciones diarias. ¡Sigue así!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {UIAlertAction in }))
             self.present(alert, animated: true, completion: nil)
+                completado = true
+            }
             completarHabito(numHabito: numHabito)
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
-        } else {
+        } else if lbContadorFV.text == "4" {
             lbCompletado.text = "Pendiente ⏳"
             lbCompletado.textColor = UIColor.gray
+            completado = false
         }
     }
     
