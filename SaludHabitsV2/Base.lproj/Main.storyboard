@@ -559,8 +559,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
-                                <rect key="frame" x="159.5" y="510" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
+                                <rect key="frame" x="150" y="510" width="79" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Guardar">
@@ -585,7 +585,7 @@
                             <constraint firstItem="Jqc-sD-ULx" firstAttribute="width" secondItem="Rc1-bg-l2n" secondAttribute="width" id="EIy-su-o3a"/>
                             <constraint firstItem="9id-3V-8ZP" firstAttribute="leading" secondItem="OWy-QD-9Tf" secondAttribute="leading" id="GoR-cg-E8j"/>
                             <constraint firstItem="x0a-oT-2JD" firstAttribute="width" secondItem="Rc1-bg-l2n" secondAttribute="width" id="Gsb-WV-WkD"/>
-                            <constraint firstItem="FBk-Zh-ha9" firstAttribute="centerX" secondItem="4oo-M2-MRt" secondAttribute="centerX" id="HGK-mU-zTs"/>
+                            <constraint firstItem="FBk-Zh-ha9" firstAttribute="centerX" secondItem="4oo-M2-MRt" secondAttribute="centerX" constant="2" id="HGK-mU-zTs"/>
                             <constraint firstItem="OWy-QD-9Tf" firstAttribute="leading" secondItem="Rc1-bg-l2n" secondAttribute="trailing" constant="14" id="IEJ-M7-RpT"/>
                             <constraint firstItem="1Wi-y7-jws" firstAttribute="top" secondItem="OWy-QD-9Tf" secondAttribute="bottom" constant="23" id="IqN-ev-8Mu"/>
                             <constraint firstItem="Zfi-Qq-j9D" firstAttribute="width" secondItem="Rc1-bg-l2n" secondAttribute="width" id="J8E-ha-ZDR"/>
@@ -649,7 +649,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H3-6k-LdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="rgT-MM-IcS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="769" y="1639"/>
+            <point key="canvasLocation" x="768.79999999999995" y="1638.5307346326838"/>
         </scene>
         <!--Info-->
         <scene sceneID="UF4-RE-uWY">

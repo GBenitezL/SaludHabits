@@ -58,7 +58,8 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         storeActiveHabits()
-        
+        //recopilarRegistros()
+
         let defaults = UserDefaults.standard
         if (defaults.object(forKey: "lastLogin") as! Date) < Date().onlyDate! {
             defaults.setValue(Date().onlyDate, forKey: "lastLogin")

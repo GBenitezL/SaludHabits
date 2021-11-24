@@ -50,6 +50,16 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
         let combine = person.value(forKeyPath: "completo") as! Bool
         let combine2 = person.value(forKeyPath: "fecha") as! Date
 
+        var combString : String!
+        if combine {
+            combString = "Completo"
+        } else {
+            combString = "No completado"
+        }
+        
+        
+        
+        
         // Create Date Formatter
         let dateFormatter = DateFormatter()
 
@@ -62,7 +72,32 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
         let b = dateFormatter.string(from: combine2)
         
         let combine3 = person.value(forKeyPath: "numHabito") as! Int
-        cell.textLabel?.text = String(combine) + " " + b + " " + String(combine3)
+        var habitString : String!
+        switch combine3 {
+        case 1:
+            habitString = "1 Rutinas de Ejercicio"
+        case 2:
+            habitString = "2 Horas antes de dormir"
+        case 3:
+            habitString = "3 Comidas completas"
+        case 4:
+            habitString = "4 Breaks"
+        case 5:
+            habitString = "5 Raciones de Frutas y Verduras"
+        case 6:
+            habitString = "6 Minutos de Meditación"
+        case 7:
+            habitString = "7 Vasos de Agua"
+        case 8:
+            habitString = "8 horas de sueño"
+        case 9:
+            habitString = "9 Mil pasos al día"
+        default:
+            habitString = "Error"
+        }
+        
+        cell.textLabel?.text = String(combString) + " " + b 
+        cell.detailTextLabel?.text = habitString
         return cell
     }
     
