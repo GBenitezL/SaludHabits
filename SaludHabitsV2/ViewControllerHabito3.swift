@@ -25,10 +25,27 @@ class ViewControllerHabito3: UIViewController {
     @IBOutlet weak var prgComida: UIProgressView!
     @IBOutlet weak var lbCompletado: UILabel!
     
+    var done : Bool!
+    
+    // User Defaults
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Cargamos los datos de User Default
+        swDesayuno.setOn(defaults.bool(forKey:"swCompletoh31"), animated: true)
+        swComida.setOn(defaults.bool(forKey:"swCompletoh32"), animated: true)
+        swCena.setOn(defaults.bool(forKey:"swCompletoh33"), animated: true)
+
+        done = defaults.bool(forKey:"lbCompletoh3")
+        if done {
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
+        }
     }
     
     @IBAction func checkProgress(_ sender: UISwitch) {
@@ -48,10 +65,16 @@ class ViewControllerHabito3: UIViewController {
             completarHabito(numHabito: numHabito)
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
+            done = true
         } else {
+            done = false
             lbCompletado.text = "Pendiente ⏳"
             lbCompletado.textColor = UIColor.gray
         }
+        defaults.setValue(swDesayuno.isOn, forKey:"swCompletoh31")
+        defaults.setValue(swComida.isOn, forKey:"swCompletoh32")
+        defaults.setValue(swCena.isOn, forKey:"swCompletoh33")
+        defaults.setValue(done, forKey: "lbCompletoh3")
     }
     
     @IBAction func regresar(_ sender: UIBarButtonItem) {
