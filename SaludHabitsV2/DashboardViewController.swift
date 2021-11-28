@@ -44,7 +44,6 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
    
     
     override func viewWillAppear(_ animated: Bool) {
-        
         habitos.removeAll()
         habitosActivo.removeAll()
         
@@ -103,5 +102,24 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    // Resetea todos los habitos
+    func resetearHabitos() {
+        // User Defaults
+        let defaults = UserDefaults.standard
+        
+        // habito 1
+        defaults.setValue(false, forKey:"swCompletoh1")
+        defaults.setValue(false, forKey: "lbCompletoh1")
+        
+        // habito 2
+        defaults.setValue(false, forKey:"swCompletoh2")
+        defaults.setValue(false, forKey: "lbCompletoh2")
+        
+        // habito 3
+        defaults.setValue(false, forKey:"swCompletoh31")
+        defaults.setValue(false, forKey:"swCompletoh32")
+        defaults.setValue(false, forKey:"swCompletoh33")
+        defaults.setValue(false, forKey: "lbCompletoh3")
+    }
 }
