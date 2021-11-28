@@ -16,9 +16,12 @@ class ViewControllerHabito2: UIViewController {
         return false
     }
 
+    // User Defaults
+    let defaults = UserDefaults.standard
     
     var numHabito : Int = 2
     var horaDormir : Date!
+    var done : Bool!
 
     private let notifManager = NotificationManager()
 
@@ -28,6 +31,16 @@ class ViewControllerHabito2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         horaDormir = Date()
+        // Cargamos los datos de User Default
+        swRecordatorio.setOn(defaults.bool(forKey:"swCompletoh2"), animated: true)
+        done = defaults.bool(forKey:"lbCompletoh2")
+        if done {
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        } else {
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
+        }
     }
     
     @IBAction func setHora(_ sender: UIDatePicker) {
@@ -54,12 +67,16 @@ class ViewControllerHabito2: UIViewController {
             
             notifManager.sendNotification(title: "Tienes planeado irte a dormir en dos horas", body: "Te recomendamos que dejes el celular para descansar tus ojos", doesRepeat: true, hour: hour, minute: minute, idS: "habit2")
             completarHabito(numHabito: numHabito)
+            done = true
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
         } else {
+            done = false
             lbCompletado.text = "Pendiente ⏳"
             lbCompletado.textColor = UIColor.gray
         }
+        defaults.setValue(swRecordatorio.isOn, forKey:"swCompletoh2")
+        defaults.setValue(done, forKey: "lbCompletoh2")
     }
     
     @IBAction func regresar(_ sender: UIBarButtonItem) {
