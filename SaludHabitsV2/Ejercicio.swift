@@ -22,12 +22,8 @@ class Ejercicio: Habito {
 
         let values = try decoder.container(keyedBy: CodingKeys.self)
         tiempo =  try values.decode(Int.self, forKey: .tiempo)
-        
-        
     }
-    
    
-    
     /* Necesario para Codable */
     private enum CodingKeys : String, CodingKey {
             case tiempo
