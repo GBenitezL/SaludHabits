@@ -47,6 +47,7 @@
 		E4240231274B6FDE001BE052 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4240230274B6FDE001BE052 /* utils.swift */; };
 		E4240240274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424023E274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift */; };
 		E4240241274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424023F274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift */; };
+		E4579F902754CF10007B9420 /* RegisterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4579F8F2754CF10007B9420 /* RegisterViewCell.swift */; };
 		E4936C54274CD179005413A3 /* ViewControllerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4936C53274CD179005413A3 /* ViewControllerStats.swift */; };
 		E4ACCA0B274856C000AF82A6 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4ACCA09274856C000AF82A6 /* Models.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		E4240230274B6FDE001BE052 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		E424023E274CAF63001BE052 /* RegistroHabito+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistroHabito+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E424023F274CAF63001BE052 /* RegistroHabito+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistroHabito+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E4579F8F2754CF10007B9420 /* RegisterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewCell.swift; sourceTree = "<group>"; };
 		E4936C53274CD179005413A3 /* ViewControllerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStats.swift; sourceTree = "<group>"; };
 		E4ACCA0A274856C000AF82A6 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
 				84351933275499F100365CF9 /* RecetarioIngredientesViewController.swift */,
 				8435193527549B9600365CF9 /* RecetarioPasosViewController.swift */,
+				E4579F8F2754CF10007B9420 /* RegisterViewCell.swift */,
 				E4936C53274CD179005413A3 /* ViewControllerStats.swift */,
 				84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */,
 				84B0527427335D3E00F9AE30 /* CustomTableViewCell.swift */,
@@ -265,6 +268,7 @@
 				84351934275499F100365CF9 /* RecetarioIngredientesViewController.swift in Sources */,
 				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
 				84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */,
+				E4579F902754CF10007B9420 /* RegisterViewCell.swift in Sources */,
 				3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */,
 				3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */,
 				3A8226312731C67D00632B01 /* ViewControllerHabito8.swift in Sources */,
