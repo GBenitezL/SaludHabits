@@ -1468,6 +1468,7 @@ de lucro. </string>
                     <connections>
                         <outlet property="lbCompletado" destination="OSG-ea-vGo" id="n3g-oN-hJk"/>
                         <outlet property="lbHoras" destination="UAd-eR-Ax5" id="xfa-yb-c08"/>
+                        <outlet property="stepper" destination="uho-Np-jga" id="tMw-Cw-UVb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cK5-j0-Dua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2484,7 +2485,7 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dUW-Bt-RD8"/>
+        <segue reference="GCd-55-5oj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>

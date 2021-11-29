@@ -36,7 +36,7 @@ class Agua: Habito{
            try container.encode(numVasos, forKey: .numVasos)
     }
     
-    func resetFrutasVerdurasHabit(){
+    func resetAgua(){
              var habitos = [Habito]()
              do {
                  let data = try Data(contentsOf: dataFileURLHabitos())

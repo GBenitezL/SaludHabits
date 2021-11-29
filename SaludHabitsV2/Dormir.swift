@@ -46,4 +46,27 @@ class Dormir: Habito {
     func cambiarHorario (inicio : DateComponents, final : DateComponents) {
         
     }
+    
+    func resetDormir(){
+        var habitos = [Habito]()
+        do {
+            let data = try Data(contentsOf: dataFileURLHabitos())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        habitos[7].completo = false
+        do {
+            let data = try PropertyListEncoder().encode(habitos)
+                try data.write(to: dataFileURLHabitos())
+        }
+        catch {
+            print("Error al escribir en el archivo")
+        }
+        
+        let defaults = UserDefaults.standard
+        defaults.set(0, forKey: "contadorDormir")
+    }
 }
