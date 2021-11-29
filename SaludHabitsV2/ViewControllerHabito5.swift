@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewControllerHabito5: UIViewController {
+    var habitos = [Habito]()
+
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
@@ -17,6 +19,7 @@ class ViewControllerHabito5: UIViewController {
         return false
     }
 
+    @IBOutlet weak var stepper: UIStepper!
     
     @IBOutlet weak var lbContadorFV: UILabel!
     @IBOutlet weak var pbProgreso: UIProgressView!
@@ -44,10 +47,12 @@ class ViewControllerHabito5: UIViewController {
             self.present(alert, animated: true, completion: nil)
                 completado = true
             }
+            habitos[4].completo = true
             completarHabito(numHabito: numHabito)
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
         } else if lbContadorFV.text == "4" {
+            habitos[4].completo = false
             lbCompletado.text = "Pendiente ⏳"
             lbCompletado.textColor = UIColor.gray
             completado = false
@@ -64,6 +69,47 @@ class ViewControllerHabito5: UIViewController {
     }
     
     @IBAction func regresar(_ sender: UIBarButtonItem) {
+        do {
+            let data = try PropertyListEncoder().encode(habitos)
+                try data.write(to: dataFileURLHabitos())
+        }
+        catch {
+            print(" al escribir en el archivo")
+        }
+        let defaults = UserDefaults.standard
+        defaults.set(Int(lbContadorFV.text!), forKey: "contador")
+        
         self.dismiss(animated: true, completion: nil)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        do {
+            let data = try Data(contentsOf: dataFileURLHabitos())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        
+        if(habitos[4].completo){
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        }else{
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
+        }
+        
+        let defaults = UserDefaults.standard
+        let cont = defaults.integer(forKey: "contador")
+        if cont != 0 {
+            lbContadorFV.text = String(cont)
+            progreso(cont: cont)
+            stepper.value = Double(cont)
+        }
+        
+        
+        
+    }
+    
 }

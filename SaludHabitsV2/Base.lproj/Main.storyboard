@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -274,7 +275,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -883,6 +884,7 @@ de lucro. </string>
                         <outlet property="lbCompletado" destination="RuC-D8-baD" id="qH7-D3-G7w"/>
                         <outlet property="lbContadorFV" destination="evS-UY-ezK" id="JTM-eT-V3N"/>
                         <outlet property="pbProgreso" destination="zGr-0p-PPq" id="IRh-PY-kG1"/>
+                        <outlet property="stepper" destination="f1A-ob-NSB" id="NFz-JT-rRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5x6-gy-mGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1753,7 +1755,7 @@ de lucro. </string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="gsO-Fe-M03" detailTextLabel="iws-Z5-J13" style="IBUITableViewCellStyleSubtitle" id="Jeg-fz-dZA">
-                                        <rect key="frame" x="0.0" y="28" width="321" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="321" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jeg-fz-dZA" id="ZeV-F8-Fja">
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="43.5"/>
@@ -2205,7 +2207,7 @@ de lucro. </string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habito-3-oscuro" translatesAutoresizingMaskIntoConstraints="NO" id="mPY-7G-4Yy">
-                                <rect key="frame" x="67" y="187" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="187" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mPY-7G-4Yy" secondAttribute="height" multiplier="15:8" id="771-57-GQ2"/>
                                     <constraint firstAttribute="height" constant="128" id="UYz-T6-vgu"/>
@@ -2469,7 +2471,7 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t7d-YV-MhD"/>
+        <segue reference="1JO-ts-IOH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
