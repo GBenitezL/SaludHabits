@@ -72,6 +72,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func storeActiveHabits() {
+        
         for i in 0...8{
             if habitos[i].activo {
                 habitosActivo.append(habitos[i])

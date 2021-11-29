@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewControllerHabito6: UIViewController {
+    var habitos = [Habito]()
+
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
@@ -38,9 +40,11 @@ class ViewControllerHabito6: UIViewController {
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
             despliegaAlerta()
+            habitos[5].completo = true
         } else {
             lbCompletado.text = "Pendiente ⏳"
             lbCompletado.textColor = UIColor.gray
+            habitos[5].completo = false
         }
     }
     
@@ -106,6 +110,35 @@ class ViewControllerHabito6: UIViewController {
     }
     
     @IBAction func regresar(_ sender: UIBarButtonItem) {
+        do {
+            let data = try PropertyListEncoder().encode(habitos)
+                try data.write(to: dataFileURLHabitos())
+        }
+        catch {
+            print(" al escribir en el archivo")
+        }
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        do {
+            let data = try Data(contentsOf: dataFileURLHabitos())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        
+        if(habitos[5].completo){
+            swCompleto.isOn = true
+            lbCompletado.text = "Completado ✔️"
+            lbCompletado.textColor = UIColor.black
+        }else{
+            swCompleto.isOn = false
+            lbCompletado.text = "Pendiente ⏳"
+            lbCompletado.textColor = UIColor.gray
+        }
+        
     }
 }
