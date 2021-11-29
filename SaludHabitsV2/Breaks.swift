@@ -39,5 +39,32 @@ class Breaks: Habito {
     func iniciarTimer() {
         
     }
+    
+    func resetBreaksHabit(){
+        var habitos = [Habito]()
+        do {
+            let data = try Data(contentsOf: dataFileURLHabitos())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        habitos[3].completo = false
+        do {
+            let data = try PropertyListEncoder().encode(habitos)
+                try data.write(to: dataFileURLHabitos())
+        }
+        catch {
+            print("Error al escribir en el archivo")
+        }
+        
+        let defaults = UserDefaults.standard
+        defaults.setValue(false, forKey: "break1")
+        defaults.setValue(false, forKey: "break2")
+        defaults.setValue(false, forKey: "break3")
+        defaults.setValue(false, forKey: "break4")
+        
+    }
 
 }
