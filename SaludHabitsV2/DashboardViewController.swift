@@ -59,12 +59,13 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         
         storeActiveHabits()
         //recopilarRegistros()
+        //resetearHabitos()
 
         let defaults = UserDefaults.standard
         if (defaults.object(forKey: "lastLogin") as! Date) < Date().onlyDate! {
             defaults.setValue(Date().onlyDate, forKey: "lastLogin")
             recopilarRegistros()
-            // TODO: resetHabits() Aqui haré una función en utils que llame al reset de cada hábito
+            resetearHabitos()
             print("Se recopilaron los registros del dia anterior ")
         } else {
             print("No se recopilaron registros ")
@@ -123,5 +124,34 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         defaults.setValue(false, forKey:"swCompletoh32")
         defaults.setValue(false, forKey:"swCompletoh33")
         defaults.setValue(false, forKey: "lbCompletoh3")
+        
+        let dateComponents = [
+            DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
+        ]
+        
+        // habito 4
+        let br = Breaks(activo: false, desc: "4 breaks", completo: false, horas: dateComponents, icon: "coffee-time")
+        br.resetBreaksHabit()
+        
+        // habito 5
+        let ft = FrutasVerduras(activo: false, desc: "5 raciones de frutas y verduras", completo: false, horas: dateComponents, icon: "healthy-food")
+        ft.resetFrutasVerdurasHabit()
+        
+        // habito 6
+        //Meditacion(activo: false, desc: "6 minutos de meditación", completo: false, horas: dateComponents, icon: "meditation")
+        
+        // habito 7
+        let ag = Agua(activo: false, desc: "7 vasos de agua", completo: false, horas: dateComponents, icon: "water-bottle")
+        ag.resetAgua()
+        
+        // habito 8
+        let dateComponent = DateComponents(calendar: Calendar.current, year: 2018, month: 10, day: 10)
+        let dor = Dormir(activo: false, desc: "8 horas de sueño", completo: false, horas: dateComponents, inicial: dateComponent, final: dateComponent, icon: "sleep")
+        dor.resetDormir()
+        
+        // habito 9
+        let pas = Pasos(activo: false, desc: "9 mil pasos", completo: false, horas: dateComponents, icon: "sneaker")
+        pas.resetPasos()
+        
     }
 }
