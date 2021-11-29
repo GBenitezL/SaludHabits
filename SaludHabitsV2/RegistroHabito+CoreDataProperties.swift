@@ -19,6 +19,7 @@ extension RegistroHabito {
     @NSManaged public var completo: Bool
     @NSManaged public var fecha: Date
     @NSManaged public var numHabito: Int16
+    @NSManaged public var descripcion: String
 
 }
 

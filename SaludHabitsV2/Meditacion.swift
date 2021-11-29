@@ -29,23 +29,6 @@ class Meditacion: Habito {
     }
     
     func resetMeditacionHabit(){
-        var habitos = [Habito]()
-        do {
-            let data = try Data(contentsOf: dataFileURLHabitos())
-            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
-        }
-        
-        catch {
-            print("Error al cargar el archivo")
-        }
-        habitos[5].completo = false
-        do {
-            let data = try PropertyListEncoder().encode(habitos)
-                try data.write(to: dataFileURLHabitos())
-        }
-        catch {
-            print("Error al escribir en el archivo")
-        }
     }
     
 }

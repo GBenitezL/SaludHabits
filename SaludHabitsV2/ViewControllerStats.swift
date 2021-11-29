@@ -46,36 +46,23 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = registros[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let combine = person.value(forKeyPath: "completo") as! Bool
-        let combine2 = person.value(forKeyPath: "fecha") as! Date
-
-        var combString : String!
-        if combine {
-            combString = "Completo"
-        } else {
-            combString = "No completado"
-        }
-        
-        
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RegisterViewCell
+        let complete = person.value(forKeyPath: "completo") as! Bool
+        let fRegistro = person.value(forKeyPath: "fecha") as! Date
         
         // Create Date Formatter
         let dateFormatter = DateFormatter()
 
-        // Set Date Format
         dateFormatter.dateFormat = "YYYY/MM/dd"
-
-        // Convert Date to String
-        dateFormatter.string(from: combine2)
+        dateFormatter.string(from: fRegistro)
         
-        let b = dateFormatter.string(from: combine2)
+        let fecha = dateFormatter.string(from: fRegistro)
         
-        let combine3 = person.value(forKeyPath: "numHabito") as! Int
+        let numH = person.value(forKeyPath: "numHabito") as! Int
         var habitString : String!
-        switch combine3 {
+        switch numH {
         case 1:
-            habitString = "1 Rutinas de Ejercicio"
+            habitString = "1 Rutina de Ejercicio"
         case 2:
             habitString = "2 Horas antes de dormir"
         case 3:
@@ -96,9 +83,20 @@ class ViewControllerStats: UIViewController, UITableViewDataSource, UITableViewD
             habitString = "Error"
         }
         
-        cell.textLabel?.text = String(combString) + " " + b 
-        cell.detailTextLabel?.text = habitString
+        cell.lbText.text = fecha
+        cell.lbDetail.text = habitString
+        if complete {
+            cell.imgRegistro.image = UIImage(systemName: "checkmark")
+            cell.imgRegistro.tintColor = .green
+        } else {
+            cell.imgRegistro.image = UIImage(systemName: "xmark")
+            cell.imgRegistro.tintColor = .red
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
     
 
