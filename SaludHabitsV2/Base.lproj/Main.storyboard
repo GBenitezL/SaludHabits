@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -275,7 +274,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="Li0-rD-ei1" customClass="CustomTableViewCell" customModule="SaludHabitsV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Li0-rD-ei1" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-Po-fs8">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
@@ -560,9 +559,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBk-Zh-ha9">
                                 <rect key="frame" x="150" y="510" width="79" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FBk-Zh-ha9" secondAttribute="height" multiplier="79:30" id="7oV-4a-AZr"/>
+                                    <constraint firstAttribute="width" constant="79" id="KJQ-fq-aU5"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Guardar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1279,6 +1282,7 @@ de lucro. </string>
                         <outlet property="lbCompletado" destination="LHM-pk-hSG" id="sqC-79-aYu"/>
                         <outlet property="lbContadorAgua" destination="H84-sC-4he" id="9wN-u4-lyv"/>
                         <outlet property="pbProgreso" destination="zvZ-jK-Rc4" id="ZQv-7e-m2I"/>
+                        <outlet property="stepper" destination="eYc-zp-XP9" id="gOB-Zi-zI9"/>
                         <outlet property="water1" destination="cEJ-ef-qQB" id="T2o-jJ-u9V"/>
                         <outlet property="water2" destination="yi8-a0-709" id="WQ4-Bl-EP4"/>
                         <outlet property="water3" destination="x4O-5d-Azn" id="LPJ-E4-Nw1"/>
@@ -1468,6 +1472,7 @@ de lucro. </string>
                     <connections>
                         <outlet property="lbCompletado" destination="OSG-ea-vGo" id="n3g-oN-hJk"/>
                         <outlet property="lbHoras" destination="UAd-eR-Ax5" id="xfa-yb-c08"/>
+                        <outlet property="stepper" destination="uho-Np-jga" id="tMw-Cw-UVb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cK5-j0-Dua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -40,4 +40,28 @@ class Pasos: Habito {
     func registrarPasos(pasos: Int) {
         
     }
+    
+    func resetPasos(){
+        var habitos = [Habito]()
+        do {
+            let data = try Data(contentsOf: dataFileURLHabitos())
+            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+        }
+        
+        catch {
+            print("Error al cargar el archivo")
+        }
+        habitos[8].completo = false
+        do {
+            let data = try PropertyListEncoder().encode(habitos)
+                try data.write(to: dataFileURLHabitos())
+        }
+        catch {
+            print("Error al escribir en el archivo")
+        }
+        
+        let defaults = UserDefaults.standard
+        defaults.set(0, forKey: "pasos")
+        defaults.set(0, forKey: "objPasos")
+    }
 }
