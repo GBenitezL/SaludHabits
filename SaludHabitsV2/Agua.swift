@@ -37,26 +37,9 @@ class Agua: Habito{
     }
     
     func resetAgua(){
-             var habitos = [Habito]()
-             do {
-                 let data = try Data(contentsOf: dataFileURLHabitos())
-                 habitos = try PropertyListDecoder().decode([Habito].self, from: data)
-             }
 
-             catch {
-                 print("Error al cargar el archivo")
-             }
-             habitos[6].completo = false
-             do {
-                 let data = try PropertyListEncoder().encode(habitos)
-                     try data.write(to: dataFileURLHabitos())
-             }
-             catch {
-                 print("Error al escribir en el archivo")
-             }
-
-             let defaults = UserDefaults.standard
-             defaults.set(0, forKey: "contadorAgua")
+        let defaults = UserDefaults.standard
+        defaults.set(0, forKey: "contadorAgua")
         
         defaults.setValue(true, forKey: "agua1")
         defaults.setValue(true, forKey: "agua2")
@@ -65,6 +48,6 @@ class Agua: Habito{
         defaults.setValue(true, forKey: "agua5")
         defaults.setValue(true, forKey: "agua6")
         defaults.setValue(true, forKey: "agua7")
-         }
+    }
 
 }
