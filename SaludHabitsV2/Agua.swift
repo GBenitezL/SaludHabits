@@ -36,4 +36,35 @@ class Agua: Habito{
            try container.encode(numVasos, forKey: .numVasos)
     }
     
+    func resetFrutasVerdurasHabit(){
+             var habitos = [Habito]()
+             do {
+                 let data = try Data(contentsOf: dataFileURLHabitos())
+                 habitos = try PropertyListDecoder().decode([Habito].self, from: data)
+             }
+
+             catch {
+                 print("Error al cargar el archivo")
+             }
+             habitos[6].completo = false
+             do {
+                 let data = try PropertyListEncoder().encode(habitos)
+                     try data.write(to: dataFileURLHabitos())
+             }
+             catch {
+                 print("Error al escribir en el archivo")
+             }
+
+             let defaults = UserDefaults.standard
+             defaults.set(0, forKey: "contadorAgua")
+        
+        defaults.setValue(true, forKey: "agua1")
+        defaults.setValue(true, forKey: "agua2")
+        defaults.setValue(true, forKey: "agua3")
+        defaults.setValue(true, forKey: "agua4")
+        defaults.setValue(true, forKey: "agua5")
+        defaults.setValue(true, forKey: "agua6")
+        defaults.setValue(true, forKey: "agua7")
+         }
+
 }
