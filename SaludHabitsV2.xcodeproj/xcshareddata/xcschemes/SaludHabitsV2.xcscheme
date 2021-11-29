@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6481DA582730ED0B000E64F2"
-               BuildableName = "SaludHabits.app"
-               BlueprintName = "SaludHabits"
-               ReferencedContainer = "container:SaludHabits.xcodeproj">
+               BuildableName = "SaludHabitsV2.app"
+               BlueprintName = "SaludHabitsV2"
+               ReferencedContainer = "container:SaludHabitsV2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6481DA582730ED0B000E64F2"
-            BuildableName = "SaludHabits.app"
-            BlueprintName = "SaludHabits"
-            ReferencedContainer = "container:SaludHabits.xcodeproj">
+            BuildableName = "SaludHabitsV2.app"
+            BlueprintName = "SaludHabitsV2"
+            ReferencedContainer = "container:SaludHabitsV2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6481DA582730ED0B000E64F2"
-            BuildableName = "SaludHabits.app"
-            BlueprintName = "SaludHabits"
-            ReferencedContainer = "container:SaludHabits.xcodeproj">
+            BuildableName = "SaludHabitsV2.app"
+            BlueprintName = "SaludHabitsV2"
+            ReferencedContainer = "container:SaludHabitsV2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
