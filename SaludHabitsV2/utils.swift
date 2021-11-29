@@ -46,14 +46,6 @@ func completarHabito(numHabito: Int, cancel: Bool = false) {
             } else {
                 habitosArr[n].completo = true
             }
-            let pokeMirror = Mirror(reflecting: habitosArr[n])
-            let properties = pokeMirror.children
-
-            for property in properties {
-
-              print("\(property.label!) = \(property.value)")
-
-            }
         }
     }
     
@@ -81,8 +73,7 @@ func recopilarRegistros() {
     
     for i in 0...8{
         if habitos[i].activo {
-            print("Hola")
-            saveRegistroHabito(completo: habitos[i].completo, fecha: habitos[i].creacion, numHabito: habitos[i].numHabito)
+            saveRegistroHabito(completo: habitos[i].completo, fecha: habitos[i].creacion, numHabito: habitos[i].numHabito,  desc: "a")
             habitos[i].creacion = Date().onlyDate
             habitos[i].completo = false
         }
@@ -97,7 +88,7 @@ func recopilarRegistros() {
     }
 }
 
-func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int) {
+func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int, desc: String) {
 
     guard let appDelegate =
         UIApplication.shared.delegate as? AppDelegate else {
@@ -111,6 +102,7 @@ func saveRegistroHabito(completo: Bool, fecha: Date, numHabito: Int) {
     registro.setValue(completo, forKeyPath: "completo")
     registro.setValue(fecha, forKeyPath: "fecha")
     registro.setValue(numHabito, forKeyPath: "numHabito")
+    registro.setValue(desc, forKeyPath: "descripcion")
 
     do {
         try managedContext.save()

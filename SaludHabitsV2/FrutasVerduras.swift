@@ -38,23 +38,6 @@ class FrutasVerduras: Habito {
     }
 
     func resetFrutasVerdurasHabit(){
-        var habitos = [Habito]()
-        do {
-            let data = try Data(contentsOf: dataFileURLHabitos())
-            habitos = try PropertyListDecoder().decode([Habito].self, from: data)
-        }
-        
-        catch {
-            print("Error al cargar el archivo")
-        }
-        habitos[4].completo = false
-        do {
-            let data = try PropertyListEncoder().encode(habitos)
-                try data.write(to: dataFileURLHabitos())
-        }
-        catch {
-            print("Error al escribir en el archivo")
-        }
         
         let defaults = UserDefaults.standard
         defaults.set(0, forKey: "contador")
