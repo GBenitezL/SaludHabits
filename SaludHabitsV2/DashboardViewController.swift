@@ -113,15 +113,19 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         // habito 1
         defaults.setValue(false, forKey:"swCompletoh1")
         defaults.setValue(false, forKey: "lbCompletoh1")
+        defaults.setValue(0, forKey: "horah1")
+        defaults.setValue(0, forKey: "minutoh1")
         
         // habito 2
         defaults.setValue(false, forKey:"swCompletoh2")
         defaults.setValue(false, forKey: "lbCompletoh2")
+        defaults.setValue(Date(), forKey: "horaDormirh2")
         
         // habito 3
         defaults.setValue(false, forKey:"swCompletoh31")
         defaults.setValue(false, forKey:"swCompletoh32")
         defaults.setValue(false, forKey:"swCompletoh33")
         defaults.setValue(false, forKey: "lbCompletoh3")
+        defaults.setValue(0, forKey: "prgComidah3")
     }
 }

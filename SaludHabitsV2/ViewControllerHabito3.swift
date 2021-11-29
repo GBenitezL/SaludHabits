@@ -37,8 +37,8 @@ class ViewControllerHabito3: UIViewController {
         swDesayuno.setOn(defaults.bool(forKey:"swCompletoh31"), animated: true)
         swComida.setOn(defaults.bool(forKey:"swCompletoh32"), animated: true)
         swCena.setOn(defaults.bool(forKey:"swCompletoh33"), animated: true)
-
         done = defaults.bool(forKey:"lbCompletoh3")
+        prgComida.progress = defaults.float(forKey:"prgComidah3")
         if done {
             lbCompletado.text = "Completado ✔️"
             lbCompletado.textColor = UIColor.black
@@ -75,6 +75,7 @@ class ViewControllerHabito3: UIViewController {
         defaults.setValue(swComida.isOn, forKey:"swCompletoh32")
         defaults.setValue(swCena.isOn, forKey:"swCompletoh33")
         defaults.setValue(done, forKey: "lbCompletoh3")
+        defaults.setValue(prgComida.progress, forKey: "prgComidah3")
     }
     
     @IBAction func regresar(_ sender: UIBarButtonItem) {
