@@ -80,4 +80,12 @@ class ViewControllerHabito3: UIViewController {
     @IBAction func regresar(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func accederRecetario(_ sender: UIButton) {
+        let recetaHoy = Int.random(in: 0..<4)
+        let defaults = UserDefaults.standard
+        defaults.set(recetaHoy, forKey: "recetaHoy")
+    }
+    
+    
 }

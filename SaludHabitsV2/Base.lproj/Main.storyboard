@@ -2171,6 +2171,7 @@ de lucro. </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="accederRecetario:" destination="qpz-T3-t3I" eventType="touchUpInside" id="4Ug-Ig-sEg"/>
                                     <action selector="btPausar:" destination="1EB-He-TD5" eventType="touchUpInside" id="Hqg-1J-1gK"/>
                                     <segue destination="kmE-89-drI" kind="presentation" id="Lj7-aH-Gqg"/>
                                 </connections>
