@@ -1333,7 +1333,7 @@ de lucro. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSX-qE-GzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5322" y="-17"/>
+            <point key="canvasLocation" x="4990" y="444"/>
         </scene>
         <!--habito8-->
         <scene sceneID="knI-yB-A0v">
@@ -1775,6 +1775,20 @@ de lucro. </string>
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsO-Fe-M03">
+                                                    <rect key="frame" x="16" y="6" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iws-Z5-J13">
+                                                    <rect key="frame" x="16" y="22.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-bj-lns">
                                                     <rect key="frame" x="250" y="10" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2162,7 +2176,9 @@ de lucro. </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="accederRecetario:" destination="qpz-T3-t3I" eventType="touchUpInside" id="4Ug-Ig-sEg"/>
                                     <action selector="btPausar:" destination="1EB-He-TD5" eventType="touchUpInside" id="Hqg-1J-1gK"/>
+                                    <segue destination="kmE-89-drI" kind="presentation" id="Lj7-aH-Gqg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pendiente ⏳" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuO-Pn-GpM">
@@ -2284,6 +2300,164 @@ de lucro. </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFv-9P-oTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3389.5999999999999" y="-699.40029985007504"/>
+        </scene>
+        <!--Pasos-->
+        <scene sceneID="l23-rF-y0p">
+            <objects>
+                <viewController id="8hW-07-vgX" customClass="RecetarioPasosViewController" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHM-4V-wqo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf3-uM-hm8">
+                                <rect key="frame" x="150" y="35" width="75" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Jvs-2h-wwC"/>
+                                    <constraint firstAttribute="width" constant="75" id="XDX-uh-awZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-Ef-2mH">
+                                <rect key="frame" x="16" y="85" width="343" height="444"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sn0-CQ-Apa"/>
+                        <color key="backgroundColor" red="0.80233121429999998" green="0.8214300672" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jf3-uM-hm8" firstAttribute="top" secondItem="Sn0-CQ-Apa" secondAttribute="top" constant="35" id="Jsg-Bn-0hJ"/>
+                            <constraint firstItem="JoF-Ef-2mH" firstAttribute="top" secondItem="Jf3-uM-hm8" secondAttribute="bottom" constant="18" id="QNs-Ba-ULl"/>
+                            <constraint firstItem="Sn0-CQ-Apa" firstAttribute="trailing" secondItem="Jf3-uM-hm8" secondAttribute="trailing" constant="150" id="VzR-te-KYZ"/>
+                            <constraint firstItem="Sn0-CQ-Apa" firstAttribute="trailing" secondItem="JoF-Ef-2mH" secondAttribute="trailing" constant="16" id="ZXt-8Q-m38"/>
+                            <constraint firstItem="JoF-Ef-2mH" firstAttribute="leading" secondItem="Sn0-CQ-Apa" secondAttribute="leading" constant="16" id="byc-d7-f1W"/>
+                            <constraint firstItem="Sn0-CQ-Apa" firstAttribute="bottom" secondItem="JoF-Ef-2mH" secondAttribute="bottom" constant="69" id="jms-7N-8e6"/>
+                            <constraint firstItem="Jf3-uM-hm8" firstAttribute="leading" secondItem="Sn0-CQ-Apa" secondAttribute="leading" constant="150" id="uUu-Rm-NtC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pasos" image="chart.bar.doc.horizontal" catalog="system" id="eCX-hV-3tY"/>
+                    <connections>
+                        <outlet property="tvPasos" destination="JoF-Ef-2mH" id="WsR-OU-Z08"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJI-8V-Efd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045.6000000000004" y="-389.05547226386807"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="oCD-27-wz4">
+            <objects>
+                <viewController id="FO0-nU-iUe" customClass="RecetarioIngredientesViewController" customModule="SaludHabitsV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSY-ho-AL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Platillo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wy-0b-8TK">
+                                <rect key="frame" x="12" y="49" width="350" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Fon-NA-Cx1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <color key="textColor" red="0.39865051774077287" green="0.41963799228596838" blue="0.97544783353805542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JFj-GF-Bsz">
+                                <rect key="frame" x="42" y="107" width="290" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="AXI-IV-SAb"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plD-m0-eRt">
+                                <rect key="frame" x="16" y="369" width="343" height="179"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="YEi-IW-kn1"/>
+                                    <constraint firstAttribute="height" constant="179" id="nAL-48-wff"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receta del Día" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEE-hh-ao6">
+                                <rect key="frame" x="73" y="0.0" width="228" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1Hl-xU-ydg"/>
+                                    <constraint firstAttribute="width" constant="228" id="R6K-cq-YxL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-C6-OrV">
+                                <rect key="frame" x="116" y="323" width="142" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3vf-0O-ofh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZPc-hK-C7x"/>
+                        <color key="backgroundColor" red="0.80233121426625686" green="0.82143006720581202" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JFj-GF-Bsz" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="42" id="5PZ-h3-weh"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="zcO-C6-OrV" secondAttribute="trailing" constant="117" id="HDi-QC-PNC"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="GEE-hh-ao6" secondAttribute="trailing" constant="74" id="Hnf-2a-iHq"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="bottom" secondItem="plD-m0-eRt" secondAttribute="bottom" constant="56" id="HsW-ch-4kY"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="4wy-0b-8TK" secondAttribute="trailing" constant="13" id="Ibj-U1-DhQ"/>
+                            <constraint firstItem="zcO-C6-OrV" firstAttribute="top" secondItem="JFj-GF-Bsz" secondAttribute="bottom" constant="33" id="IfR-Qv-gpg"/>
+                            <constraint firstItem="plD-m0-eRt" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="16" id="M4v-qp-dpE"/>
+                            <constraint firstItem="JFj-GF-Bsz" firstAttribute="top" secondItem="4wy-0b-8TK" secondAttribute="bottom" id="Md5-8z-fbZ"/>
+                            <constraint firstItem="4wy-0b-8TK" firstAttribute="top" secondItem="ZPc-hK-C7x" secondAttribute="top" constant="49" id="Vbn-ws-fFg"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="plD-m0-eRt" secondAttribute="trailing" constant="16" id="XcV-qW-Yg7"/>
+                            <constraint firstItem="plD-m0-eRt" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="16" id="XrV-Bz-qJN"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="bottom" secondItem="plD-m0-eRt" secondAttribute="bottom" constant="45" id="Yi2-Ff-lIi"/>
+                            <constraint firstItem="4wy-0b-8TK" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="12" id="gx4-nC-037"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="plD-m0-eRt" secondAttribute="trailing" constant="16" id="htw-J1-Gad"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="trailing" secondItem="JFj-GF-Bsz" secondAttribute="trailing" constant="43" id="lIX-IB-vYe"/>
+                            <constraint firstItem="plD-m0-eRt" firstAttribute="top" secondItem="zcO-C6-OrV" secondAttribute="bottom" constant="14" id="oTV-sR-htv"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="bottom" secondItem="plD-m0-eRt" secondAttribute="bottom" constant="50" id="p9E-xv-QSZ"/>
+                            <constraint firstItem="zcO-C6-OrV" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="116" id="quz-TA-G9M"/>
+                            <constraint firstItem="GEE-hh-ao6" firstAttribute="leading" secondItem="ZPc-hK-C7x" secondAttribute="leading" constant="73" id="rGb-UG-Af9"/>
+                            <constraint firstItem="ZPc-hK-C7x" firstAttribute="bottom" secondItem="plD-m0-eRt" secondAttribute="bottom" constant="50" id="sXv-Ed-8vI"/>
+                            <constraint firstItem="GEE-hh-ao6" firstAttribute="top" secondItem="ZPc-hK-C7x" secondAttribute="top" id="z5K-WL-Pmy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ingredientes" image="circle.hexagongrid.circle.fill" catalog="system" id="mUm-YK-xd5"/>
+                    <connections>
+                        <outlet property="imgPlatillo" destination="JFj-GF-Bsz" id="FRR-7S-xny"/>
+                        <outlet property="lbNombrePlatillo" destination="4wy-0b-8TK" id="jtq-8p-MSM"/>
+                        <outlet property="tvIngredientes" destination="plD-m0-eRt" id="6vZ-0L-1Mp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izU-sU-EJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045.6000000000004" y="-1130.2848575712144"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lgp-3b-ZVM">
+            <objects>
+                <tabBarController id="kmE-89-drI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BAv-lq-qDl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FO0-nU-iUe" kind="relationship" relationship="viewControllers" id="vNZ-Ce-bAK"/>
+                        <segue destination="8hW-07-vgX" kind="relationship" relationship="viewControllers" id="rbd-fl-jJd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhO-gR-0A9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4178" y="-699"/>
         </scene>
         <!--habito4-->
         <scene sceneID="euA-eP-kIW">
@@ -2498,14 +2672,16 @@ de lucro. </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fvf-fj-JM2"/>
+        <segue reference="t7d-YV-MhD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSample_ByTailorBrands" width="200" height="200"/>
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="chart.bar.doc.horizontal" catalog="system" width="115" height="128"/>
         <image name="chart.bar.fill" catalog="system" width="128" height="92"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="circle.hexagongrid.circle.fill" catalog="system" width="128" height="121"/>
         <image name="habito-1-oscuro" width="971" height="966"/>
         <image name="habito-2-oscuro" width="1000" height="1000"/>
         <image name="habito-3-oscuro" width="1000" height="1000"/>

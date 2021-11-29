@@ -27,6 +27,8 @@
 		6481DA662730ED0C000E64F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA652730ED0C000E64F2 /* Assets.xcassets */; };
 		6481DA692730ED0C000E64F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6481DA672730ED0C000E64F2 /* LaunchScreen.storyboard */; };
 		842DF779274718E10046C729 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DF778274718E10046C729 /* NotificationsManager.swift */; };
+		84351934275499F100365CF9 /* RecetarioIngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84351933275499F100365CF9 /* RecetarioIngredientesViewController.swift */; };
+		8435193627549B9600365CF9 /* RecetarioPasosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435193527549B9600365CF9 /* RecetarioPasosViewController.swift */; };
 		84893A9627479373001F930F /* AjustesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84893A9527479373001F930F /* AjustesGeneralViewController.swift */; };
 		84B052572733255A00F9AE30 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B052562733255A00F9AE30 /* SetUpViewController.swift */; };
 		84B0525D273327A000F9AE30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0525C273327A000F9AE30 /* DashboardViewController.swift */; };
@@ -73,6 +75,8 @@
 		6481DA682730ED0C000E64F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6481DA6A2730ED0C000E64F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842DF778274718E10046C729 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		84351933275499F100365CF9 /* RecetarioIngredientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioIngredientesViewController.swift; sourceTree = "<group>"; };
+		8435193527549B9600365CF9 /* RecetarioPasosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioPasosViewController.swift; sourceTree = "<group>"; };
 		84893A9527479373001F930F /* AjustesGeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesGeneralViewController.swift; sourceTree = "<group>"; };
 		84B052562733255A00F9AE30 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		84B0525C273327A000F9AE30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				3A955BBA2735DA3E0042DCE0 /* ViewControllerPopOver.swift */,
 				6481DA602730ED0B000E64F2 /* ViewController.swift */,
 				6481DA622730ED0B000E64F2 /* Main.storyboard */,
+				84351933275499F100365CF9 /* RecetarioIngredientesViewController.swift */,
+				8435193527549B9600365CF9 /* RecetarioPasosViewController.swift */,
 				E4579F8F2754CF10007B9420 /* RegisterViewCell.swift */,
 				E4936C53274CD179005413A3 /* ViewControllerStats.swift */,
 				84CFB9892740EBDD00596DB2 /* AjustesViewController.swift */,
@@ -259,12 +265,14 @@
 				6481DA5D2730ED0B000E64F2 /* AppDelegate.swift in Sources */,
 				3A82261F2731C5FA00632B01 /* ViewControllerHabito2.swift in Sources */,
 				E4ACCA0B274856C000AF82A6 /* Models.xcdatamodeld in Sources */,
+				84351934275499F100365CF9 /* RecetarioIngredientesViewController.swift in Sources */,
 				3A82261C2731C5E900632B01 /* ViewControllerHabito1.swift in Sources */,
 				84CFB98A2740EBDD00596DB2 /* AjustesViewController.swift in Sources */,
 				E4579F902754CF10007B9420 /* RegisterViewCell.swift in Sources */,
 				3A8226222731C62F00632B01 /* ViewControllerHabito3.swift in Sources */,
 				3A8226372731C6A700632B01 /* ViewControllerInfo.swift in Sources */,
 				3A8226312731C67D00632B01 /* ViewControllerHabito8.swift in Sources */,
+				8435193627549B9600365CF9 /* RecetarioPasosViewController.swift in Sources */,
 				6446A65C2730EFC900994D6E /* Habito.swift in Sources */,
 				3A8226342731C68800632B01 /* ViewControllerHabito9.swift in Sources */,
 				3A82262E2731C67300632B01 /* ViewControllerHabito7.swift in Sources */,

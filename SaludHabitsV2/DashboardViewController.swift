@@ -9,6 +9,7 @@ import UIKit
 
 class DashboardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
     }

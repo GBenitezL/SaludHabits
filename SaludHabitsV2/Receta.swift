@@ -7,17 +7,19 @@
 
 import UIKit
 
-class Receta: NSObject {
+class Receta: NSObject, Codable{
     var id : Int!
-    var receta : String!
-    var link : URL!
-    var tipoComida : Int!
+    var nombre_platillo : String!
+    var ingredientes = [String]()
+    var pasos = [String]()
+    var imagen : String!
     
-    init (id : Int, receta : String, link : URL, tipoComida : Int) {
+    init (id : Int, nombre : String, ingredientes : [String], pasos : [String], imagen : String) {
         self.id = id
-        self.receta = receta
-        self.link = link
-        self.tipoComida = tipoComida
+        self.nombre_platillo = nombre
+        self.ingredientes = ingredientes
+        self.pasos = pasos
+        self.imagen = imagen
     }
 
 }
