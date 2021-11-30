@@ -30,8 +30,8 @@ class ViewControllerHabito2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        horaDormir = Date()
         // Cargamos los datos de User Default
+        horaDormir = (defaults.object(forKey: "horaDormirh2") as? Date)
         swRecordatorio.setOn(defaults.bool(forKey:"swCompletoh2"), animated: true)
         done = defaults.bool(forKey:"lbCompletoh2")
         if done {
@@ -45,6 +45,7 @@ class ViewControllerHabito2: UIViewController {
     
     @IBAction func setHora(_ sender: UIDatePicker) {
         self.horaDormir = sender.date
+        defaults.set(sender.date, forKey: "horaDormirh2")
     }
     
     @IBAction func setRecordatorio(_ sender: UISwitch) {
